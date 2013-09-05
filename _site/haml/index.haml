@@ -1,0 +1,43 @@
+\---
+\layout: default
+\title: Délégation des Compétitions en Informatique de l'ÉTS
+\---
+/ Jumbotron
+.jumbotron
+	.container
+		%h1 Qualification CSAW CTF 2013
+
+		.p La DCI est &agrave; la recherche d'&eacute;tudiants d&eacute;sirant participer aux qualifications de la CSAW.
+
+		%a.btn.btn-primary.btn-md{:href=>'/2013/08/16/qualification-csaw-ctf-2013/'} Plus d'information sur la CSAW
+
+.container
+	.row
+		.col-md-4
+			%h2 Nouvelles
+			%ul.posts
+				{% for post in site.posts %}
+				%li
+					%span {{ post.date | date_to_string }}
+					&raquo; 
+					%a{:href=>'{{ post.url }}'} {{ post.title }}
+				{% endfor %}
+		.col-md-4
+			%h2 &Agrave; propos
+			%p La DCI s’occupe de représenter l’École de technologie supérieure dans les événements et compétitions inter-universitaires reliés à l’informatique. En bref, le rôle de la DCI est de :
+
+			%ul
+				%li Former des équipes pour participer aux compétitions informatique
+				%li Faire la promotion des conférences reliées à l’informatique
+				%li Organiser des compétitions intra-muraux
+				%li Renforcer les liens entre les étudiants en informatique
+		.col-md-4
+			%h2 Twitter
+	.row
+		.col-md-12
+			%h3 Inscrivez-vous &agrave; notre liste de courriel
+			%form.form-inline{:role=>'form'}
+				.form-group
+					%label.sr-only{:for=>'email'} Courriel
+					%input#email.form-control{:type=>'email', :placeholder=>'Entrer votre courriel'}
+				%button.btn.btn-success{:type=>'submit'} Inscription
