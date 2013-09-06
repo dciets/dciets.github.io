@@ -61,7 +61,7 @@ h1,h2,h3,h4,h5 {
  	background-image: url('/img/bg_jumbotron.png');
  	background-position: 0px -200px;
  	color:#fff;
- } 
+ }
 
 .btn-primary {
 	color: #fff;
@@ -93,6 +93,7 @@ footer {
 	border-top: 1px solid #EEE;
 	margin-top: 20px;
 	padding-top: 25px;
+    margin-bottom: 20px;
 }
 
 .partenaires {
