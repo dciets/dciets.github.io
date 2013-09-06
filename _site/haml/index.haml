@@ -13,6 +13,10 @@
 
 .container
 	.row
+		.col-md-12
+			%h3 Inscrivez-vous &agrave; notre liste de courriel
+			%a.btn.btn-primary.btn-md{:href=>'/2013/08/16/qualification-csaw-ctf-2013/'} Inscription
+	.row
 		.col-md-4
 			%h2 Nouvelles
 			%ul.posts
@@ -33,11 +37,3 @@
 				%li Renforcer les liens entre les étudiants en informatique
 		.col-md-4
 			%h2 Twitter
-	.row
-		.col-md-12
-			%h3 Inscrivez-vous &agrave; notre liste de courriel
-			%form.form-inline{:role=>'form'}
-				.form-group
-					%label.sr-only{:for=>'email'} Courriel
-					%input#email.form-control{:type=>'email', :placeholder=>'Entrer votre courriel'}
-				%button.btn.btn-success{:type=>'submit'} Inscription
