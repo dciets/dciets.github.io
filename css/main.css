@@ -139,6 +139,22 @@ footer {
     margin: auto;
 }
 
+.partners-platine img {
+	height:370px;
+}
+
+.partners-or img {
+	height:250px;
+}
+
+.partners-argent img {
+	height:170px;
+}
+
+.partners-bronze img {
+	height: 150px;
+}
+
 .social a{
 	text-indent: -9999px;
 	display: inline-block;
@@ -198,7 +214,7 @@ a.etsmtl {
 }
 
 a.genetec {
-	background-image:url('../img/partenaires/genetec.png');
+	background-image:url('../img/partenaires/genetec-small.png');
 	background-size: 155px 30px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -207,7 +223,7 @@ a.genetec {
 }
 
 a.reseauets {
-	background-image:url('../img/partenaires/reseau_ets2.png');
+	background-image:url('../img/partenaires/reseau_ets2-small.png');
 	background-size: 108px 30px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -216,7 +232,7 @@ a.reseauets {
 }
 
 a.iweb {
-	background-image:url('../img/partenaires/iweb.png');
+	background-image:url('../img/partenaires/iweb-small.png');
 	background-size: 40px 30px;
 	background-repeat: no-repeat;
 	background-position: center;
