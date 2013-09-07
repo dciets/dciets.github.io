@@ -26,8 +26,20 @@ h1,h2,h3,h4,h5 {
   background-color: #8f0000;
  }
 
-.navbar-brand:hover {
-	color:#fff;
+.navbar-brand {
+	text-indent: -9999px;
+	height: 30px;
+ 	width: 23px;
+ 	background-image: url('../img/logo_dci_white.png');
+ 	background-size: 23px 30px;
+ 	background-position: center;
+ 	margin-top: 10px;
+ 	margin-left: 10px;
+}
+
+.footer-logo {
+	height: 87px;
+ 	width: 69px;
 }
 
  .navbar a {
