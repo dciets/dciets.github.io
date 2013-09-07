@@ -140,19 +140,23 @@ footer {
 }
 
 .partners-platine img {
-	height:370px;
+	height:75%;
+	width:75%;
 }
 
 .partners-or img {
-	height:250px;
+	height:55%;
+	width:55%;
 }
 
 .partners-argent img {
-	height:170px;
+	height:35%;
+	width:35%;
 }
 
 .partners-bronze img {
-	height: 150px;
+	height:35%;
+	width:35%;
 }
 
 .social a{
