@@ -29,12 +29,13 @@ h1,h2,h3,h4,h5 {
 .navbar-brand {
 	text-indent: -9999px;
 	height: 30px;
- 	width: 23px;
+ 	width: 30px;
  	background-image: url('../img/logo_dci_white.png');
  	background-size: 23px 30px;
- 	background-position: center;
+ 	background-position: right center;
+ 	background-repeat: no-repeat;
  	margin-top: 10px;
- 	margin-left: 10px;
+ 	margin-left: 0px !important;
 }
 
 .footer-logo {
@@ -59,12 +60,12 @@ h1,h2,h3,h4,h5 {
 	background-color:#be0000;
 }
 
-.navbar-toggle .icon-bar {
-	background-color: #fff;
+.navbar-toggle {
+	margin-right: 8px;
 }
 
-.navbar-brand {
-	padding: 9px 9px;
+.navbar-toggle .icon-bar {
+	background-color: #fff;
 }
 
  a {
