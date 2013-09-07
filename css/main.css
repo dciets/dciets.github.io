@@ -220,6 +220,7 @@ a.genetec {
 	background-position: center;
 	height:40px;
 	width:155px;
+	text-align: left;
 }
 
 a.reseauets {
@@ -229,6 +230,7 @@ a.reseauets {
 	background-position: center;
 	height: 40px;
 	width: 108px;
+	text-align: left;
 }
 
 a.iweb {
@@ -238,4 +240,5 @@ a.iweb {
 	background-position: center;
 	height: 40px;
 	width:40px;
+	text-align: left;
 }
