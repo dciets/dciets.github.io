@@ -1,4 +1,4 @@
 dciets.github.io
 =================
 
-Our blog build with ♥ on Jekyll.
+Our blog builded with ♥ on Jekyll.
