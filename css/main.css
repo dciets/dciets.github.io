@@ -74,7 +74,7 @@ h1,h2,h3,h4,h5 {
 	border-color: #8f0000;
 }
 
-img.grayscale {
+.grayscale {
 	opacity: .5;
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+, IE10 */
     filter: gray; /* IE6-9 */
@@ -83,7 +83,7 @@ img.grayscale {
     -webkit-backface-visibility: hidden; /* Fix for transition flickering */
 }
 
-img.grayscale:hover {
+.grayscale:hover {
 	opacity:1;
     filter: none;
     -webkit-filter: grayscale(0%);
@@ -94,6 +94,8 @@ footer {
 	margin-top: 20px;
 	padding-top: 25px;
     margin-bottom: 20px;
+    font-size: 11px;
+    color:#777;
 }
 
 .partenaires {
@@ -106,4 +108,89 @@ footer {
 
 .partenaires .img-responsive {
     margin: auto;
+}
+
+.social a{
+	text-indent: -9999px;
+	display: inline-block;
+	height: 23px;
+	width: 23px;
+}
+
+.partners a {
+	text-indent: -9999px;
+	overflow: hidden;
+	display: inline-block;
+	margin-left: 15px;
+}
+
+a.facebook {
+	background-image:url('../img/facebook.png');
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+a.twitter {
+	background-image:url('../img/twitter.png');
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+a.youtube {
+	background-image:url('../img/youtube.png');
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+a.github {
+	background-image:url('../img/github.png');
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+a.googleplus {
+	background-image:url('../img/googleplus.png');
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+a.etsmtl {
+	background-image:url('../img/partenaires/ets2011.png');
+	background-size: 45px 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	height:40px;
+	width:45px;
+}
+
+a.genetec {
+	background-image:url('../img/partenaires/genetec.png');
+	background-size: 155px 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	height:40px;
+	width:155px;
+}
+
+a.reseauets {
+	background-image:url('../img/partenaires/reseau_ets2.png');
+	background-size: 108px 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 40px;
+	width: 108px;
+}
+
+a.iweb {
+	background-image:url('../img/partenaires/iweb.png');
+	background-size: 40px 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 40px;
+	width:40px;
 }
