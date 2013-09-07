@@ -22,7 +22,7 @@ title: Délégation des Compétitions en Informatique de l'ÉTS
     <div class='col-md-4'>
       <h2>Nouvelles</h2>
       <ul class='posts'>
-        {% for post in site.posts %}
+        {% for post in site.posts limit:10 %}
         <li>
           <span>{{ post.date | date_to_string }}</span>
           &raquo;
@@ -30,6 +30,7 @@ title: Délégation des Compétitions en Informatique de l'ÉTS
         </li>
         {% endfor %}
       </ul>
+      <a href='/archives'>Archives</a>
     </div>
     <div class='col-md-4'>
       <h2>&Agrave; propos</h2>
