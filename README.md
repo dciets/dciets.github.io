@@ -1,4 +1,4 @@
-dci-ets.github.io
+dciets.github.io
 =================
 
-DCI's website build with ♥ on Jekyll
+Our blog builded with ♥ on Jekyll.
