@@ -63,6 +63,14 @@ h1,h2,h3,h4,h5 {
  	color:#fff;
  }
 
+.alert a {
+	color:#3A87AD;
+}
+
+.alert a:hover {
+	color:#285e8e;
+}
+
 .btn-primary {
 	color: #fff;
 	background-color: #8f0000;
