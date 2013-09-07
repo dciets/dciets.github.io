@@ -43,6 +43,14 @@ h1,h2,h3,h4,h5 {
     -webkit-backface-visibility: hidden; /* Fix for transition flickering */
  }
 
+.navbar-toggle:hover {
+	background-color:#be0000;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
 .navbar-brand {
 	padding: 9px 9px;
 }
