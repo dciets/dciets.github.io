@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Messages de la rentrée hiver 2011"
+date:   2011-01-04 20:16:06
+---
+
+##10e édition du CUSEC très bientôt!
+
+Du **13 au 15 janvier** prochain aura lieu la 10e édition du CUSEC (*Canadian University Software Engenering Conference* — Conférence universitaire canadienne de génie logiciel). Il s’agit de trois jours de conférences animées par des experts. Des employeurs à la recherche de stagiaires et d’employés auront également leur kiosque sur place. Cet événement, qui aura lieu à deux pas de l’ÉTS au Marriott Château Champlain, constitue un excellent moment pour rencontrer des étudiants provenant d’autres universités canadiennes et pour discuter avec vos confrères de l’ÉTS. D’ailleurs, plusieurs ont déjà confirmé leur présence.
+
+L’inscription est **obligatoire** pour participer (60$)! Demandez à ceux qui y sont aller : ça vaut la peine! Pour plus d’information ou pour vous inscrire, visitez le [site internet du CUSEC](http://2011.cusec.net/) ou écrivez à [dci@aeets.com](mailto:dci@aeets.com).
+
+##Qualification des CS Games
+
+La journée de qualification pour les CS Games sera le **samedi 29 janvier 2011 à 10:30**. 20 personnes seront sélectionnés pour faire partie de la délégation de l’ÉTS. Préparez vos algos et surtout [inscrivez-vous sur la page de l’événement](http://dciets.com/evenements/cs-games-2011) pour me faciliter la tâche et pour connaitre le lieu de rencontre à l’ÉTS qui n’est pas encore déterminé.

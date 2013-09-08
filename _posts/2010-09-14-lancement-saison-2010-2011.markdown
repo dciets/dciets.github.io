@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Lancement de la saison 2010-2011"
+date:   2010-09-14 13:40:06
+---
+
+##Retour sur la saison 2010
+
+La DCI est très fière de ramener à l’ÉTS la CS Cup, qu’elle a remporté au CS Games 2010. L’équipe Hack to the Future s’est classé première parmi 23 équipes. L’autre équipe de l’ÉTS, Full Metal Packet, s’est classé 6e. Le détail du pointage est disponible [sur le site des CS Games 2010](http://www.csgames.org/2010/?page=scores). Pour plus de détails, voir [le communiqué sur le site du département](http://departements.etsmtl.ca/logti/Communiques.html) ou encore sur [le site de l’école](http://www.etsmtl.ca/manager/doc/csgames_03_10.html).
+
+L’ÉTS a aussi remporté la 3e place au [HackUS](http://www.hackus.org/), une compétition de sécurité à l’université de Sherbrooke qui en était à sa première édition.
+
+##Prochainement…
+
+La DCI lance sa saison 2010-2011 avec trois [événements](http://dciets.com/evenements) :
+
+* Le Hackfest, une conférence sur la sécurité informatique
+* Le CUSEC, une conférence sur le génie logiciel
+* Les Computer Science Games, une compétition nord américaine
+
+Aussi, il est possible que le HackUS revienne cette année. Si c’est le cas, nous pourrons aussi former une équipe.
+
+Vous pouvez déjà [signaler votre intérêt](http://dciets.com/evenements) pour les différentes activités.
+
+##La DCI a besoin d’aide
+
+La DCI cherche des gens pour l’aider dans les tâches administratives et techniques. Si vous êtes intéressé à participer à la gestion de la DCI, répondez ici ou écrivez à [dci@aeets.com](dci@aeets.com).
+
+Note: La CS Cup sera au pub le 14 septembre le soir.

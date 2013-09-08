@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "CUSEC 2012 - Un événement à ne pas manquer pour les étudiants de LOGTI"
+date:   2012-01-16 13:11:06
+---
+
+Cette semaine a lieu un événement important : le CUSEC ( Canadian University Software Engineering Conference ). Il s’agit de 3 jours de conférences, de jeudi à samedi, données par des vedettes du logiciel comme
+
+* Alexis Ohanian ( cofondateur de reddit )
+* Greg Kroah-Hartman ( développeur sur le noyau Linux )
+* Bret Victor ( Un designer de UI qui a entre autre travaillé pour Apple )
+* Beaucoup d’autres, à voir sur le site.
+
+Il s’agit d’un événement idéal pour se faire des contacts, rencontrer des gens et s’impliquer dans le milieu. Il y a toujours des activités organisées le soir où il est possible de discuter avec les conférencier et évidemment faire la fête.
+
+La conférence se déroule à 2 coins de rue de l’ÉTS : l’hôtel Delta. Plusieurs étudiants de l’ÉTS ont confirmé leur présence.
+
+Pour les nouveaux étudiants, cet événement est idéal pour rencontrer Plusieurs ont décroché des stages dans ce genre d’événement.
+
+Pour plus d’informations et l’inscription : http://2012.cusec.net
+
+Je vous invite à vous inscrire au groupe Google des gens présents à l’ÉTS ( http://groups.google.com/group/dci_cusec_2012 ) et sur irc #dci-cusec sur Freenode pour se regrouper lors de l’événement.

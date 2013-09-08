@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Ouverture saison 2011-2012"
+date:   2011-09-22 12:51:06
+---
+
+##Résultats au HackUs 2
+
+Douze étudiants de l’ÉTS formaient deux équipes pour participer à la deuxième édition du HackUs. La DCI est très fière des résultats obtenus : une équipe s’est classé en **8e** position et une autre a décroché la **2e** position!
+
+##HackFest 2011
+
+Le [HackFest](http://www.hackfest.ca/) est une conférence sur la sécurité informatique de deux jours à Québec. Le soir du vendredi et samedi, une compétition est organisée. Plusieurs étudiants de l’ÉTS ont déjà confirmé leur présence. Si vous désirez participer à la compétition, faire du covoiturage, partager une chambre ou simplement avoir plus d’information, envoyez une demande au [groupe Google](http://groups.google.com/group/dci_hackfest_2011).
+
+##CSAW
+
+Quelques membres de la DCI participent au [CSAW CTF](https://csawctf.poly.edu/) en fin de semaine (du 23 au 25 septembre). Il s’agit d’une compétition internationale. Si vous désirez vous joindre à nous envoyer un courriel à dci@aeets.com et il nous fera plaisir de vous accueillir. C’est une bonne occasion de rencontrer l’équipe.
+
+##CUSEC 2012
+
+Le [CUSEC](http://www.cusec.net/) est une conférence sur l’ingénierie logiciel organisé par des étudiants qui aura lieu du 19 au 21 janvier prochain. L’[édition 2012](http://2012.cusec.net/) est la 10e édition de l’événement qui gagne de plus en plus en popularité. Les inscriptions sont ouvertes!
+
+##CS Games 2012
+
+Les prochains [CS Games](http://www.csgames.org/) seront au Manitoba! Plus d’informations à venir…
