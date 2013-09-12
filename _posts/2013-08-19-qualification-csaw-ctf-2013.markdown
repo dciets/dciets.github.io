@@ -10,8 +10,8 @@ Bonne rentrée à tous et à toutes. La première compétition de la DCI cette a
 
 La compétition aura lieu du jeudi 19 septembre à 18:00 au dimanche 22 septembre à 18:00. Elle aura lieu à l’ÉTS dans les locaux suivants:
 
-A-4420: Jeudi 18:00 à Vendredi 18:00
-A-3324: Vendredi 18:00 à Dimanche 18:00
+* A-4420: Jeudi 18:00 à Vendredi 18:00
+* A-3324: Vendredi 18:00 à Dimanche 18:00
 
 Si vous êtes intéressé par cette compétition, n’hésitez pas à venir y faire un tour, peu importe votre niveau de compétence technique dans le domaine.
 
