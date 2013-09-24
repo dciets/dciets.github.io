@@ -10,7 +10,9 @@ Once we are logged we are prompt to enter a new entry into the diary. We first e
 The exploit is that the size we send first is then used by `recv` to read our entry into a fixed sized buffer of `0x400` bytes. Note that there is a check to see if the size we provided is below `0x400`, but giving a 2 bytes negative number such a `0xFFFF` would pass the test, but still read `0xFFFF` bytes of data, allowing us to smash the stack and overwrite the return adresse.
 
 Since there were no `jmp esp` instruction in the program, I scanned the libc to find an adresse we could return to that would then jump on the shellcode in the buffer. The exploit script used is:
-```
+
+```python
+
 #!/usr/bin/env python
 
 import socket
@@ -106,4 +108,5 @@ def find_jmp_esp():
 jmpesp_addr = find_jmp_esp()
 print 'jmpesp_addr: ', hex(jmpesp_addr)
 exploit(jmpesp_addr)
+
 ```

