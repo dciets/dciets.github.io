@@ -4,7 +4,7 @@ title:  "CSAW CTF 2013 - Reverse 400 (keygenme)"
 author: "Mathieu B."
 ---
 
-For this challenge, we need to provide a remote server with the password for a specific user within 5 seconds. All we have is keygenme32.elf, an executable that requires a valid username and two tokens (integers). It'll then validate the two tokens and respond with either :-( or *&gt;:-). 
+For this challenge, we need to provide a remote server with the password for a specific user within 5 seconds. All we have is keygenme32.elf, an executable that requires a valid username and two tokens (integers). It'll then validate the two tokens and respond with either :-( or *&lt;:-). 
 
 Basically, the executable will validate that your username is legit (checks the string's length), then will execute some emulated CPU code using that username and get two values (T6 and T7) resulting from that emulation (which are username dependant, but token independant).
 
@@ -93,4 +93,4 @@ s.close();
 
 And there you go – You get the key (`r3vers1ng_emul4t3d_cpuz_a1n7_h4rd!`) without even worrying about the emulated CPU. Saved us a lot of time!
 
-Note: The source code for keygenme (including the emulated CPU instructions) is available there: https://github.com/crowell/keygenme
+Note: The source code for keygenme (including the emulated CPU instructions) is available [here](https://github.com/crowell/keygenme)
