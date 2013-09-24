@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "CSAW CTF 2013 - Miscellaneous 100"
+author: "HoLyVieR"
+---
+
+This challenge was simple and there is a lot of way to do it. There was text written in an image and the text color was almost white. One easy way to do it is to use the Magic Wand of Paint.NET.
+
+![The key](/img/writeups/CSAW2013_Misc100.png)
+
+An other way to do it is to play with the contrast until you see the key. It's harder to read than the previous method, but it works too.
+
+Also, on some monitor simply looking at the image from a different angle reveals the key.
