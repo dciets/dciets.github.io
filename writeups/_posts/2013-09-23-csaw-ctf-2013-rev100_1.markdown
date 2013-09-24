@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "CSAW CTF 2013 - Reverse 100 (DotNet)"
+author: "Mathieu B."
 ---
 
 For this challenge, you simply had to reverse DotNet.exe using an automated tool (I used ILSpy). Then, in the main function, you could see the following code:
@@ -26,5 +27,5 @@ else
 
 You can clearly see that the passcode needs to be `num3 ^ num2` which is `13371337255`.
 
-And there’s the flag: `flag{I'll create a GUI interface using visual basic...see if I can track an IP address.}`
+And there's the flag: `flag{I'll create a GUI interface using visual basic...see if I can track an IP address.}`
 
