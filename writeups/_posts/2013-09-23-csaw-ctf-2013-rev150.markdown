@@ -12,7 +12,7 @@ If they were equal, we got the flag!
 
 Since the application was written in .NET, we fired up ILSpy to decompile it. What we found was a straightforward form with a textfield and a button and its handler :
 
-```cs
+```csharp
 
 private void eval_?(object obj, EventArgs eventArgs)
 {
@@ -55,7 +55,7 @@ And now it's actually time for more Bawls!!
 
 Here's the complete code we used in Visual Studio. Note that in order to get the correct value to enter, you have to break on the line of the comparison and take note of the value of str_b.
 
-```cs
+```csharp
 
 using System;
 using System.Security.Cryptography;
