@@ -19,6 +19,10 @@ Lors de la qualification, les deux équipes de l'ÉTS se sont classées :
 
 C'est grâce à tout ceux et celles qui sont passés lors de cette longue compétition de 72 heures que l'ÉTS a si bien performé, donc __félicitations à tout les participants__!
 
+###Writeups
+
+Des writeups sont disponible [sur notre site](/writeups/) ainsi que sur le site du [CSAW CTF](https://ctf.isis.poly.edu/writeups/) (en anglais seulement). Si vous avez participé et souhaitez ajouter le(s) vôtre(s), envoyez-nous un courriel!
+
 ###La finale
 
 Cette année, ce sera donc 2 équipes de quatre étudiants qui représenteront l'école à la finale du CSAW CTF à New York. 
@@ -36,3 +40,5 @@ Cette année, ce sera donc 2 équipes de quatre étudiants qui représenteront l
 * Benjamin Vanheuverzwijn
 
 On leur souhaite bonne chance!
+
+[![Résultats - Qualification CSAW CTF 2013](/img/news/resultats-qualifs-csaw-2013.png)](https://ctf.isis.poly.edu/scoreboard/?l=q)
