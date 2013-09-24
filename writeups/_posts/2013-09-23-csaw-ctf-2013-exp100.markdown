@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CSAW CTF 2013 - Exploit 100"
+title:  "CSAW CTF 2013 - Exploit 100 (Exploitation 1)"
 ---
 
 Source for exploit 100 were provided:

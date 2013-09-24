@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CSAW CTF 2013 - Exploit 200"
+title:  "CSAW CTF 2013 - Exploit 200 (Exploitation 2)"
 ---
 
 Source were not provided, but with IDA and Hex-Ray we can get the following pseudocode:
