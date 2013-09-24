@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "CSAW CTF 2013 - Reverse 200 (CSAW Reversing 2013 1)"
+author: "Mathieu B."
+---
+
+For this challenge, you had a Windows executable that you could run to see an encrypted string (which is your flag).
+
+To decrypt it, you only had to step it through the debugger and set `$eap` to `0` before the first conditional jump, then jump over the debugger trap and monitor the execution for traps and quick exits. But when you notice how they were decoding the flag with the `0x8899AABB` key, it's just as fast to write a quick Python script and get the flag that way:
+
+
+```python
+
+import binascii
+
+flag_encrypted =  [ 0xE9F5CCBB,0xFDF7D1DC,0xFAFCC8D6,0xE9EAC389,0xFCEDC3D7,0xE1FBCFD7,0xFAF8C2CF,0xB2EBCFDF,0x8899D7CB ]
+key = 0x8899AABB;
+
+flag = '';
+for i in flag_encrypted:
+  flag = binascii.unhexlify(hex(key ^ i)[2:-1]) + flag
+
+print flag[::-1];
+
+```
+
+And there's the flag: `flag{number2isalittlebitharder:p}`
