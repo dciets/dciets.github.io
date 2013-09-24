@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CSAW CTF 2013 - Reverse 150 (bikinibonanza)"
-author: "Jérôme Gingras"
+author: "JÃ©rÃ´me Gingras"
 ---
 
 For this challenge, we needed to provide a key to an executable in order for it to show us the flag.
