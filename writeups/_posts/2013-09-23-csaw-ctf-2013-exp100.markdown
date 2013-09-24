@@ -5,6 +5,14 @@ title:  "CSAW CTF 2013 - Exploit 100"
 
 Source for exploit 100 were provided:
 
+Here's an example:
+
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+
 ``` C
 void handle(int newsock) {
     int backdoor = 0;
