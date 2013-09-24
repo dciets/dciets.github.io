@@ -12,14 +12,7 @@ Then it moves on to a function check(int, int, int, int), which can be translate
 
 ```c
 
-bool __cdecl check(int T6, int T7, int Token1, unsigned int Token2)
-{
-  unsigned int v4; // eax@1
 
-  v4 = Token2;
-  return T6 == (Token1 ^ 0x31333337)
-      && T7 == ((unsigned __int8)Token2 | ((unsigned __int8)(Token2 >> 24) << 8) | ((unsigned __int8)((unsigned __int16)(Token2 & 0xFF00) >> 8) << 16) | ((unsigned __int8)((signed int)(v4 & 0xFF0000) >> 16) << 24));
-}
 
 ```
 
@@ -40,54 +33,6 @@ So here's the (ugly) script I used to do beat the challenge:
 
 ```python
 
-#!/usr/bin/env python
-import time;
-from socket import *
-from struct import *
-from subprocess import *
-
-s = socket()
-s.connect(("128.238.66.219" , 14549))
-
-s.recv(100)
-output = s.recv(100)
-print output;
-
-while "the password for" in output : #They're gonna ask for it more than once
-	key = (output[-32:]) #Last 32 chars are the user/key
-
-	Popen("echo 'set args "+key+" 1 1\nbreak _Z5checkiiii\nrun\np/x *(unsigned*)($ebp+8)\np/x *(unsigned*)($ebp+12)\nquit' > gdb_test", stdout=PIPE, shell=True) #Oh yes, this is ugly... But it was quick.
-	output = Popen("gdb ./keygenme32.elf --command=gdb_test", stdout=PIPE, shell=True).stdout.read()
-
-	lines = output.split('\n')
-
-	a = lines[-8] #$1 = 0xe75a39fc #That's T6
-	b = lines[-7] #$2 = 0x6693b9af #That's T7
-
-	real_a = hex(int(a[7:],16) ^ 0x31333337) #Reverse T6 to required Token1
-	b = b[7:]
-	real_b = "0x"+b[4:6]+b[0:2]+b[2:4]+b[6:8] #Reverse T7 to required Token2
-
-	int_a = int(real_a,16)
-	int_b = int(real_b,16)
-
-	pw = str(int_a)+" "+str(int_b)+"\n" #Send the tokens in decimal form
-
-	print key;
-	print pw;
-
-	s.send(pw);
-
-	time.sleep(0.5); #Sleep just a little bit
-
-	output = s.recv(100).split('\n');
-	print output;
-	if len(output) > 1:
-		output = ''.join(output
-
-print s.recv(100);
-
-s.close();
 
 ```
 
