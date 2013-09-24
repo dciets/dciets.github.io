@@ -22,7 +22,7 @@ title: Délégation des compétitions en informatique de l'ÉTS
     <div class='col-md-4 posts'>
       <h2>Nouvelles</h2>
       <ul>
-        {% for post in site.posts limit:10 %}
+        {% for post in site.news.posts limit:10 %}
         <li>
           <span>{{ post.date | date_to_string }}</span>
           &raquo;
