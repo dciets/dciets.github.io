@@ -1,5 +1,7 @@
-CSAW CTF 2013 - Exploit 300
-================================
+---
+layout: post
+title:  "CSAW CTF 2013 - Exploit 300"
+---
 
 This challenge is a diary server listening on port 34266. When we first connect it prompt us to enter a password and an username. Both value are hardcoded in the application and can be retrieved through reverse engineering. Username is `csaw2013` and password is `S1mplePWD`.
 

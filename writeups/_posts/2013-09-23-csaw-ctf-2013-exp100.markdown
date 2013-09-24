@@ -1,5 +1,7 @@
-CSAW CTF 2013 - Exploit 100
-================================
+---
+layout: post
+title:  "CSAW CTF 2013 - Exploit 100"
+---
 
 Source for exploit 100 were provided:
 ```

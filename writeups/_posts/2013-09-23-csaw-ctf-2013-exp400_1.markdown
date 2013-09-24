@@ -1,5 +1,7 @@
-CSAW CTF 2013 - Exploit 400
-================================
+---
+layout: post
+title:  "CSAW CTF 2013 - Exploit 400.1"
+---
 
 This challenge was a service reading prompting some data, doing some stuff and then exiting. The file was stripped, was partly written in assembly and staticly linked. After doing some test we found that inputting a lot of data would result in a segmentation fault. If we wrote enough data, we could actually rewrite the return value and jump anywhere in the code. All we needed was then to jump on our shellcode in the buffer.
 
