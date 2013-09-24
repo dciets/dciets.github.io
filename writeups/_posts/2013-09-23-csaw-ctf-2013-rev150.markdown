@@ -1,0 +1,146 @@
+---
+layout: post
+title:  "CSAW CTF 2013 - Reverse 150 (bikinibonanza)"
+author: "Jérôme Gingras"
+---
+
+For this challenge, we needed to provide a key to an executable in order for it to show us the flag.
+
+Basically, the executable took the string "NeEd_MoRe_Bawlz", applied some transformation to it based on the hour of the day, hashed it and then compareed it to the key we entered.
+
+If they were equal, we got the flag!
+
+Since the application was written in .NET, we fired up ILSpy to decompile it. What we found was a straightforward form with a textfield and a button and its handler :
+
+```c
+
+private void eval_?(object obj, EventArgs eventArgs)
+{
+	string strB = null;
+	Assembly executingAssembly = Assembly.GetExecutingAssembly();
+	ResourceManager resourceManager = new ResourceManager(executingAssembly.GetName().Name + ".Resources", executingAssembly);
+	DateTime now = DateTime.Now;
+	string arg_65_0 = this.eval_?.Text;
+	string value = string.Format("{0}", now.Hour + 1);
+	string text = "NeEd_MoRe_Bawlz";
+	this.eval_?(text, Convert.ToInt32(value), ref strB); //Compute the base string
+	if (string.Compare(arg_65_0.ToUpper(), strB) == 0) //Compare the result to the string you entered
+	{
+		this.eval_?.Text = "";
+		this.eval_?(this.eval_?(107));
+		this.eval_?();
+		this.eval_?.Text = string.Format(this.eval_?.Text, this.eval_?(resourceManager));
+		this.eval_?.Image = (Bitmap)resourceManager.GetObject("Sorry You Suck"); //Surprisingly, this is where you want to go.
+	}
+	else
+	{
+		this.eval_?.Image = (Bitmap)resourceManager.GetObject("Almost There"); //Ending up here means that you failed.
+		this.eval_?();
+	}
+}
+
+```
+
+The conversion process takes the "NeEd_MoRe_Bawlz" string and loops does some computation and then hashes it before comparing it with the one you entered.
+
+Because the hour of the day is used to define the amount of loops the conversion process makes on each character, the fianl value of the hash changes when the time changes (only the hour).
+
+In order to get the correct hash, we copied the code in Visual Studio and debugged it from there.
+
+At midnight, the hash that was created was "CFDF804CE0C601F97C3DC7C2026E44FD", so we fired up the provided executable and entered that to get the flag.
+
+key(0920303251BABE89911ECEAD17FEBF30) 
+
+And now it's actually time for more Bawls!!
+
+Here's the complete code we used in Visual Studio. Note that in order to get the correct value to enter, you have to break on the line of the comparison and take note of the value of str_b.
+
+```c
+
+using System;
+using System.Security.Cryptography;
+using System.Text;
+
+namespace Bikinibonanza
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+
+      string text = Console.ReadLine();
+
+      CheckText(text);
+
+      Console.Read();
+    }
+
+    // bikinibonanza.Form1
+    private static void CheckText(string enteredText)
+    {
+      string strB = null;
+      string value = string.Format("{0}", DateTime.Now.Hour + 1);
+      string text = "NeEd_MoRe_Bawlz";
+      Extract(text, Convert.ToInt32(value), ref strB);
+      if (string.Compare(enteredText.ToUpper(), strB) == 0) //break here to get the value you need
+      {
+        Console.WriteLine("Where we want to go.");
+      }
+      else
+      {
+        Console.WriteLine("Not what we want");
+      }
+    }
+
+      // bikinibonanza.Form1
+    private static void Extract(string text, int num, ref string ptr)
+    {
+      int num2 = 0;
+      if (0 < text.Length)
+      {
+        do
+        {
+          char c = text[num2];
+          int num3 = 1;
+          if (1 < num)
+          {
+            do
+            {
+              c = Convert.ToChar(GetAssociatedValue(Convert.ToInt32(c), num3));
+              num3++;
+            }
+            while (num3 < num);
+          }
+          ptr += c;
+          num2++;
+        }
+        while (num2 < text.Length);
+      }
+      ptr = Compute(ptr);
+    }
+
+    // bikinibonanza.Form1
+    // Get the value at the num2 index and XOR it with num
+    private static int GetAssociatedValue(int num, int num2)
+    {
+      return (new int[]
+      {
+        2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43,
+        47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101,
+        103, 107, 109, 113
+      })[num2] ^ num;
+    }
+
+    // bikinibonanza.Form1
+    //Computes the hash
+    private static string Compute(string s)
+    {
+      byte[] bytes = Encoding.ASCII.GetBytes(s);
+      return BitConverter.ToString(new MD5CryptoServiceProvider().ComputeHash(bytes)).Replace("-", "");
+    }
+
+  }
+}
+
+
+```
