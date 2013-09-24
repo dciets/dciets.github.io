@@ -91,6 +91,6 @@ s.close();
 
 ```
 
-And there you go – You get the key (`r3vers1ng_emul4t3d_cpuz_a1n7_h4rd!`) without even worrying about the emulated CPU. Saved us a lot of time!
+And there you go - You get the key (`r3vers1ng_emul4t3d_cpuz_a1n7_h4rd!`) without even worrying about the emulated CPU. Saved us a lot of time!
 
 Note: The source code for keygenme (including the emulated CPU instructions) is available [here](https://github.com/crowell/keygenme).
