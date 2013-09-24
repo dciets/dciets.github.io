@@ -1,0 +1,96 @@
+---
+layout: post
+title:  "CSAW CTF 2013 - Reverse 400 (keygenme)"
+author: "Mathieu B."
+---
+
+For this challenge, we need to provide a remote server with the password for a specific user within 5 seconds. All we have is keygenme32.elf, an executable that requires a valid username and two tokens (integers). It'll then validate the two tokens and respond with either :-( or *<:-). 
+
+Basically, the executable will validate that your username is legit (checks the string's length), then will execute some emulated CPU code using that username and get two values (T6 and T7) resulting from that emulation (which are username dependant, but token independant).
+
+Then it moves on to a function check(int, int, int, int), which can be translated to:
+
+```c
+
+bool __cdecl check(int T6, int T7, int Token1, unsigned int Token2)
+{
+  unsigned int v4; // eax@1
+
+  v4 = Token2;
+  return T6 == (Token1 ^ 0x31333337)
+      && T7 == ((unsigned __int8)Token2 | ((unsigned __int8)(Token2 >> 24) << 8) | ((unsigned __int8)((unsigned __int16)(Token2 & 0xFF00) >> 8) << 16) | ((unsigned __int8)((signed int)(v4 & 0xFF0000) >> 16) << 24));
+}
+
+```
+
+That means that if we can get T6 and T7 - and we can with gdb - we can reverse those values to the expected Token values. Here are the gdb instructions needed to get the T6 and T7 values:
+
+```
+
+set args aaaaaaaaaabbbbbb 1 1
+break _Z5checkiiii
+run
+p/x *(unsigned*)($ebp+8)
+p/x *(unsigned*)($ebp+12)
+quit
+
+```
+
+So here's the (ugly) script I used to do beat the challenge:
+
+```python
+
+	#!/usr/bin/env python
+	import time;
+	from socket import *
+	from struct import *
+	from subprocess import *
+
+	s = socket()
+	s.connect(("128.238.66.219" , 14549))
+
+	s.recv(100)
+	output = s.recv(100)
+	print output;
+
+	while "the password for" in output : #They're gonna ask for it more than once
+		key = (output[-32:]) #Last 32 chars are the user/key
+
+		Popen("echo 'set args "+key+" 1 1\nbreak _Z5checkiiii\nrun\np/x *(unsigned*)($ebp+8)\np/x *(unsigned*)($ebp+12)\nquit' > gdb_test", stdout=PIPE, shell=True) #Oh yes, this is ugly... But it was quick.
+		output = Popen("gdb ./keygenme32.elf --command=gdb_test", stdout=PIPE, shell=True).stdout.read()
+
+		lines = output.split('\n')
+
+		a = lines[-8] #$1 = 0xe75a39fc #That's T6
+		b = lines[-7] #$2 = 0x6693b9af #That's T7
+
+		real_a = hex(int(a[7:],16) ^ 0x31333337) #Reverse T6 to required Token1
+		b = b[7:]
+		real_b = "0x"+b[4:6]+b[0:2]+b[2:4]+b[6:8] #Reverse T7 to required Token2
+
+		int_a = int(real_a,16)
+		int_b = int(real_b,16)
+
+		pw = str(int_a)+" "+str(int_b)+"\n" #Send the tokens in decimal form
+
+		print key;
+		print pw;
+
+		s.send(pw);
+
+		time.sleep(0.5); #Sleep just a little bit
+
+		output = s.recv(100).split('\n');
+		print output;
+		if len(output) > 1:
+			output = ''.join(output
+
+	print s.recv(100);
+
+	s.close();
+
+```
+
+And there you go – You get the key (`r3vers1ng_emul4t3d_cpuz_a1n7_h4rd!`) without even worrying about the emulated CPU. Saved us a lot of time!
+
+Note: The source code for keygenme (including the emulated CPU instructions) is available there: https://github.com/crowell/keygenme
