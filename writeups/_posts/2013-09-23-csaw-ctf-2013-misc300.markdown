@@ -6,7 +6,7 @@ author: "Louis Dion-Marcil"
 
 The hint given for misc300 was simply "nc 128.238.66.216 45678"
 
-nc, which stands for netcat, is a a Unix utility which helps send data over network connections. After running the given command on a linux shell, we recieve the following output;
+nc, which stands for netcat, is a Unix utility which helps send data over network connections. After running the given command on a linux shell, we recieve the following output;
 
 ```
 
