@@ -4,6 +4,11 @@ title:  "CSAW CTF 2013 - Reverse 400 (keygenme)"
 author: "Mathieu B."
 ---
 
+For this challenge, we need to provide a remote server with the password for a specific user within 5 seconds. All we have is keygenme32.elf, an executable that requires a valid username and two tokens (integers). It'll then validate the two tokens and respond with either :-( or *&lt;:-). 
+
+Basically, the executable will validate that your username is legit (checks the string's length), then will execute some emulated CPU code using that username and get two values (T6 and T7) resulting from that emulation (which are username dependant, but token independant).
+
+Then it moves on to a function check(int, int, int, int), which can be translated to:
 
 ```c
 
@@ -18,7 +23,7 @@ bool __cdecl check(int T6, int T7, int Token1, unsigned int Token2)
 
 ```
 
-That means that if we can get T6 and T7 - and we can with gdb - we can reverse those values to the expected Token values. Here are the gdb instructions needed to get the T6 and T7 values:
+That means that if we can get T6 and T7 (and we can with gdb), we can reverse those values to the expected Token values. Here are the gdb instructions needed to get the T6 and T7 values:
 
 ```
 
