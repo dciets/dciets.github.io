@@ -5,7 +5,7 @@ title:  "CSAW CTF 2013 - Reverse 100 (DotNet)"
 
 For this challenge, you simply had to reverse DotNet.exe using an automated tool (I used ILSpy). Then, in the main function, you could see the following code:
 
-```csharp
+```c
 
 Console.WriteLine("Greetings challenger! Step right up and try your shot at gaining the flag!");
 Console.WriteLine("You'll have to know the pascode to unlock the prize:");
