@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "CSAW CTF 2013 - Reverse 100 (CSAW Reversing 2013 1)"
+author:  "Mathieu B."
+---
+
+For this challenge, the first thing I did was to drop the executable into IDA and give it a run with a debugger.
+
+And there’s the flag: `flag{this1isprettyeasy:)}`
+
+For reference, here were the actual instructions:
+
+
+```
+
+.text:01131000 _main           proc near              
+.text:01131000                 call    ds:IsDebuggerPresent
+.text:01131006                 test    eax, eax
+.text:01131008                 jnz     short loc_113101F
+.text:0113100A                 push    2               ; uType
+.text:0113100C                 push    offset Caption  ; "Flag"
+.text:01131011                 push    offset Text     ; lpText
+.text:01131016                 push    eax             ; hWnd
+.text:01131017                 call    ds:MessageBoxA
+.text:0113101D                 jmp     short loc_113105C
+
+```
