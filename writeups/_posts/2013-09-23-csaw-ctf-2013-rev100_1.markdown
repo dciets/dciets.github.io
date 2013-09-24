@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "CSAW CTF 2013 - Reverse 100 (DotNet)"
+---
+
+For this challenge, you simply had to reverse DotNet.exe using an automated tool (I used ILSpy). Then, in the main function, you could see the following code:
+
+```csharp
+
+Console.WriteLine("Greetings challenger! Step right up and try your shot at gaining the flag!");
+Console.WriteLine("You'll have to know the pascode to unlock the prize:");
+string value = Console.ReadLine();
+long num = Convert.ToInt64(value);
+long num2 = 53129566096L;
+long num3 = 65535655351L;
+if ((num ^ num2) == num3)
+{
+	Console.WriteLine("yay");
+}
+else
+{
+	Console.WriteLine("Incorrect, try again!");
+}
+
+```
+
+You can clearly see that the passcode needs to be `num3 ^ num2` which is `13371337255`.
+
+And there’s the flag: `flag{I'll create a GUI interface using visual basic...see if I can track an IP address.}`
+
