@@ -23,7 +23,7 @@ C'est grâce à tout ceux et celles qui sont passés lors de cette longue compé
 
 Cette année, ce sera donc 2 équipes de quatre étudiants qui représenteront l'école à la finale du CSAW CTF à New York. 
 
-####DCI-ETS
+#####DCI-ETS
 * Olivier Arteau 
 * Félix Cloutier
 * Israël Hallé
