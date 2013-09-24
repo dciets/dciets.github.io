@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CSAW CTF 2013 - Reverse 400 (keygenme)"
-author: "Mathieu B."
+author: "Mathieu Binette"
 ---
 
 For this challenge, we need to provide a remote server with the password for a specific user within 5 seconds. All we have is keygenme32.elf, an executable that requires a valid username and two tokens (integers). It'll then validate the two tokens and respond with either :-( or *&lt;:-). 

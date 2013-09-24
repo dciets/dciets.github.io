@@ -1,0 +1,143 @@
+---
+layout: post
+title:  "CSAW CTF 2013 - Miscellaneous 300"
+author: "Louis Dion-Marcil"
+---
+
+The hint given for misc300 was simply "nc 128.238.66.216 45678"
+
+nc, which stands for netcat, is a a Unix utility which helps send data over network connections. After running the given command on a linux shell, we recieve the following output;
+
+```
+
+ldionmarcil@home:~/misc300 nc 128.238.66.216 45678
+##### Round 1: 21 Generations #####
+##################################
+#      *                      ** #
+#  *        *                **  #
+#                       *      **#
+#            *          **    * *#
+#     *                  *    *  #
+# *         *   **               #
+#            *   ***   *   *     #
+#                           *    #
+##################################
+
+Too slow!
+
+```
+
+To those who are not familiar with Game of Life, this might look confusing and unintuitive, which is why after about 24 hours they decided to add a hint, pointing to Wikipedia's Game of Life page.
+
+> The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.h The "game" is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves. [Wikipedia.org]
+
+The game contains four simple rules.
+
+1. Any live cell with fewer than two live neighbours dies, as if caused by under-population.
+2. Any live cell with two or three live neighbours lives on to the next generation.
+3. Any live cell with more than three live neighbours dies, as if by overcrowding.
+4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+
+Once we are familiar with the rules, we understand that the server sends us a Game of Life map and it expects us to send back the map after having N generations performed onto it. A generation is basically a "round". The connection isn't closed after the map is sent, though. The server waits for about two seconds, and then shuts down. So we had to write a piece of code that would fetch the map, perform N iterations of the Game of Life rules, and send the map back. We wrote this Python code:
+
+```python
+
+import socket, re
+host = "128.238.66.216"
+port = 45678
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((host,port))
+
+#####
+#code borrowed from StackExchange's CodeReview user, Lewis
+#http://codereview.stackexchange.com/questions/25772/game-of-life-in-python
+def countSurrounding(universe, a, b):
+    count = 0
+    surrounding = ((a - 1, b - 1),
+                   (a - 1, b    ),
+                   (a - 1, b + 1),
+                   (a    , b - 1),
+                   (a    , b + 1),
+                   (a + 1, b - 1),
+                   (a + 1, b    ),
+                   (a + 1, b + 1))
+    for a, b in surrounding:
+        if not(a < 0 or b < 0 or a >= len(universe) or b >= len(universe[a])) and universe[a][b]:
+            count += 1
+    return count
+#####
+
+listMap = [] #map array container
+a = None #regex group container
+generationAmnt = 0
+
+while 1:
+    data = s.recv(2048)
+    a = re.match(r'.*d ([0-9]+): ([0-9]+) G.*', data, re.S) #detect round reqs
+    if a != None:
+        round = a.group(1)
+        generationAmnt = a.group(2)
+        print 'New round. Round #', round, 'Generations:', generationAmnt
+    a = re.match(r'.*#\n# .*', data, re.S) #detect map packet
+    if a != None:
+        lastChar = ''
+        width = 0
+        listMap = []
+        lineNum = 1 #used for height calculation
+        #parsing the map
+        for i in data:
+            if i == '\n':
+                listMap.append([])
+                lineNum += 1
+            if lineNum == 1:
+                width +=1
+            if lineNum != 1:
+                for j in i:
+                    lastChar = j[:]
+                    if lastChar == '#' and j == '#':
+                        break
+                    if j != '\n' and j != '#':
+                        if j == '*':
+                            listMap[lineNum-2].append(1)
+                        if j == ' ':
+                            listMap[lineNum-2].append(0)
+        #####
+        # code borrowed from StackExchange's CodeReview user, Lewis
+        # http://codereview.stackexchange.com/questions/25772/game-of-life-in-python
+        for gen in range(0, int(generationAmnt)):
+            universe = [a[:] for a in listMap]
+            for a in range(0, len(universe)):
+                for b in range(0, len(universe[a])):
+                    if universe[a][b] == 0 and countSurrounding(universe, a, b) == 3:
+                        listMap[a][b] = 1
+                    elif universe[a][b] == 1 and countSurrounding(universe, a, b) not in (2, 3):
+                        listMap[a][b] = 0
+        #####
+        #convert from 0/1s to desired format [* ]
+        for k in range(len(listMap)):
+            for l in range(len(listMap[k])):
+                if listMap[k][l] == 0:
+                    listMap[k][l] = ' '
+                if listMap[k][l] == 1:
+                    listMap[k][l] = '*'
+        #build a new map
+        listMap[:] = listMap[:-2]
+        finalStr = '#'*(width)
+        finalStr += '\n'
+        for k in listMap:
+            finalStr += '#'
+            finalStr += ''.join(k)
+            finalStr += '#\n'
+        finalStr += '#'*(width)
+        finalStr = '%s\n' % (finalStr) #add newline as expected by game server
+        s.sendall(finalStr) #send a the map
+    if not data: break
+s.close()
+
+```
+
+(The code isn't to be compared to proper programming quality standards, it was hacked together helplessly)
+
+We borrowed code from a StackExchange user because we did not want to waste implementing the game. This Python program is a very simple while loop that fetches whatever the server sends, determines if the packet recieved is the generation instructions or the map, and then computes the new map. It then sends the formatted map back to the server. Upon execution, the server will send exactly 100 randomly maps to be computed, and once they have all been completed (took about 15 seconds), the key is sent back to us.
+
+> Congratulations!You made it!Here's your prize: key{that comp sci assignment was useful after all}

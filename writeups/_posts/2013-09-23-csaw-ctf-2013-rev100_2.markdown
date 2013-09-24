@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CSAW CTF 2013 - Reverse 100 (CSAW Reversing 2013 1)"
-author: "Mathieu B."
+author: "Mathieu Binette"
 ---
 
 For this challenge, the first thing I did was to drop the executable into IDA and give it a run with a debugger.

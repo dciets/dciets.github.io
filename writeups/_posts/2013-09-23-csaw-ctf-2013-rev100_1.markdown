@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CSAW CTF 2013 - Reverse 100 (DotNet)"
-author: "Mathieu B."
+author: "Mathieu Binette"
 ---
 
 For this challenge, you simply had to reverse DotNet.exe using an automated tool (I used ILSpy). Then, in the main function, you could see the following code:
