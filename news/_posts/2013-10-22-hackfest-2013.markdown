@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hackfest 2013"
-date:   2013-09-24 11:31:06
+date:   2013-10-22 11:31:06
 ---
 
 Dans un peu plus de deux semaines (8-9 novembre) aura lieu le Hackfest 2013 à Québec. Le Hackfest, c'est (tiré de leur site)...
