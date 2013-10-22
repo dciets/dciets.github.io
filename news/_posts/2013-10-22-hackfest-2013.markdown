@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hackfest 2013
+title:  "Hackfest 2013"
 date:   2013-09-24 11:31:06
 ---
 
