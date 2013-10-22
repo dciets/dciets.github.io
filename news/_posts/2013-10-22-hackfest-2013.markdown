@@ -4,16 +4,16 @@ title:  "Hackfest 2013"
 date:   2013-10-22 11:31:06
 ---
 
-Dans un peu plus de deux semaines (8-9 novembre) aura lieu le Hackfest 2013 à Québec. Le Hackfest, c'est (tiré de leur site)...
+Dans un peu plus de deux semaines (8-9 novembre) aura lieu le [Hackfest 2013](http://www.hackfest.ca/en) à Québec. Le Hackfest, c'est (tiré de leur site)...
 
 > [...] plus de 500 passionnés de sécurité.
  
 > [...] deux jours de conférences, où la première journée s’adresse à un public curieux de la sécurité et la deuxième à un publique qui s’intéresse aux détails techniques de la sécurité, aka “Hardcode”. Les soirées sont une rencontre privilégiée, où les participants peuvent mesurer leur habileté en sécurité lors de « Capture the Flag », « Red team & Blue team » unique en sont genre, du lockpicking et plus encore. Cela en fait le plus gros événement de sécurité au Québec et le plus gros rassemblement de hacking games du genre dans l’est du Canada.
 
-La DCI a décidée de payer les frais d'inscription de 6 chanceux. Vous serez tout de même responsables de payer le transport (des places en voiture seront disponibles) ainsi que l'hôtel pour les deux nuits. Le prix total sera à confirmer, mais on s'attends à environ 80$ par personne.
+La DCI a décidée de payer les frais d'inscription de 6 chanceux. Vous serez tout de même responsables de payer le transport (des places en voiture seront disponibles) ainsi que l'hôtel pour les deux nuits. Le prix total sera à confirmer, mais on s'attend à environ 80$ par personne.
 
 ###Comment participer ?
 
 Si vous êtes intéressés à participer à l'évènement, remplissez [ce formulaire](https://docs.google.com/forms/d/14SdAt1bhv7hWfHuIx8kAQZMpk-aatoHRyDPdZdTpby0/viewform) avant mercredi à 18h00.
 
-Mercredi soir, nous annoncerons qui sont les 6 étudiants gagnants. Si d'autres veulent se joindre au groupe (en assumant les frais d'inscription), vous êtes bien sûr encouragés à le faire!
+Mercredi soir, nous annoncerons qui seront les 6 étudiants gagnants. Si d'autres veulent se joindre au groupe (en assumant les frais d'inscription), vous êtes bien sûr encouragés à le faire!
