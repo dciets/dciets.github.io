@@ -16,7 +16,7 @@ La DCI a décidée de payer les frais d'inscription de 6 chanceux. Vous serez to
 Nous avons finalement décidé de payer 10 inscriptions au Hackfest 2013, soit celles de:
 
 * Émile "Jesus" Filteau-Tessier
-* Nicolas Bouliane
+* Philippe Nichols
 * Nicolas Bastien
 * Louis Dion-Marcil
 * Olivier Arteau (HoLyVieR)
@@ -26,4 +26,4 @@ Nous avons finalement décidé de payer 10 inscriptions au Hackfest 2013, soit c
 * Anthony Piché
 * Jérome "Draco" Gingras
 
-Si vous n'êtes pas dans la liste, mais que vous voulez tout de même vous joindre au groupe, avisez-nous avant mardi le 29 octobre à midi pour profiter des prix d'inscription de groupe au Hackfest à 50$/pers. 
+
