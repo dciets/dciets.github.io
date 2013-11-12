@@ -26,7 +26,7 @@ M. Poulin compte plus de trente années d'expérience en informatique, durant le
 
 ###WEBCAST
 
-Sera disponible en direct sur YouTube
+Sera disponible en direct sur YouTube (EDIT: [Mainteant disponible](http://www.youtube.com/watch?v=AAHG_oB9iEU))
 
 ###PROGRAMME
 
