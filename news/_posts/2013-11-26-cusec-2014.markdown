@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "CUSEC 2014"
+date:   2013-11-26 11:55:57
+---
+
+Le 16 à 18 janvier prochain aura lieu le *Canadian University Software Engineering Conference* (CUSEC) à l'hôtel [Marriott Château Champlain](https://www.google.com/maps?q=Marriott+Ch%C3%A2teau+Champlain,+1050+Rue+de+la+Gaucheti%C3%A8re+Ouest,+Montreal,+QC+H3B+4C9,+Canada&hl=en&ie=UTF8&t=m&geocode=FUg9tgId2nKd-w&hnear=Marriott+Ch%C3%A2teau+Champlain,+1050+Rue+de+la+Gaucheti%C3%A8re+Ouest,+Montreal,+QC+H3B+4C9,+Canada&z=15). Cette conférence convoque tous les étudiants en génie logiciel à se faire des contacts dans le milieu, à rencontrer les grandes vedettes dans le monde logiciel et à être présent lors des conférences données par : 
+
+* Tobias Lütke - CEO, Shopify
+* Zach Holman - Engineer, GitHub
+* Gary Bernhardt - Creator & Destroyer of Software, Destroy All Software LLC
+* Michelle Zatlyn - Co-founder & Head of User Experience, CloudFlare Inc.
+* … et plus encore!
+
+La DCI vous invite à cet évènement et offre l'inscription aux 15 premiers étudiants inscrits dans ce [formulaire Google](https://docs.google.com/forms/d/1DIfQlhhQWZrRM9b9bwDDb1dN8UASLYN9fKhRQkmUTsg/viewform).
+
+C’est un évènement à ne pas manquer; nous sommes très chanceux qu’il soit hébergé à Montréal à chaque année! C’est l’occasion parfaite pour faire du réseautage afin vous trouver un emploi ou un stage.
+
+Vous pouvez vous informer sur l'évènement sur [leur site](http://2014.cusec.net/). La DCI sera présente lors des trois journées (et soirées), on encourage tous les étudiants de se joindre à nous. 
+
+Si vous avez des questions, n'hésitez pas à nous joindre sur la [mailing list](https://groups.google.com/forum/#!forum/dciets/join).
