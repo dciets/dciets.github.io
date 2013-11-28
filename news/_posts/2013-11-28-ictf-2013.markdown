@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "UCSB iCTF 2013"
+date:   2013-11-28 11:55:57
+---
+
+Nous avons enfin plus de détails sur le [iCTF 2013](https://ictf2013.ngrok.com/) de la semaine prochaine!
+
+## Détails
+
+* Quand : 6 décembre 2013 de 11 heures à 20 heures;
+* Où : Salle des pas-perdus, près de l’auditorium A-1600, des nouveaux ascenseurs panoramiques et de la pendule de Foucault;
+* Comment : Apportez votre laptop;
+* Qui : Tous les étudiants, peu importe votre niveau de compétence technique;
+* Quoi : Compétition de sécurité informatique. L’iCTF est un [capture the flag](http://en.wikipedia.org/wiki/Capture_the_flag#Computer_security) qui est organisé par l’University of California, Santa Barbara. 
+
+La DCI hébergera une équipe avec les [CISSP Groupies](http://cissp.gr.oupi.es/). Il sera possible de juste passer lors de la journée, se brancher dans la switch et chercher des flags avec nous! 
+
+C’est une bonne occasion afin de vous familiariser avec les CTF. Les débutants sont fortement invités! Inscrivez-vous dans l’[évènement Facebook](https://www.facebook.com/events/181686132026467)!
