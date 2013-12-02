@@ -26,7 +26,7 @@ M. Poulin compte plus de trente années d'expérience en informatique, durant le
 
 ###WEBCAST
 
-Sera disponible en direct sur YouTube
+Sera disponible [en direct sur YouTube](https://www.youtube.com/owaspmontreal).
 
 ###PROGRAMME
 
