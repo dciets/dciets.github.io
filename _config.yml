@@ -3,6 +3,7 @@ markdown: redcarpet
 pygments: true
 permalink: pretty
 safe: true
+url: "http://dciets.com"
 lsi: false
 
 # exclude some files we don't want to leak

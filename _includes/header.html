@@ -2,6 +2,21 @@
 <html>
   <head>
     <meta charset='utf-8'>
+    {% if page.title %}
+        <meta property="og:type" content="article">
+    {% else %}
+        <meta property="og:type" content="website">
+    {% endif %}
+    <meta property="og:image" content="http://dciets.com/img/blason_dci.png"/>
+    {% if page.url %}
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    {% endif %}
+    {% if page.title %}
+        <meta property="og:title" content="{{ page.title }}"/>
+    {% else %}
+        <meta property="og:title" content="{{ site.name }}"/>
+    {% endif %}
+    <meta property="og:site_name" content="{{ site.name }}"/>
     <meta content='IE=edge, chrome=1' http-equiv='X-UX-Compatible'>
     <link href='/img/logo_dci.png' rel='shortcut icon'>
     <title>{% if page.title != null %}{{ page.title }} - {% endif %}D&eacute;l&eacute;gation des comp&eacute;titions en informatique de l'&Eacute;TS</title>
