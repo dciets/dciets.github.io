@@ -1,54 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta content='IE=edge, chrome=1' http-equiv='X-UX-Compatible'>
-    <link href='/img/logo_dci.png' rel='shortcut icon'>
-    <title>{{ page.title }} - D&eacute;l&eacute;gation des comp&eacute;titions en informatique de l'&Eacute;TS</title>
-    <meta content='width=device-width' name='viewport'>
-    <!-- syntax highlighting CSS -->
-    <link href='/css/syntax.css' rel='stylesheet'>
-    <!-- bootstrap -->
-    <link href='/css/bootstrap.min.css' rel='stylesheet'>
-    <!-- Custom CSS -->
-    <link href='/css/main.css' rel='stylesheet'>
-    <script src='/js/jquery.min.js' type='text/javascript'></script>
-    <script src='/js/bootstrap.js' type='text/javascript'></script>
-    <script src='/js/main.js' type='text/javascript'></script>
-  </head>
-  <body>
-    <!-- Master nav -->
-    <div class='navbar navbar-fixed-top'>
-      <div class='container'>
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class='navbar-brand' href='/'>Accueil</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class='active'>
-              <a href='/'>Accueil</a>
-            </li>
-            <li>
-              <a href='/a-propos-dci'>&Agrave; propos</a>
-            </li>
-            <li>
-              <a href='/calendrier'>Calendrier</a>
-            </li>
-            <li>
-              <a href='/partenaires'>Partenaires</a>
-            </li>
-            <li>
-              <a href='/contact'>Contact</a>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
+{% include header.html %}
     <!-- Content -->
     <div class='container'>
       <div class='row'>
@@ -77,37 +27,4 @@
             <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
           </div>
       </div>
-      <footer>
-        <div class='row'>
-          <div class='col-md-4 social'>
-            <p>&copy; 2013 D&eacute;l&eacute;gation des comp&eacute;titions en informatique de l'&Eacute;TS</p>
-            <a href="http://facebook.com/dciets/" class='facebook grayscale'>Facebook</a>
-            <a href="http://twitter.com/dciets/" class='twitter grayscale'>Twitter</a>
-            <a href="http://youtube.com/dciets/" class='youtube grayscale'>Youtube</a>
-            <a href="http://github.com/dciets/" class='github grayscale'>Github</a>
-            <a href="https://plus.google.com/105255431140384875567/posts" class='googleplus grayscale'>Google+</a>
-          </div>
-          <div class='col-md-4 text-center'>
-            <a href='mailto:dci@aeets.com'>
-              <img class='grayscale footer-logo' src='/img/blason_dci.png'>
-            </a>
-          </div>
-          <div class='col-md-4 partners text-right'>
-            <p class='text-right'>Merci &agrave; nos partenaires &hearts;</p>
-            <a href="http://etsmtl.ca" class='etsmtl grayscale'>&Eacute;TS</a>
-            <a href="http://aeets.com" class='aeets grayscale'>A&Eacute;&Eacute;TS</a>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-43836069-1', 'dciets.com');
-      ga('send', 'pageview');
-    </script>
-  </body>
-</html>
+{% include footer.html %}
