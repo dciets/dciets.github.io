@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "CSAW CTF 2013 - Reverse 400 (keygenme)"
+ctf: "CSAW CTF 2013"
+title:  "Reverse 400 (keygenme)"
 author: "Mathieu Binette"
 ---
 

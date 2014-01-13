@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "CSAW CTF 2013 - Reverse 100 (DotNet)"
+ctf: "CSAW CTF 2013"
+title:  "Reverse 100 (DotNet)"
 author: "Mathieu Binette"
 ---
 

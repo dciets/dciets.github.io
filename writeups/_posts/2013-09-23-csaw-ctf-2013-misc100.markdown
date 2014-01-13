@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "CSAW CTF 2013 - Miscellaneous 100"
+ctf: "CSAW CTF 2013"
+title:  "Miscellaneous 100"
 author: "HoLyVieR"
 ---
 

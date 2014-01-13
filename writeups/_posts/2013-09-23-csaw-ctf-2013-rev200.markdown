@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "CSAW CTF 2013 - Reverse 200 (CSAW Reversing 2013 1)"
+ctf: "CSAW CTF 2013"
+title:  "Reverse 200 (CSAW Reversing 2013 1)"
 author: "Mathieu Binette"
 ---
 

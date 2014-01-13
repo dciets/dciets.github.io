@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "CSAW CTF 2013 - Reverse 150 (bikinibonanza)"
+ctf: "CSAW CTF 2013"
+title:  "Reverse 150 (bikinibonanza)"
 author: "Jérôme Gingras"
 ---
 
