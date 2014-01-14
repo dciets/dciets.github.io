@@ -1,0 +1,68 @@
+---
+layout: post
+ctf: "Break In 2014"
+title:  "Miscellaneous 5"
+author: "Louis Dion-Marcil"
+---
+
+For misc 5, we were given a single file named calling_card.pyc. Judging from the file extension, we would be tempted to say this is a compiled python file. I tested running it with python2.7. However, upon executing the code, we can see this error:
+
+```
+~% python calling_card.pyc
+RuntimeError: Bad magic number in .pyc file
+```
+
+A bit of theory on the term *magic number*
+
+> A constant numerical or text value used to identify a file format or protocol. [Wikipedia.org](http://en.wikipedia.org/wiki/Magic_number_%28programming%29)
+
+In this context, magic numbers are arbitrary numbers seen in the leading bytes of a file that is used to identify the type of the file. It's value is defined by the filetype author and it's length is arbitrary. The unix command `file` compares the leading bytes of a file against a database of magic numbers in order to identify the type of a given file. I decided to check which version of python this file was compiled for using the file command. 
+
+```
+~% file calling_card.pyc
+calling_card.pyc: data
+```
+Seems like the file command couldn't find whatever magic number *calling_card.pyc* is using. To see a file's magic number, we can use a hex editor. You can use the hexdump command to see the hex content of a file. I personally used emacs' *hexl-mode*.
+
+Upon opening the file in a hex editor, we can see the two leading bytes aref 0x1011. I then googled for a list of python magic numbers online and found a comprehensive list on [this stackoverflow comment](http://stackoverflow.com/a/7807661/1428450). I then modified the leading bytes to every python 2.7 magic numbers listed in this comment and finally got a valid python program with `0x03f3`. After execution. We can see the file creates a `.clue` file. Said `.clue` file contains some very iteresting keywords such as *killer*, *name*, *reconstructor*, and *Clue*.
+
+I then decompiled the python bytecode using [uncompyle2](https://github.com/wibiti/uncompyle2). Once installed, create a new directory where you want the source to be reversed to, and you can then run the following command:
+
+```
+~% uncompyle -o /path/to/source/ calling_card.pyc
+```
+
+Then, browse to the source path and then I suggest renaming the single file there to `calling_card.py` for ease use. We can run the python file to guarantee the reversing was successful.
+
+```
+~% python calling_card.py
+```
+
+The `.clue` file is created, and all is well. We can then browse through the source in order to extract the key. Inside the file we can see one import, one class with a function and a constructor, five functions, a gigantic tuple named "secret" containing two large arrays of chars, and an initialiaztion instruction at the very bottom. Some functions have interesting names, such as *encode*, *decode*, *divide*, *combine*. The file seems to be an implementation of a cusotm-built algorithm to encode and decode data.
+
+The biggest hint we got was the seemingly useless import of the "pickle" package. From the python website, we learn that pickle is an object serialization package. Judging from the *reconstructor* and *Clue* keyword we found in the `.clue` file, we can assume that it is a serialized Clue object. We can then extract the examples from the python website to unserialize our object and extract the *killer* data from it. I added these lines at the bottom of the file, and ran it again:
+
+```
+print pickle.load(open('.clue', 'rb')).killer
+```
+
+```
+~% python calling_card.py
+(['8', '11', '19', '3', '7', '9', '14...
+```
+
+Seems like the serialized object is "encoded". I tried to simply wrap the decode() function around the print statement and we got our killer:
+
+```
+~% python calling_card.py
+Tom Marvolo Riddle
+```
+
+We then md5 the key, and that's a challenge done!
+
+```
+~% echo -n "Tom Marvolo Riddle" |md5sum
+6d41f9485dd1f51d27ad0ca75fb1af26  -
+```
+
+All in all, this was a good challenge for 300 points. My only regret was that there was no reversing of the custom algorithm for encoding. This was a bit too easy, and reversing python would've been fun.
