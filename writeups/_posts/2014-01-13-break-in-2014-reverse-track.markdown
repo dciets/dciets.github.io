@@ -110,7 +110,7 @@ It is then easy to see that FELICITY would be the `%f` representation of `0x5954
 
 ##Reverse 4 (Delme) - 300pts
 
-Delme was an interesting program...
+Delme was an interesting program... I think ?
 
 After some investigation, I noticed a function really similar to the decrypting algorithm of `Reverse 1`. 
 
@@ -167,10 +167,10 @@ It seems like the organizers know what we're up to:
 
 > If you want to have more fun, stop looking at assembly, and try to figure out what exactly the program wants.
 
-Well - I'm not going to listen to this during a CTF, in a *reversing* challenge, am I?
+Well - that is a weird request for a *reversing* challenge, isn't it?
 
-However, after looking at the code, I noticed the organizers added a couple of decoy decrypt functions, so I decided to run the program through gdb.
+After looking at the code, I noticed the organizers added a couple of decoy decrypt functions (about 5). Since I was too lazy to try them all, I decided to give it a spin through gdb.
 
-The program was waiting for some input on a socket. I just skipped that whole part (sorry guys!).
+The program was waiting for some input on a socket, and seemed to loop a couple of times. I just skipped that whole part (sorry guys!).
 
-After some analysis, I found the right decrypt function and reused `Reverse 7`'s script to get the key `phoos_phoos_bumb`.
+After some analysis, I found the right decrypt function and reused `Reverse 6`'s script to get the key `phoos_phoos_bumb`.
