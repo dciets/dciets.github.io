@@ -24,7 +24,7 @@ The code isn't very long and we can quickly see that the function `callMeMaybe` 
 
 ```
 
-If we look more closely at the `callMeMaybe` function, we notice there are a bunch of encrypted data (or so it looks like), and then some code that could be roughly translated in Python as:
+If we look more closely at the `callMeMaybe` function, we notice there is a bunch of encrypted data (or so it looks like), and then some code that could be roughly translated in Python as:
 
 ```python
 
@@ -47,7 +47,7 @@ print decoded_string
 
 ```
 
-For this challenge, you could simply edit the value of `x` to 0 before the decryption loop starts to get the full decrypted key: `break_in@iiit`.
+For this challenge, you could simply edit the value of `x` to `0` before the decryption loop starts to get the full decrypted key: `break_in@iiit`.
 
 * * *
 
