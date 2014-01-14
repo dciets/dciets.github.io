@@ -125,7 +125,7 @@ I was able to reuse the same algorithm described in `Reverse 1` to get the key f
 
 ##Reverse 5 (Whereami) - 200pts
 
-After my luck on `Reverse 4`, I decided to try again. I felt so lucky when this came out: `gdb_is_false`.
+After my luck on `Reverse 4`, I decided to look for a decrypting funtion again. I found one identical to `Reverse 1` and `Reverse 4`, gave my script a spin again , and got the following key: `gdb_is_false`.
 
 I don't know why gdb is false, but yay!
 
@@ -133,7 +133,7 @@ I don't know why gdb is false, but yay!
 
 ##Reverse 6 (Bomb) - 400pts
 
-Never change your winning formula.
+Never change your winning formula. I went looking for that same function once again.
 
 However, the organizers wisened up, and modified their algorithm a little. Here is my new updated script:
 
@@ -176,6 +176,6 @@ Well - that is a weird request for a *reversing* challenge, isn't it?
 
 After looking at the code, I noticed the organizers added a couple of decoy decrypt functions (about 5). Since I was too lazy to try them all, I decided to give it a spin through gdb.
 
-The program was waiting for some input on a socket, and seemed to loop a couple of times. I just skipped that whole part (sorry guys!).
+The program was waiting for input on a socket, and seemed to loop a couple of times. I just skipped over all the socket stuff (sorry guys!) and made it to the defusing part of the bomb (the real defusing).
 
-After some analysis, I found the right decrypt function and reused `Reverse 6`'s script to get the key `phoos_phoos_bumb`.
+Once I got there, I noticed there were two of the multiple decrypt functions called. I decided to start with the last one since the first one clearly outputs "This is not the key" (but that could have been a trap..). I reused `Reverse 6`'s script and got the following key: `phoos_phoos_bumb`.
