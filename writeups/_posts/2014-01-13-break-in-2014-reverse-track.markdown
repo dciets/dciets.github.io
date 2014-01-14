@@ -11,11 +11,16 @@ The code isn't very long and we can quickly see that the function `callMeMaybe` 
 
 ```
 
+[...]
 .text:0000000000400918 mov     [rbp+var_4], 1
 .text:000000000040091F cmp     [rbp+var_4], 0
 .text:0000000000400923 jnz     short loc_40092F
 .text:0000000000400925 mov     eax, 0
 .text:000000000040092A call    callMeMaybe
+.text:000000000040092F mov     edi, 1
+.text:0000000000400934 mov     eax, 0
+.text:0000000000400939 call    _sleep
+[...]
 
 ```
 
