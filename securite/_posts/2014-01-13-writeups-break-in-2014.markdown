@@ -5,7 +5,7 @@ date:   2014-01-13 08:59:57
 ---
 
 <p>
-    Voici quelques writeups en anglais pour le Break In 2014:
+    Voici quelques writeups en anglais pour le Break In 2014 (où nous avons terminé 4e):
 </p>
 <ul class='posts'>
     {% for post in site.categories.writeups %}
