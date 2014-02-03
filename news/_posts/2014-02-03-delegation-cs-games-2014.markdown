@@ -28,6 +28,7 @@ La sélection pour déterminer la délégation de l’ÉTS pour les Computer Sci
 * Danny Tran
 
 Ainsi que nos deux parrains:
+
 * Christine Dumont
 * Benjamin Vanheuverzwijn
 
