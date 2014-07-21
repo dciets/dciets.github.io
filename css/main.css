@@ -42,6 +42,13 @@ h1,h2,h3,h4,h5 {
 	margin-left: 0px !important;
 }
 
+.news-post img {
+	display:block;
+	height:auto;
+	max-width:100%;
+}
+
+
 .footer-logo {
 	height: 87px;
 	width: 69px;
@@ -166,18 +173,18 @@ footer {
 }
 
 .partners-diamant img {
-	height:85%;
-	width:85%;
+	height:60%;
+	width:60%;
 }
 
 .partners-platine img {
-	height:75%;
-	width:75%;
+	height:55%;
+	width:55%;
 }
 
 .partners-or img {
-	height:65%;
-	width:65%;
+	height:55%;
+	width:55%;
 }
 
 .partners-argent img {
