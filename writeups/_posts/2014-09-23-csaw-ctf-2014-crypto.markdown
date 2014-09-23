@@ -22,20 +22,20 @@ cfbsum
 
 The first step to decrypt everything is to reverse the XOR part that includes the sum and previous value. To do this you have to do the following :
 
-ciphers = [ ... array of all the value of the challenge ... ]
+	ciphers = [ ... array of all the value of the challenge ... ]
 
-for i in range(c):
-	new_cipher = []
-	sum = 0
-	prev = 0
+	for i in range(c):
+		new_cipher = []
+		sum = 0
+		prev = 0
 
-	for j in ciphers[i]:
-		new_cipher[i].append(j ^ sum ^ prev)
+		for j in ciphers[i]:
+			new_cipher[i].append(j ^ sum ^ prev)
 
-		prev = j
-		sum  = (sum + j) % 256
+			prev = j
+			sum  = (sum + j) % 256
 
-	ciphers[i] = new_cipher
+		ciphers[i] = new_cipher
 
 After this the challenge becomes the decryption a N-time pad. This is a well-known cryptography problem where all the plaintexts are XORed with the same pad/mask. To decrypt a N-time pad you first have to define a charset of acceptable character for the plaintext. In this case, it's english text so using "qwertyuiopasdfghjklzxcvbnm.0123456789 {}_,'&" is pretty much everything that we need for the charset. The other thing that we need to converge fast to the right solution is a list of acceptable word. Using any dictionary is fine, but make sure it doesn't contain too many small word that are barely never used. Also, as the decryption goes, you may realize that there are word missing such as "scallywag" and you can add those manually to your dictionary.
 
