@@ -9,7 +9,7 @@ feal
 
 First, you had to recognize the algorithm used for the encryption. There are quite a few hints in the text and in the challenge name. The algorithm is in fact "Feal4". There is an other variant called "Feal6", but if you take a look at the encrypt method, you can see that there are only 4 rounds of encryption instead of 6.
 
-What you had to also realize is that it's a slightly modified version of Feal4 that was used. The two differences is that the gBox has a rotation of 3 instead of 2 and that the fBox input is reversed (byte 0 is byte 3 and byte 1 is byte 2).
+What you had to also realize is that it's a slightly modified version of Feal4 that was used. The two differences are that the gBox has a rotation of 3 instead of 2 and that the fBox input is reversed (byte 0 is byte 3 and byte 1 is byte 2).
 
 After that you have to apply an [already known cryptanalysis](http://www.theamazingking.com/crypto-feal.php), but with the slight modification of the algorithm. What this changes is that output differential is of 0x00000004 instead of 0x02000000.
 
