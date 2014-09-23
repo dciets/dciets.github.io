@@ -55,7 +55,7 @@ After this the challenge becomes the decryption a N-time pad. This is a well-kno
 	charset = "qwertyuiopasdfghjklzxcvbnm.0123456789 {}_,'&"
 	lc   = len(c)
 		
-	# Reverse of the XOR sum and XOR previous byte as explained before
+	# Reverse of the XOR sum and XOR previous byte as explained previously
 	for i in range(lc):
 		sum = 0
 		nc = [c[i][0]]
