@@ -2,7 +2,7 @@
 layout:    post
 title:     "Résultats - Qualification CSAW CTF 2014"
 date:      2014-09-23 18:00:00
-published: false
+published: true
 ---
 
 La Délégation des compétitions en informatique (DCI) de l’ÉTS est fière d’annoncer que l’École s’est qualifiée pour la finale de la compétition Capture The Flag (CTF) de la Cyber Security Awareness Week (CSAW) qui se tiendra du 13 au 15 novembre au Polytechnic Institute of New York University.
