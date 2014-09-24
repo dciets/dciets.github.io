@@ -19,7 +19,7 @@ Lors des qualifications, les deux équipes de l'ÉTS se sont classées :
 * 5e et 13e parmi les universités nord-américaines (plus de 100 équipes)
 * 11e et 33e parmi les 1174 équipes qui ont fait des points
 
-C'est grâce à tout ceux et celles qui sont passés lors de cette longue compétition de 48 heures que l'ÉTS a si bien performé, donc __félicitations à tous les participants__!
+C'est grâce à tous ceux et celles qui sont passés lors de cette longue compétition de 48 heures que l'ÉTS a si bien performé, donc __félicitations à tous les participants__!
 
 ###Writeups
 
