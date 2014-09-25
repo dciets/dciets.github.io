@@ -7,9 +7,9 @@ published: true
 
 La Délégation des compétitions en informatique (DCI) de l’ÉTS est fière d’annoncer que l’École s’est qualifiée pour la finale de la compétition Capture The Flag (CTF) de la Cyber Security Awareness Week (CSAW) qui se tiendra du 13 au 15 novembre au Polytechnic Institute of New York University.
 
-Il s’agissait de la troisième participation de la DCI de l'ÉTS au CSAW CTF. En 2013, deux équipes de l'ÉTS avaient participé et c'étaient classées respectivement 3e et 4e parmi les universités nord-américaines lors des qualifications et avaient remporté la 3e et la 5e place lors de la grande finale à New York. 
+Il s’agissait de la troisième participation de la DCI de l'ÉTS au CSAW CTF. En 2013, deux équipes de l'ÉTS y ont participé et se sont classées respectivement en 3e et 4e places parmi les universités nord-américaines lors des qualifications et ont remporté la 3e et la 5e place lors de la grande finale à New York. 
 
-Cette année encore, c'est deux équipes de l'École qui ont participé à cette compétition et qui se sont qualifiées pour la grande finale.
+Cette année encore, deux équipes de l'École ont participé à cette compétition et se sont qualifiées pour la grande finale.
 
 ###Les résultats
 
