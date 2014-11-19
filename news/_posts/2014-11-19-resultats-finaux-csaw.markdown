@@ -8,6 +8,7 @@ Après s'être qualifiées aux [qualifications en septembre dernier](http://dcie
 Représentant deux des seules 3 équipes canadiennes<sup>1</sup> s'étant qualifiées pour la grande finale, les équipes de l'ÉTS se sont classés 6ème et 15ème sur le tableau final.
 
 Lors de la qualification, les deux équipes de l'ÉTS s'étaient classées:
+
 * 1ere et 3e au Canada, toutes équipes confondues
 * 5e et 13e parmi les universités nord-américaines (plus de 100 équipes)
 * 11e et 33e parmi les 1174 équipes qui ont fait des points
@@ -16,7 +17,7 @@ La semaine précédente, une équipe de la DCI a participé au “Hacking Games�
 
 Félicitations à nos huit délégués du CSAW ainsi qu’à l’équipe qui a participé au Hackfest !
 
-![Les étudiants de l'ÉTS à la finale de la CSAW CTF 2014"](/img/news/csaw_finals_2014.jpg "Les étudiants de l'ÉTS à la finale de la CSAW CTF 2014")
+![Les étudiants de l'ÉTS à la finale de la CSAW CTF 2014"](/img/news/csaw_finals_2014.png "Les étudiants de l'ÉTS à la finale de la CSAW CTF 2014")
 
 Sur la photo: Félix Cloutier (génie logiciel), Louis Dion-Marcil (génie logiciel), Émile Filteau-Tessier (génie logiciel), Jérôme Gingras (génie logiciel), Olivier Arteau (génie logiciel), Israël Hallé (génie logiciel), Mathieu Binette (génie logiciel), Mathieu Gascon-Lefebvre (génie des TI)
 
