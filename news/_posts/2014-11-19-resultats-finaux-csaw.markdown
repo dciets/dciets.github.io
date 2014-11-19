@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "De bons résultats à la finale du CSAW CTF 2014 et au Hackfest 2014!"
+title:  "Résultats - Finale du CSAW CTF 2014 et Hackfest 2014!"
 date:   2014-11-19 16:44:57
 ---
 Après s'être qualifiées aux [qualifications en septembre dernier](http://dciets.com/news/2014/09/23/resultats-qualification-csaw-ctf-2014/), les deux équipes de l'ÉTS, DCI-ÉTS et les CISSP Groupies, se sont rendues à New York du 13 au 15 novembre pour la finale du CSAW, compétition de sécurité informatique, à la Polytechnic Institute of New York University.
