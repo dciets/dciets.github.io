@@ -5,7 +5,7 @@ date:   2014-11-19 16:44:57
 ---
 Après s'être qualifiées aux [qualifications en septembre dernier](http://dciets.com/news/2014/09/23/resultats-qualification-csaw-ctf-2014/), les deux équipes de l'ÉTS, DCI-ÉTS et les CISSP Groupies, se sont rendues à New York du 13 au 15 novembre pour la finale du CSAW, compétition de sécurité informatique, à la Polytechnic Institute of New York University.
 
-Représentant deux des seules 3 équipes canadiennes<sup>1</sup> s'étant qualifiées pour la grande finale, les équipes de l'ÉTS se sont classés 6ème et 15ème sur le [tableau final](https://ctf.isis.poly.edu/scoreboard).
+Représentant deux des seules 3 équipes canadiennes<sup>1</sup> s'étant qualifiées pour la grande finale, les équipes de l'ÉTS se sont classées 6ème et 15ème sur le [tableau final](https://ctf.isis.poly.edu/scoreboard).
 
 Lors de la qualification, les deux équipes de l'ÉTS s'étaient classées:
 
