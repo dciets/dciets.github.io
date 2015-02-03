@@ -305,3 +305,13 @@ a.gsoft {
     width: 85px;
     text-align: left;
 }
+
+a.desjardins {
+    background-image:url('../img/partenaires/desjardins-small.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 30px;
+    width: 30px;
+    text-align: left;
+}
