@@ -288,20 +288,20 @@ a.reseauets {
 
 a.iweb {
 	background-image:url('../img/partenaires/iweb-small.png');
-	background-size: 54px 40px;
+	background-size: 40px 30px;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 40px;
-	width: 54px;
+	height: 30px;
+	width: 40px;
 	text-align: left;
 }
 
 a.gsoft {
     background-image:url('../img/partenaires/gsoft-small.png');
-    background-size: 113px 40px;
+    background-size: 85px 30px;
     background-repeat: no-repeat;
     background-position:center;
-    height: 40px;
-    width: 113px;
+    height: 30px;
+    width: 85px;
     text-align: left;
 }
