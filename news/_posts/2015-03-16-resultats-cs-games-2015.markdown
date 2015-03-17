@@ -8,15 +8,20 @@ L’ÉTS a écrit une nouvelle page de l’histoire des Computer Science Games e
 
 L'École Polytechnique et l'Université Concordia se classent respectivement aux 2e et 3e rangs du classement général. Un total de 30 équipes provenant de 20 universités participaient à la compétition.
 
+![participation](/img/news/participation-csgames-2015.jpg)
+
 Chaque année, les CS Games accueillent des étudiants de 1er cycle provenant de différentes universités nord-américaines. Les équipes doivent obtenir un maximum de points dans une quinzaine d’épreuves basées sur des problèmes de logique, de programmation et d’algorithmes. 
 
 Cette année, les épreuves étaient plus spécifiquement orientées vers les bases de données, l’intelligence artificielle, le développement web, le développement embarqué, la sécurité, l'informatique théorique, les systèmes d'exploitation et le parallélisme.
 
 ## Résultats de compétition ##
 
+Équipe 1 - CONFIRMED
+Équipe 2 - BUSTED
+
 * 1ère place - Database (CONFIRMED)
 * 1ère place - Extreme Programming (CONFIRMED)
-* 1ère place - Parrallel Programming (CONFIRMED)
+* 1ère place - Parallel Programming (CONFIRMED)
 * 1ère place - Participation (CONFIRMED & BUSTED)
 * 1ère place - Puzzle Hero (CONFIRMED)
 * 1ère place - Relay Programming (CONFIRMED)
@@ -27,7 +32,7 @@ Cette année, les épreuves étaient plus spécifiquement orientées vers les ba
 * 3e place - Machine Learning (CONFIRMED)
 * 3e place - Software Engineering (CONFIRMED)
 
-Avec une récolte de onze trophées, ainsi que la 1ere et 7e position au classement général, l’équipe exécutive de la DCI est très fière de la performance de sa délégation.
+Avec une récolte de douze trophées, ainsi que la 1ere et 7e position au classement général, l’équipe exécutive de la DCI est très fière de la performance de sa délégation.
 
 La DCI tient à remercier ses partenaires : iWeb, Desjardins, GSoft, l’ÉTS, l’AÉÉTS, le Fonds de développement de l’ÉTS, Réseau ÉTS, le département de génie logiciel et des TI, Druide, Gestion FÉRIQUE, TD Assurance, Automation RL, Grass Valley et Alain April.
 
