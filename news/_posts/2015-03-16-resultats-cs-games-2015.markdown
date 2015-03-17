@@ -17,6 +17,7 @@ Cette année, les épreuves étaient plus spécifiquement orientées vers les ba
 ## Résultats de compétition ##
 
 Équipe 1 - CONFIRMED
+
 Équipe 2 - BUSTED
 
 * 1ère place - Database (CONFIRMED)
