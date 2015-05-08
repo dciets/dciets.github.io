@@ -1,5 +1,5 @@
 dciets.github.io
 ==================
 
-Our blog builded with ♥ on Jekyll.
+Our blog built with ♥ on Jekyll.
 
