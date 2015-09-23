@@ -1,6 +1,5 @@
 ---
 layout: post
-author: "Félix Cloutier"
 ctf: "CSAW Quals 2015"
 title: "Wyvern (500pts)"
 ---
