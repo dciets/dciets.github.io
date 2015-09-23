@@ -297,3 +297,6 @@ has the following output:
 
   [+] A great success! Here is a flag{dr4g0n_or_p4tric1an_it5_LLVM}
 ```
+
+
+Written by [Félix Cloutier](http://felixcloutier.com) and solved with [Israël Hallé](https://github.com/isra17).
