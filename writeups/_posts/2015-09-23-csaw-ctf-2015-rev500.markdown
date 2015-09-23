@@ -243,14 +243,18 @@ on its end, loops over the string and copies each character to a vector:
 Now, it's possible that we kind of messed up the condition part, but what it
 does is still kind of straightforward: it reads a value from the `hero` vector...
 
+```cpp
   v25 = std::vector<int,std::allocator<int>>::operator[](hero, v26);
   v23 = *v25;
+```
 
 ... copies the current work vector, "transforms" it (does the sum)...
 
+```cpp
   std::vector<int,std::allocator<int>>::vector(v38, v44);
   v21 = transform_input(v38);
   std::vector<int,std::allocator<int>>::~vector(v38);
+```
 
 ... and tests that the transformed value is the same as we have in the `hero`
 vector...
