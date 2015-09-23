@@ -16,20 +16,22 @@ The program is an x86\_64 ELF file made from C++. What's more, the program has
 been obfuscated; it has many (**many**) references to variables called
 "x[number]" and "y[number]".
 
-  mov    eax,DWORD PTR ds:0x6103e4
-  mov    ecx,DWORD PTR ds:0x610470
-  mov    edx,eax
-  sub    edx,0x1
-  imul   eax,edx
-  and    eax,0x1
-  cmp    eax,0x0
-  sete   sil
-  cmp    ecx,0xa
-  setl   dil
-  or     sil,dil
-  test   sil,0x1
-  jne    4010db <__cxx_global_var_init+0x4b>
-  jmp    401160 <__cxx_global_var_init+0xd0>
+```
+mov    eax,DWORD PTR ds:0x6103e4
+mov    ecx,DWORD PTR ds:0x610470
+mov    edx,eax
+sub    edx,0x1
+imul   eax,edx
+and    eax,0x1
+cmp    eax,0x0
+sete   sil
+cmp    ecx,0xa
+setl   dil
+or     sil,dil
+test   sil,0x1
+jne    4010db <__cxx_global_var_init+0x4b>
+jmp    401160 <__cxx_global_var_init+0xd0>
+```
 
 The expression resolves to something like `((x * (x - 1)) & 0x1) == 0 || y < 10`.
 However, upon quick analysis, it appears that x and y variables are never written,
@@ -46,162 +48,164 @@ as we found them. We identified three important functions: `start_quest`,
 `transform_input` and `sanitize_input`. We manually cleaned up the three and
 ended up with this mostly correct translation:
 
-  //----- (0000000000401CC0) ----------------------------------------------------
-  __int64 __fastcall sanitize_input(std::string *a1)
+```cpp
+//----- (0000000000401CC0) ----------------------------------------------------
+__int64 __fastcall sanitize_input(std::string *a1)
+{
+  v46 = v7_2;
+  v45 = (unsigned int *)(v7_2);
+  v44 = (__int64)(v7_4);
+  v43 = v7_2;
+  v42 = (__int64)(v7_2);
+  v41 = v7_2;
+  v40 = v7_2;
+  v39 = (__int64)(v7_2);
+  v38 = (__int64)(v7_4);
+  std::vector<int,std::allocator<int>>::vector(v7_4);
+  *v43 = 0;
+
+  while ( 1 )
   {
-    v46 = v7_2;
-    v45 = (unsigned int *)(v7_2);
-    v44 = (__int64)(v7_4);
-    v43 = v7_2;
-    v42 = (__int64)(v7_2);
-    v41 = v7_2;
-    v40 = v7_2;
-    v39 = (__int64)(v7_2);
-    v38 = (__int64)(v7_4);
-    std::vector<int,std::allocator<int>>::vector(v7_4);
-    *v43 = 0;
-
-    while ( 1 )
-    {
-    if ( *v43 >= legend >> 2 )
-    {
-      std::operator<<<std::char_traits<char>>(&std::cout, "success\n");
-      *v45 = 0x1337;
-      *v41 = 1;
-      goto LABEL_64;
-    }
-    v35 = *v43;
-    v1 = std::string::operator[](a1, v35);
-    v33 = v1;
-
-    *v42 = *v33;
-    std::vector<int,std::allocator<int>>::push_back(v44, v42);
-
-    v2 = v39;
-    *v39 = *v43;
-    v31 = *v2;
-    v29 = std::string::length(a1);
-    v3 = v39;
-
-    *v39 = (v29 >> 40) & v31 | 0x1C;
-    if ( *v3 != 0 )
-    {
-      v26 = *v43;
-      v25 = std::vector<int,std::allocator<int>>::operator[](hero, v26);
-      v23 = *v25;
-
-      std::vector<int,std::allocator<int>>::vector(v38, v44);
-      v21 = transform_input(v38);
-      std::vector<int,std::allocator<int>>::~vector(v38);
-
-      if ( v23 == v21 )
-      {
-      v4 = *(_DWORD *)v43;
-      v18 = *(_DWORD *)v39;
-      v17 = v4;
-
-      v16 = std::vector<int,std::allocator<int>>::operator[](0x6102F8LL, v17);
-
-      *v39 = (*v16 & v18) < 0;
-      }
-      goto LABEL_46;
-    }
-
-    if ( *v39 != 0; )
-      break;
-
-    ++*(_DWORD *)v43;
-    }
-
-    *v45 = ((unsigned __int16)*v43 << 8) & 0x100;
+  if ( *v43 >= legend >> 2 )
+  {
+    std::operator<<<std::char_traits<char>>(&std::cout, "success\n");
+    *v45 = 0x1337;
     *v41 = 1;
-
-  LABEL_64:
-    std::vector<int,std::allocator<int>>::~vector(v44);
-    return *v45;
+    goto LABEL_64;
   }
+  v35 = *v43;
+  v1 = std::string::operator[](a1, v35);
+  v33 = v1;
 
+  *v42 = *v33;
+  std::vector<int,std::allocator<int>>::push_back(v44, v42);
 
-  //----- (0000000000404350) ----------------------------------------------------
-  __int64 __fastcall start_quest(std::string *action)
+  v2 = v39;
+  *v39 = *v43;
+  v31 = *v2;
+  v29 = std::string::length(a1);
+  v3 = v39;
+
+  *v39 = (v29 >> 40) & v31 | 0x1C;
+  if ( *v3 != 0 )
   {
-    __int64 v2; // [sp+0h] [bp-90h]@2
-    __int64 v3; // [sp+8h] [bp-88h]@13
-    unsigned int quest_result; // [sp+34h] [bp-5Ch]@11
-    unsigned int sanitized_input; // [sp+48h] [bp-48h]@9
-    bool v6; // [sp+4Fh] [bp-41h]@2
-    std::string *action_copy; // [sp+50h] [bp-40h]@2
-    unsigned int *v8; // [sp+58h] [bp-38h]@2
-    __int64 *v9; // [sp+60h] [bp-30h]@2
-    __int64 *v10; // [sp+68h] [bp-28h]@2
-    std::string *action.0; // [sp+70h] [bp-20h]@1
+    v26 = *v43;
+    v25 = std::vector<int,std::allocator<int>>::operator[](hero, v26);
+    v23 = *v25;
 
-    v10 = &v2 - 2;
-    v9 = &v2 - 2;
-    v8 = (unsigned int *)(&v2 - 2);
-    action_copy = (std::string *)(&v2 - 2);
+    std::vector<int,std::allocator<int>>::vector(v38, v44);
+    v21 = transform_input(v38);
+    std::vector<int,std::allocator<int>>::~vector(v38);
 
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_100);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_214);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_266);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_369);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_417);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_527);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_622);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_733);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_847);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_942);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1054);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1106);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1222);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1336);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1441);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1540);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1589);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1686);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1796);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1891);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1996);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_2112);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_2165);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_2260);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_2336);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_2412);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_2498);
-    std::vector<int,std::allocator<int>>::push_back(&hero, &secret_2575);
-
-    v6 = std::string::length(action) - 1LL != legend >> 2;
-
-    if ( v6 )
+    if ( v23 == v21 )
     {
-    *v8 = legend >> 2;
+    v4 = *(_DWORD *)v43;
+    v18 = *(_DWORD *)v39;
+    v17 = v4;
+
+    v16 = std::vector<int,std::allocator<int>>::operator[](0x6102F8LL, v17);
+
+    *v39 = (*v16 & v18) < 0;
     }
-    else
-    {
-    std::string::string(action_copy, action.0);
-    sanitized_input = sanitize_input(action_copy);
-    *v8 = sanitized_input;
-    std::string::~string(action_copy);
-    }
-    quest_result = *v8;
-    return quest_result;
+    goto LABEL_46;
   }
 
-  //----- (00000000004014B0) ----------------------------------------------------
-  __int64 __fastcall transform_input(__int64 a1)
+  if ( *v39 != 0; )
+    break;
+
+  ++*(_DWORD *)v43;
+  }
+
+  *v45 = ((unsigned __int16)*v43 << 8) & 0x100;
+  *v41 = 1;
+
+LABEL_64:
+  std::vector<int,std::allocator<int>>::~vector(v44);
+  return *v45;
+}
+
+
+//----- (0000000000404350) ----------------------------------------------------
+__int64 __fastcall start_quest(std::string *action)
+{
+  __int64 v2; // [sp+0h] [bp-90h]@2
+  __int64 v3; // [sp+8h] [bp-88h]@13
+  unsigned int quest_result; // [sp+34h] [bp-5Ch]@11
+  unsigned int sanitized_input; // [sp+48h] [bp-48h]@9
+  bool v6; // [sp+4Fh] [bp-41h]@2
+  std::string *action_copy; // [sp+50h] [bp-40h]@2
+  unsigned int *v8; // [sp+58h] [bp-38h]@2
+  __int64 *v9; // [sp+60h] [bp-30h]@2
+  __int64 *v10; // [sp+68h] [bp-28h]@2
+  std::string *action.0; // [sp+70h] [bp-20h]@1
+
+  v10 = &v2 - 2;
+  v9 = &v2 - 2;
+  v8 = (unsigned int *)(&v2 - 2);
+  action_copy = (std::string *)(&v2 - 2);
+
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_100);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_214);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_266);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_369);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_417);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_527);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_622);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_733);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_847);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_942);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1054);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1106);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1222);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1336);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1441);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1540);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1589);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1686);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1796);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1891);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_1996);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_2112);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_2165);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_2260);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_2336);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_2412);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_2498);
+  std::vector<int,std::allocator<int>>::push_back(&hero, &secret_2575);
+
+  v6 = std::string::length(action) - 1LL != legend >> 2;
+
+  if ( v6 )
   {
-    *i = 0;
+  *v8 = legend >> 2;
+  }
+  else
+  {
+  std::string::string(action_copy, action.0);
+  sanitized_input = sanitize_input(action_copy);
+  *v8 = sanitized_input;
+  std::string::~string(action_copy);
+  }
+  quest_result = *v8;
+  return quest_result;
+}
 
-    while ( *v15 < std::vector<int,std::allocator<int>>::size(a1) )
-    {
-    *i += *std::vector<int,std::allocator<int>>::operator[](a1, *i);;
-    ++*i;
-    }
+//----- (00000000004014B0) ----------------------------------------------------
+__int64 __fastcall transform_input(__int64 a1)
+{
+  *i = 0;
 
-    return *i;
+  while ( *v15 < std::vector<int,std::allocator<int>>::size(a1) )
+  {
+  *i += *std::vector<int,std::allocator<int>>::operator[](a1, *i);;
+  ++*i;
   }
 
-  int main(){ assert(start_quest(user_input) == 0x1337); }
+  return *i;
+}
+
+int main(){ assert(start_quest(user_input) == 0x1337); }
+```
 
 In it, we see that `start_quest` pushes 28 values to a vector. It then tests
 that the lenght of the input string is `legend >> 2` (which ends up as 28)
@@ -211,20 +215,23 @@ is 28 bytes long.
 `transform_input`, on its end, sums up the values of a vector. `sanitize_input`,
 on its end, loops over the string and copies each character to a vector:
 
-    while (1 ) {
-      // ...
-      v1 = std::string::operator[](a1, v35);
-    v33 = v1;
-      *v42 = *v33;
-    std::vector<int,std::allocator<int>>::push_back(v44, v42);
-      // ...
-    }
+```cpp
+  while (1 ) {
+    // ...
+    v1 = std::string::operator[](a1, v35);
+  v33 = v1;
+    *v42 = *v33;
+  std::vector<int,std::allocator<int>>::push_back(v44, v42);
+    // ...
+  }
+```
 
 (remember that operator[] returns a reference, which is a pointer at the ABI level)
 
 ...until 28 characters have successfully been "tested", for whatever definition of
 "test" it uses:
 
+```cpp
   if ( *v43 >= legend >> 2 )
   {
     std::operator<<<std::char_traits<char>>(&std::cout, "success\n");
@@ -232,6 +239,7 @@ on its end, loops over the string and copies each character to a vector:
     *v41 = 1;
     goto LABEL_64;
   }
+```
 
 Now, it's possible that we kind of messed up the condition part, but what it
 does is still kind of straightforward: it reads a value from the `hero` vector...
@@ -248,10 +256,12 @@ does is still kind of straightforward: it reads a value from the `hero` vector..
 ... and tests that the transformed value is the same as we have in the `hero`
 vector...
 
+```cpp
   if ( v23 == v21 )
   {
     // ...
   }
+```
 
 Instead of reading more code, we connected the dots here, and noticed that
 the values of the hero vector are all larger than the one before by an amount
@@ -259,6 +269,7 @@ that suspiciously looks like an ASCII character value. We extracted each value
 (which is kind of easy when they're called `secret_[value]`) and used a Python
 script to see what phrase would satisfy `hero[i] = phrase[i] + hero[i-1]`.
 
+```python
   hero = [100, 214, 266, 369, 417, 527, 622, 733, 847, 942, 1054, 1106, 1222,
     1336, 1441, 1540, 1589, 1686, 1796, 1891, 1996, 2112, 2165, 2260, 2336,
     2412, 2498, 2575]
@@ -268,10 +279,12 @@ script to see what phrase would satisfy `hero[i] = phrase[i] + hero[i-1]`.
     phrase += chr(hero[i] - prev)
 
   print phrase
+```
 
 This prints `dr4g0n_or_p4tric1an_it5_LLVM`. When used as the secret, the program
 has the following output:
 
+```
   $ ./wyvern
   +-----------------------+
   |    Welcome Hero       |
@@ -284,3 +297,4 @@ has the following output:
   success
 
   [+] A great success! Here is a flag{dr4g0n_or_p4tric1an_it5_LLVM}
+```
