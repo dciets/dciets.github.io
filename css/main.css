@@ -122,8 +122,8 @@ h1,h2,h3,h4,h5 {
 .posts ul li {
 	text-overflow: ellipsis;
 	display: block;
-	overflow: hidden; 
-	white-space: nowrap;	
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 .posts ul {
@@ -173,8 +173,6 @@ footer {
 }
 
 .partners-diamant img {
-	height:60%;
-	width:60%;
 }
 
 .partners-platine img {
