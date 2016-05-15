@@ -1,6 +1,6 @@
 name: "Délégation des Compétitions en Informatique de l'ÉTS"
-markdown: redcarpet
-pygments: true
+markdown: kramdown
+highlighter: true
 permalink: pretty
 safe: true
 url: "http://dciets.com"
