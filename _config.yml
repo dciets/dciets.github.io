@@ -3,7 +3,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 safe: true
-url: "http://dciets.com"
+url: "https://dciets.com"
 lsi: false
 
 # exclude some files we don't want to leak
