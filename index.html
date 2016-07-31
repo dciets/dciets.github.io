@@ -45,6 +45,7 @@ layout: default
       <!-- <div class="alert alert-info">Afin de rester informer sur les activit&eacute;s de la DCI, n'oubliez pas de vous <strong><a href='https://groups.google.com/forum/#!forum/dciets/join'>inscrire &agrave; notre liste de courriel</a></strong>!</div> -->
     </div>
   </div>
+
   <div class='row'>
     <div class='col-md-4 posts'>
       <h2>Nouvelles</h2>
@@ -58,6 +59,11 @@ layout: default
         {% endfor %}
       </ul>
       <a href='/archives'>Archives</a>
+
+      <h2>Twitter <a href="http://twitter.com/dciets/"><small>@dciets</small></a></h2>
+      <a class="twitter-timeline" href="https://twitter.com/dciets" data-widget-id="375135268799393793" lang="fr" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="1">Tweets by @dciets</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
     </div>
     <div class='col-md-4'>
       <h2>&Agrave; propos</h2>
@@ -68,10 +74,31 @@ layout: default
       <h2>Sécurité informatique</h2>
       <a href="/securite">Plus de détails...</a>
     </div>
-    <div class='col-md-4'>
-      <h2>Twitter <a href="http://twitter.com/dciets/"><small>@dciets</small></a></h2>
-      <a class="twitter-timeline" href="https://twitter.com/dciets" data-widget-id="375135268799393793" lang="fr" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="2">Tweets by @dciets</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <div class="col-md-4">
+      <h2>Résultats</h2>
+      <div class="timeline">
+        <ul>
+          {% for event in site.data.timeline, limit: 5 %}
+          <li>
+            {% if event.link %}
+            <a href="{{ event.link }}">
+            {% endif %}
+              <div class="title">
+                <div class="date">{{ event.date }}</div>
+                {{ event.title }}
+              </div>
+              {% if event.image %}
+              <img src="{{ event.image }}" />
+              {% endif %}
+            {% if event.link %}
+            </a>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
+
+
   </div>
 </div>

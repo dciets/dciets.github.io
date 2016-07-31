@@ -348,3 +348,37 @@ a.desjardins {
 #local-hack-day .height {
   margin: 30px 0;
 }
+
+.timeline {
+    border-left: 5px solid #8f0000;
+}
+
+.timeline ul {
+    padding-left: 1em;
+}
+
+.timeline li {
+    width: 100%;
+    background-color: #f0f0f0;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.timeline img {
+    display: block;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.timeline .title {
+    font-weight: bold;
+    padding: 1em;
+}
+
+.timeline .date {
+    text-transform: uppercase;
+    opacity: 0.7;
+    font-weight: normal;
+}
