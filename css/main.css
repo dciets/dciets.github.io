@@ -382,3 +382,58 @@ a.desjardins {
     opacity: 0.7;
     font-weight: normal;
 }
+
+.plan p {
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.plan h1 .title {
+    display: inline-block;
+    border-bottom: 4px solid black;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.2em;
+}
+
+.plan h1 .subtitle {
+    font-size: 0.75em;
+}
+
+.plan h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+.plan .intro {
+    padding-bottom: 40px;
+}
+
+.plan .about {
+    background-color: #a80000;
+    color: white;
+    padding: 30px 0px;
+    background-image: url(/img/plan/csgames_splash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.page-break { display: none }
+
+@media print {
+    .page-break	{ display: block; page-break-before: always; }
+
+    body {
+        -webkit-print-color-adjust: exact;
+    }
+
+    .plan .about {
+        background-color: #a80000 !important;
+        color: white !important;
+    }
+
+    .plan .about p, .plan .about h2 {
+        color: white!important;
+    }
+}
