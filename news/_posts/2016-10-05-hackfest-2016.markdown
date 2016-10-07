@@ -6,7 +6,7 @@ date:   2016-10-05 13:00
 
 Dans un peu plus de trois semaines (4-5 novembre) aura lieu le [Hackfest 2016](http://www.hackfest.ca) à Québec. Le Hackfest, c'est :
 
-> Le Hackfest réunit plus de 650 passionnés de sécurité. L’événement comprend deux journées de conférences techniques en sécurité et piratage informatique. Les soirées sont une rencontre privilégiée, où les participants peuvent mesurer leur habileté en sécurité lors d'un CTF (Capture The Flag) unique en sont genre en plus de concours de lockpicking, DJ, Workshops, conférences de soir et plus encore. Cela en fait le plus gros événement de sécurité au Québec et le plus gros rassemblement de sécurité informatique du genre dans l’est du Canada.
+> Le Hackfest réunit plus de 650 passionnés de sécurité. L’événement comprend deux journées de conférences techniques en sécurité et piratage informatique. Les soirées sont une rencontre privilégiée, où les participants peuvent mesurer leur habileté en sécurité lors d'un CTF (Capture The Flag) unique en son genre en plus de concours de lockpicking, DJ, Workshops, conférences de soir et plus encore. Cela en fait le plus gros événement de sécurité au Québec et le plus gros rassemblement de sécurité informatique du genre dans l’est du Canada.
 
 
 La DCI a décidée de payer les frais d'inscription de 16 chanceux. Donc, cette année il y aura 4 équipes. Nous souhaitons bonne chance aux équipes qui représenteront la DCI. 
