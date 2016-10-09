@@ -1,0 +1,27 @@
+---
+layout: default
+title: "DCI Workshop"
+---
+<div class='container'>
+  <h1>DCI Workshop</h1>
+
+  <div class="row">
+    <div class="col-md-4 col-md-push-8">
+      <p class="lead">
+        DCI Workshop est une série d'ateliers en cyber-sécurité et en algorithmie, orientés vers la pratique. C'est l'occcasion idéale d'en apprendre davantage sur un sujet de l'informatique qui t'intéresse ! Les ateliers sont gratuits et ouvert à tous et à toutes.
+      </p>
+      <p>
+        <a href="https://facebook.com/dciets">Suivez-nous sur Facebook</a> pour être au courant de la prochaine édition.
+      </p>
+    </div>
+    <div class="col-md-8 col-md-pull-4 posts">
+      {% for post in site.categories.dci-workshop %}
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {{ post.excerpt}}
+      <div class="meta">
+        {{ post.date | date: "%Y-%m-%d" }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
