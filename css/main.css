@@ -1,7 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Open+Sans+Condensed:700);
 
 body {
-	padding-top: 50px;
 	opacity: 0;
 	font-family: 'Open Sans';
 }
@@ -20,27 +19,13 @@ h1,h2,h3,h4,h5 {
 }
 
 ::selection {
-	background: #fedddd;
+	background: #87AFFF;
 }
 ::-moz-selection {
-	background: #fedddd;
+	background: #87AFFF;
 }
 
-.navbar {
-	background-color: #8f0000;
- }
 
-.navbar-brand {
-	text-indent: -9999px;
-	height: 30px;
-	width: 30px;
-	background-image: url('../img/logo_dci_white.png');
-	background-size: 23px 30px;
-	background-position: right center;
-	background-repeat: no-repeat;
-	margin-top: 10px;
-	margin-left: 0px !important;
-}
 
 .news-post img {
 	display:block;
@@ -54,65 +39,12 @@ h1,h2,h3,h4,h5 {
 	width: 69px;
 }
 
- .navbar a {
-	color: #fff;
-	font-size: 14px;
-	font-family: 'Open Sans', Georgia, 'Times New Roman', Times, serif;
- }
-
- .nav>li>a:hover {
-	color:#fff;
-	background-color:#be0000;
-	-webkit-transition: all .3s ease; /* Fade to color for Chrome and Safari */
-	-webkit-backface-visibility: hidden; /* Fix for transition flickering */
- }
-
-.navbar-toggle:hover {
-	background-color:#be0000;
-}
-
-.navbar-toggle {
-	margin-right: 8px;
-}
-
-.navbar-toggle .icon-bar {
-	background-color: #fff;
-}
-
- a {
-	color:#8f0000;
-	-webkit-transition: all .3s ease; /* Fade to color for Chrome and Safari */
-	-webkit-backface-visibility: hidden; /* Fix for transition flickering */
- }
-
- a:hover {
-	color:#be0000;
- }
-
  .jumbotron {
-	background-image: url('/img/bg_jumbotron.jpg');
-	background-position: 0px -200px;
+	background: transparent;
+
 	color:#fff;
  }
 
-.alert a {
-	color:#3A87AD;
-}
-
-.alert a:hover {
-	color:#285e8e;
-}
-
-.btn-primary {
-	color: #fff;
-	background-color: #8f0000;
-	border-color: #8f0000;
-}
-
-.btn-primary:hover {
-	background-color: #be0000;
-	border-color: #8f0000;
-}
 
 .posts {
 	overflow: hidden;
@@ -436,4 +368,105 @@ a.desjardins {
     .plan .about p, .plan .about h2 {
         color: white!important;
     }
+}
+
+
+
+.navbar-default {
+	font-family: 'Open Sans Condensed';
+	text-transform: uppercase;
+	-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+
+}
+
+
+.navbar-default.navbar-transparent {
+	background-color: transparent;
+}
+
+.navbar-default { 
+	background-color: #12356B;
+}
+.navbar-default a {
+	font-size: 120%;
+}
+
+a.navbar-brand img {
+	width: 30px;
+	margin-top: -10px;
+}
+
+
+.jumbotron h1 {
+	font-family: "Open Sans Condensed";
+	text-transform: uppercase;
+}
+
+.banner {
+	padding-top: 90px;
+}
+body.padded {
+	padding-top: 90px;
+}
+
+.alternate-section {
+	background-color: #F2F2F2;
+	padding: 2em;
+	margin: 0.9em 0;
+}
+.blason-jumbo {
+	width: 250px;
+	height: auto;
+	margin-right: 20px;
+}
+
+.last-news .btn {
+	margin-left: 2em;
+}
+
+.red-text {
+	color: #EE1C25;
+}
+
+@media (max-width: 991px) { 
+	.blason-jumbo {
+		width: 200px;
+	}
+}
+
+@media (max-width: 767px) {
+  .blason-jumbo {
+		width: 100px;
+	}
+}
+
+
+/* Super well prefixed flexbox */
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flexbox.horizontal {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row
+}
+
+.flexbox.nowrap {
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap
+}
+
+.flexbox.align-center {
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	            -ms-grid-row-align: center;
+	        align-items: center; 
 }

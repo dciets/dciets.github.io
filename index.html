@@ -2,15 +2,36 @@
 layout: default
 ---
 <!-- Jumbotron -->
-<div class='jumbotron'>
-  <div class='container'>
-    <h1>Délégation annoncée pour les CS Games 2016!</h1>
-    <div class='p'>Les délégués pour les CS Games 2016 sont annoncés!</div>
-    <a class='btn btn-primary btn-md' href='/news/2016/02/05/delegation-cs-games-2016/'>Plus d'informations</a>
+<div class='jumbotron banner'>
+  <div class='container flexbox horizontal nowrap align-center'>
+    <img src="/img/blason_dci.png" class="pull-left blason-jumbo hidden-xs">
+    <div>
+    <h1 class="hidden-xs">Délégation des compétitions en informatique de l'ÉTS</h1>
+    <p class="last-news"><i class="fa fa-quote-left red-text" aria-hidden="true"></i>
+ {% for post in site.categories.news limit:1 %}
+          {{ post.title }} <a class="btn btn-primary btn-sm" href="{{ post.url }}">Plus d'informations</a>          
+        {% endfor %}</p>
+    </div>
+
+
+
   </div>
 </div>
 
 <div class='container'>
+  <p class="lead text-center">La Délégation des compétitions en informatique de l'ÉTS (DCI) forme des équipes talentueuses de l'École de technologie supérieure pour participer à des compétitions et des évènements reliés à l'informatique.</p>
+  <p class="text-right"><a href="/A-propos">À propos  »</span></a></p>
+</div>
+<div class="alternate-section">
+  <div class="container">
+      <p class='text-center partners flexbox horizontal align-center'>Merci &agrave; nos partenaires &hearts;
+            <a href="http://etsmtl.ca" class='etsmtl'>&Eacute;TS</a>
+            <a href="http://aeets.com" class='aeets'>A&Eacute;&Eacute;TS</a>
+            <a href="http://desjardins.com" class='desjardins'>Desjardins</a>
+          </p>
+</div>
+</div>
+<div class="container">
   <div class="row">
     <div class="col-sm-4">
       <h2>Sécurité</h2>
@@ -63,16 +84,13 @@ layout: default
       <h2>Twitter <a href="http://twitter.com/dciets/"><small>@dciets</small></a></h2>
       <a class="twitter-timeline" href="https://twitter.com/dciets" data-widget-id="375135268799393793" lang="fr" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="1">Tweets by @dciets</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-    </div>
-    <div class='col-md-4'>
-      <h2>&Agrave; propos</h2>
-      <p>La d&eacute;l&eacute;gation des comp&eacute;titions en informatique de l'&Eacute;TS s’occupe de représenter l’École de technologie supérieure dans les événements et compétitions inter-universitaires reliés à l’informatique.</p>
-      <div>
+<div>
       <div class="fb-like" data-href="http://www.facebook.com/dciets" data-width="280" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
       </div>
-      <h2>Sécurité informatique</h2>
-      <a href="/securite">Plus de détails...</a>
+    </div>
+    <div class='col-md-4'>
+     
+     
     </div>
     <div class="col-md-4">
       <h2>Résultats</h2>
