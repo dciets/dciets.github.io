@@ -130,8 +130,8 @@ footer {
 .social a{
 	text-indent: -9999px;
 	display: inline-block;
-	height: 23px;
-	width: 23px;
+	height: 38px;
+	width: 38px;
 }
 
 .partners a {
@@ -143,35 +143,35 @@ footer {
 
 a.facebook {
 	background-image:url('../img/facebook.png');
-	background-size: 20px 20px;
+	background-size: 36px 36px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 a.twitter {
 	background-image:url('../img/twitter.png');
-	background-size: 20px 20px;
+	background-size: 36px 36px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 a.youtube {
 	background-image:url('../img/youtube.png');
-	background-size: 20px 20px;
+	background-size: 36px 36px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 a.github {
 	background-image:url('../img/github.png');
-	background-size: 20px 20px;
+	background-size: 36px 36px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 a.googleplus {
 	background-image:url('../img/googleplus.png');
-	background-size: 20px 20px;
+	background-size: 36px 36px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
