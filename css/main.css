@@ -135,10 +135,20 @@ footer {
 }
 
 .partners a {
-	text-indent: -9999px;
-	overflow: hidden;
-	display: inline-block;
 	margin-left: 15px;
+	opacity: 0.7;
+	transition: opacity 0.5s linear;
+}
+
+.partners a:hover {
+	opacity: 1;
+
+}
+
+.partners img {
+	width: auto;
+	height: 60px;
+	vertical-align: middle;
 }
 
 a.facebook {
@@ -282,31 +292,34 @@ a.desjardins {
 }
 
 .timeline {
-    border-left: 5px solid #8f0000;
+    border-bottom: 5px solid #12356B;
 }
 
-.timeline ul {
-    padding-left: 1em;
-}
 
-.timeline li {
+.timeline > div {
     width: 100%;
     background-color: #f0f0f0;
-    display: inline-block;
     border-radius: 5px;
     margin-bottom: 1em;
+    margin: 5px;
 }
 
-.timeline img {
+.timeline .timeline-img {
     display: block;
     width: 100%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    min-height: 110px;
+    background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding-top: 43%;
 }
 
 .timeline .title {
     font-weight: bold;
     padding: 1em;
+
 }
 
 .timeline .date {
@@ -315,6 +328,17 @@ a.desjardins {
     font-weight: normal;
 }
 
+
+.timeline-dot {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+	background-color: #F8F8F8;
+	background-size: cover;
+	background-position: center center;
+	border-radius: 255px;
+}
 .plan p {
     text-align: justify;
     line-height: 1.5em;
@@ -420,7 +444,7 @@ body.padded {
 }
 .blason-jumbo {
 	width: 250px;
-	height: auto;
+	height: 315px;
 	margin-right: 20px;
 }
 
@@ -469,4 +493,16 @@ body.padded {
 	    -ms-flex-align: center;
 	            -ms-grid-row-align: center;
 	        align-items: center; 
+}
+
+.flexbox.vertical {
+	-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+@media (max-width: 767px) {
+  .flexbox.flex-md {
+		display: block;
+	}
 }

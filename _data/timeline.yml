@@ -1,33 +1,68 @@
 - date : Novembre 2016
   title : 12e position au final du CSAW16
   image : /img/timeline/2016_csaw.jpg
+  about: false
 
 - date : Novembre 2016
   title : 5e, 11e, 15e position au Hackfest 2016
+  about: false
 
 - date : Septembre 2016
-  title: 11e position au qualification du CSAW16
+  title: 11e position mondial (1e canadienne) aux qualifications du CSAW16
+  about: false
 
 - date: Mai 2016
-  title: 1ère position au Northsec 2016
+  title: 1e place au Northsec 2016
   image: /img/timeline/2016_nsec.jpg
 
 - date: Mars 2016
-  title: 1ère place aux Computer Science Games 2016
+  title: 1e place aux Computer Science Games 2016
   image: /img/timeline/2016_cs.jpg
 
 - date: Mars 2016
-  title: 15e position au Boston Key Party 2016
+  title: 15e place au Boston Key Party 2016
   image: /img/timeline/2016_bkp.jpg
+  about: false
 
 - date: Janvier 2016
   title: 67e position au classement mondial de CTFTime
+  about: false
 
 - date: Mai 2015
-  title: 1ère place au Northsec 2015
+  title: 1e place au Northsec 2015
 
 - date: Mars 2015
-  title: 1ère place aux Computer Science Games 2015
+  title: 1e place aux Computer Science Games 2015
 
 - date: Mars 2014
   title: 9 trophées aux Computer Science Games 2014
+
+- date: Juin 2014
+  title: 3e place au Northsec 2014
+
+- date: Mars 2013
+  title: 1e place au CS Games 2013
+
+- date: 2013
+  title: 3e place au NorthSec 2013
+
+- date: 2013
+  title: 1e place canadienne au CSAW 2013
+
+- date: 2013
+  title: 5e place mondiale au ICTF 2013
+
+- date: 2012
+  title: 4e place au CS Games 2012
+
+- date: 2011
+  title: 2e place au CS Games 2011
+
+- date: 2011
+  title: 2e place au Hackus 2011
+
+- date: 2010
+  title: 1e place au CS Games 2010
+
+- date: 2010
+  title: 2e place au Hackus 2010
