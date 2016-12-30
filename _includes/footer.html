@@ -22,9 +22,18 @@
     <script>
       $(function() {
         $('.jumbotron').parallax({imageSrc: '/img/banner.png'});
+        $(document).ready(function() {
+          colorNavbar();
+
+        }); 
 
         $(document).scroll(function(event) {
-          if($(document).scrollTop() > 2) {
+         colorNavbar(); 
+        });
+
+        function colorNavbar() 
+        {
+           if($(document).scrollTop() > 2) {
             $('.navbar.transparency-mode').removeClass('navbar-transparent');
           }
           else {
@@ -32,7 +41,7 @@
 
           }
 
-        }); 
+        } 
 
     });
     </script>

@@ -24,12 +24,19 @@ title: "À propos de la DCI"
     </p>
     <h2>La DCI, c'est aussi la...</h2>
 
-     <ul class="list-unstyled">
+     <ul class="list-unstyled two-columns-md a-propos-list">
           {% for event in site.data.timeline %}
           {% if event.about==null or event.about %}
           <li>
               
-                <span class="timeline-dot" {% if event.image %}style="background-image: url({{ event.image }})"{% endif %} ></span> {{ event.title }}
+                <span class="timeline-dot" {% if event.image %}style="background-image: url({{ event.image }})"{% endif %} ></span> {% if event.link %}
+            <a href="{{ event.link }}">
+            {% endif %}
+             
+                {{ event.title }}
+                 {% if event.link %}
+            </a>
+            {% endif %}
             
           </li>
           {% endif %}

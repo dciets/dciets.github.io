@@ -28,6 +28,7 @@ layout: default
       <a href='http://etsmtl.ca/'><img src='/img/partenaires/ets2011.png'></a>
       <a href='http://aeets.com/'><img src='/img/partenaires/aeets.png'></a>
       <a href='http://desjardins.com/'><img src='/img/partenaires/desjardins.png'></a>
+      <a href='http://www.coveo.com/'><img src='/img/partenaires/coveo.png'></a>
           </p>
           <p class='text-right'><a href="/partenaires">Nos partenaires »</a></p>
 </div>
@@ -72,7 +73,7 @@ layout: default
     </div>
   </div>
     <div class='row'>   
-   
+    <div class="col-sm-12">
       <h2>Résultats</h2>
       <div class="timeline flexbox horizontal nowrap flex-md">
        
@@ -80,10 +81,11 @@ layout: default
           <div class="flexbox vertical">
            
               <div class="title">
+                   <div class="date">{{ event.date }}</div>
                  {% if event.link %}
             <a href="{{ event.link }}">
             {% endif %}
-                <div class="date">{{ event.date }}</div>
+             
                 {{ event.title }}
                  {% if event.link %}
             </a>
@@ -98,6 +100,7 @@ layout: default
        
     </div>
   <p class="text-right"><a href="/a-propos-dci">Plus  »</a></p>
+    </div>
 
   </div>
   <div class="row">

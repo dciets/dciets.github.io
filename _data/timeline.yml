@@ -14,10 +14,12 @@
 - date: Mai 2016
   title: 1e place au Northsec 2016
   image: /img/timeline/2016_nsec.jpg
+  link:/news/2016/05/24/resultats-northsec-2016/
 
 - date: Mars 2016
   title: 1e place aux Computer Science Games 2016
   image: /img/timeline/2016_cs.jpg
+  link: /news/2016/03/14/resultats-cs-games-2016/
 
 - date: Mars 2016
   title: 15e place au Boston Key Party 2016
@@ -30,18 +32,26 @@
 
 - date: Mai 2015
   title: 1e place au Northsec 2015
+  image: /img/news/northsec_2015_hack_toute.jpg
+  link: /news/2015/07/01/la-dci-remport-la-premiere-place-au-northsec/
 
 - date: Mars 2015
   title: 1e place aux Computer Science Games 2015
+  image: /img/news/participation-csgames-2015.jpg
+  link: /news/2015/03/16/resultats-cs-games-2015/
 
 - date: Mars 2014
   title: 9 trophées aux Computer Science Games 2014
+  link: /news/2014/03/28/resultats-cs-games-2014/
+  image: /img/news/participation-csgames.jpg
 
 - date: Juin 2014
   title: 3e place au Northsec 2014
 
 - date: Mars 2013
   title: 1e place au CS Games 2013
+  link: /news/2013/03/26/etudiants-ets-grands-vainqueurs/
+  image: /img/news/CS_games_2_LR.jpg
 
 - date: 2013
   title: 3e place au NorthSec 2013
@@ -57,6 +67,7 @@
 
 - date: 2011
   title: 2e place au CS Games 2011
+  link: /news/2011/03/21/resultats-cs-games-2011/
 
 - date: 2011
   title: 2e place au Hackus 2011
