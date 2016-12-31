@@ -5,10 +5,51 @@ title: "Sécurité"
 <div class='container'>
   <h1>Sécurité</h1>
   <div class='row'>
-    <div class='col-md-4 posts'>
+    <div class='col-md-8 col-md-push-4'>
+      <h2>Ressources</h2>
+      <dl class="dl-horizontal">
+        {% for link in site.data.securite.resources %}
+        <dt>
+          {% if link.link %}
+          <a href="{{link.link}}">
+          {% endif %}
+          {{ link.name }}
+          {% if link.link %}
+          </a>
+          {% endif %}
+        </dt>
+        <dd>{{ link.description }}</dd>
+        {% endfor %}
+      </dl>
+     <h2>Outils</h2>
+     <div class="two-columns-md">
+     {% assign grouped_tools = site.data.securite.tools | group_by: "category" %}
+
+     {% for group in grouped_tools %}
+     <div class="no-break-inside">
+      <strong>{{ group.name }}</strong>
+        <ul>
+        {% for tool in group.items %}
+        <li>
+           {% if tool.link %}
+          <a href="{{tool.link}}">
+          {% endif %}
+         {{ tool.name }}
+          {% if tool.link %}
+          </a>
+          {% endif %}
+          </li>
+        {% endfor %}
+        </ul>
+     </div>
+     {% endfor %}
+    </div>
+  </div>
+    <div class='col-md-4 col-md-pull-8'>
+      <div class="posts">
       <h2>Archives</h2>
       <ul>
-        {% for post in site.categories.securite limit:10 %}
+        {% for post in site.categories.securite %}
         <li>
           <span>{{ post.date | date_to_string }}</span>
           &raquo;
@@ -16,19 +57,26 @@ title: "Sécurité"
         </li> 
         {% endfor %}
       </ul>
-    </div>
-    <div class='col-md-4'>
-      <h2>Sondage</h2>
-      <iframe src="https://docs.google.com/forms/d/1CoriA-pJ4ZsJh5a8VSyaEMiKkMP37Zm7V3lTHMHEypY/viewform?embedded=true" width="360" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-    </div>
-    <div class='col-md-4 posts'>
-      <h2>CTFs à venir</h2>
+      <h2>Workshops</h2>
+      <p> <a href="/dci-workshop">DCI Workshop</a> portant sur la sécurité.</p>
       <ul>
+        {% for post in site.categories.dci-workshop limit:5 %}
+        {% if post.categories contains "security" %}
         <li>
-          <span>Avril 2015</span> » <a href="https://www.nsec.io">NorthSec</a>
-        </li>
+          <span>{{ post.date | date_to_string }}</span>
+          &raquo;
+          <a href='{{ post.url }}'>{{ post.title }}</a>
+        </li> 
+        {% endif %}
+        {% endfor %}
       </ul>
-      <a href="https://ctftime.org/">Plus...</a>
     </div>
+      <div class="well well-sm">
+        <small>
+          Contribuez en soumettant une pull request sur Github: <a href="https://github.com/dciets/dciets.github.io/tree/master/_data/securite">Ressources &amp; outils</a> et <a href="https://github.com/dciets/dciets.github.io/tree/master/securite/_posts">Writeups</a>. 
+        </small>
+      </div>
+    </div>
+
   </div>
 </div>

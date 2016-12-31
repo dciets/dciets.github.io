@@ -1,0 +1,22 @@
+- name: IDA
+  category: Décompilateur
+
+- name: fcd
+  link: https://zneak.github.io/fcd/
+  category: Décompilateur
+
+- name: Burp Suite
+  category: Web & réseaux
+
+- name: Wireshark
+  category: Web & réseaux
+
+- name: nmap 
+  category: Web & réseaux
+
+- name: pwntools
+  category: Exploitation
+
+- name: sqlmap
+  category: Web & réseaux
+

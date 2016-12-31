@@ -304,6 +304,10 @@ a.desjardins {
     border-radius: 5px;
     margin-bottom: 1em;
     margin: 5px;
+
+   -webkit-box-pack:justify;
+      -ms-flex-pack:justify;
+          justify-content:space-between;
 }
 
 .timeline .timeline-img {
@@ -422,7 +426,7 @@ transition: all 0.5s ease;
 	background-color: #12356B;
 }
 .navbar-default a {
-	font-size: 120%;
+	font-size: 110%;
 }
 
 a.navbar-brand img {
@@ -517,6 +521,12 @@ body.padded {
 column-count: 2;
 column-gap: 5px;
 }
+
+.no-break-inside {
+	-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+          page-break-inside: avoid; /* Firefox */
+               break-inside: avoid; /* IE 10+ */
+}
 @media (max-width: 767px) {
   .flexbox.flex-md {
 		display: block;
@@ -537,4 +547,8 @@ column-gap: 5px;
 	background-color: #12356B;
 
 }
+}
+
+.dl-horizontal dt {
+	white-space: normal;
 }
