@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sécurité offensive avec Metasploit"
-date:   2016-01-24
+date:   2017-01-24
 categories: dci-workshop security
 ---
 
@@ -9,4 +9,7 @@ Pour cette édition, David Lebrun présente une introduction à la sécurité of
 
 ## Outils
 - Machine virtuelle avec [Kali Linux](https://www.offensive-security.com/kali-linux-vmware-virtualbox-image-download/)
-- Ou les outils Metasploit, nmap et OpenVPN.
+- Ou les outils Metasploit et OpenVPN.
+
+## Présentation
+- [Présentation](https://docs.google.com/presentation/d/1Cj3Iu3HGoqUwddyKqz4BWC8ryw570hSNh77r8P-nhdo/ "Présentation")
