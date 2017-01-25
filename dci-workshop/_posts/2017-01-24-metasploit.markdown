@@ -13,3 +13,4 @@ Pour cette édition, David Lebrun présente une introduction à la sécurité of
 
 ## Présentation
 - [Présentation](https://docs.google.com/presentation/d/1Cj3Iu3HGoqUwddyKqz4BWC8ryw570hSNh77r8P-nhdo/ "Présentation")
+- [Solution](https://gist.github.com/davidlebr1/65ff903d59f2684b3462153e8ad31b4c)
