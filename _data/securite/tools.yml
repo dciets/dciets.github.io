@@ -1,22 +1,51 @@
+- name: radare2
+  category: Rétro-ingénierie
+  link: http://radare.org/r/
+
+- name: Binary Ninja
+  category: Rétro-ingénierie
+  link: https://binary.ninja/
+
+- name: Hopper
+  category: Rétro-ingénierie
+  link: https://www.hopperapp.com/
+
 - name: IDA
-  category: Décompilateur
+  category: Rétro-ingénierie
+  link: https://www.hex-rays.com/index.shtml
 
 - name: fcd
   link: https://zneak.github.io/fcd/
-  category: Décompilateur
+  category: Rétro-ingénierie
+
+- name: GDB
+  link: https://www.sourceware.org/gdb/
+  category: Rétro-ingénierie
+
+- name: OllyDbg
+  link: http://www.ollydbg.de/
+  category: Rétro-ingénierie
+
+- name: angr
+  link: http://angr.io/
+  category: Rétro-ingénierie
 
 - name: Burp Suite
   category: Web & réseaux
+  link: https://portswigger.net/burp/
 
 - name: Wireshark
   category: Web & réseaux
+  link: https://www.wireshark.org/
 
-- name: nmap 
+- name: nmap
   category: Web & réseaux
+  link: https://nmap.org/
 
 - name: pwntools
   category: Exploitation
+  link: https://docs.pwntools.com/en/stable/
 
 - name: sqlmap
   category: Web & réseaux
-
+  link: http://sqlmap.org/
