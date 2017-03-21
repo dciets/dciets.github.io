@@ -1,3 +1,7 @@
+- name: Montrehack
+  link: http://montrehack.ca/
+  description: Apprentissage et partage de connaissance sur la sécurité informatique en travaillant des problèmes appliqués.
+
 - name: OWASP
   link: https://www.owasp.org/
   description: Open Web Application Security Project (OWASP) est une communauté oeuvrant dans la sécurité des applications Web. Le site internet regorge d'informations sur les vulnérabilités.
@@ -8,10 +12,8 @@
 
 - name: RingZer0 Team Online CTF
   link: https://ringzer0team.com/
-  description: RingZer0 Team's online CTF propose des défis conçus pour tester et améliorer vos compétences en hacking. 
+  description: RingZer0 Team's online CTF propose des défis conçus pour tester et améliorer vos compétences en hacking.
 
 - name: DCI101
   link: https://dciets.com/ing101
   description: Quelques défis introductifs insiprés du format des compéttions <em>Capture The Flag</em>.
-
-  
