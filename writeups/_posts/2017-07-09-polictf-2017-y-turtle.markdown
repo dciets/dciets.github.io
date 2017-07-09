@@ -19,7 +19,7 @@ Since the description hinted about metaprogramming, I tried executing function t
 ```
 
 ```
-(move (chr "A")); made the cursor move 41 pixels. chr is very Pythonic function
+(move (ord "A")); made the cursor move 41 pixels. ord is very Pythonic function
 ```
 
 ```
