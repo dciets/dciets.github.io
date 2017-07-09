@@ -1,10 +1,9 @@
 ---
 layout: post
 ctf: "PoliCTF 2017"
-title: "y-turtle"
+title: "PoliCTF 2017 - Y-Turle - Grab Bag"
 ---
 
-# PoliCTF 2017 - Y-Turle - Grab Bag
 >A new cyber-artistic collective had fun experimenting with metaprogramming and domain specific languages. Here thre is a first, broken, implementation of a Turtle graphic engine.
 >http://yturtle.chall.polictf.it
 
