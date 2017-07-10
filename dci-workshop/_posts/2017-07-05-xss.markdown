@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "XSS"
+date:   2017-07-05
+categories: dci-workshop security
+---
+
+Cette édition, présentée par Benoit Côté-Jodoin, portera sur le Cross-site scripting (XSS), une vulnérabilité courante au sein des applications web. L'atelier couvrira les scénarios typiques d'attaque, ainsi que les méthodes de contournement des mécanismes de protection et des filtres.
+
+## Outils
+- Google Chrome
+
+## Exercice
+Utilisez Google Chrome pour valider vos solutions.
+
+- [Exercices](http://xss.workshop.dciets.com/)
+
+## Présentation
+- [Slides](https://docs.google.com/presentation/d/1BvIzR4xORoxQWZ--KlPC-2Q1qcAYOx0OUMJAlZjRJds/edit?usp=sharing)
