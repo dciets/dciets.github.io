@@ -49,4 +49,6 @@ Access to internet is probably blocked. I then tried using DNS which turned out 
 ```
 The server receives a DNS query for the subdomain `ZmxhZ3tzaGFfbWFfbmFfbmFfbmFfc2hhbWFfbmFfbmFfbmFfbmF9Cg==` which decodes to the flag `flag{sha_ma_na_na_na_shama_na_na_na_na}`.
 
+The DNS exfiltration was made using [DNSBin](https://github.com/HoLyVieR/dnsbin) made by the all mighty [HoLyVieR](https://github.com/HoLyVieR).
+
 Becojo - Northern Coalition
