@@ -1,0 +1,24 @@
+---
+layout: post
+title: "DCI CTF de la rentrée"
+date: 2017-08-26
+---
+
+![dci ctf](/img/news/dci-ctf.png)
+
+**DCI CTF** est une compétition Capture The Flag organisée par la Délégation des compétitions en informatique de l'ÉTS pour la communauté étudiante. Votre objectif: trouver des FLAGs dissimulés dans les challenges de sécurité. Nous vous proposons des défis pour tous les goûts et pour tous les niveaux; c'est une excellente façon de vous initier à la sécurité informatique et de vous mettre à l'épreuve! 
+
+En bref: 
+
+* La compétition a lieu du 8 septembre au 22 septembre.  De nouveaux défis seront publiés régulièrement pour agrémenter votre début de session!
+* Plus de 400$ en prix à gagner dont des prix de participation.
+* La compétition se déroule à distance et sera clôturée par une cérémonie de remise de prix en formule 5@7! 
+* L'évènement est gratuit. 
+
+Pour tous les détails, voyez le [site web de la compétition](https://ctf.dciets.com) et l'[évènement Facebook](https://facebook.com/events/125027478126741/).
+
+ 
+
+ 
+
+ 
