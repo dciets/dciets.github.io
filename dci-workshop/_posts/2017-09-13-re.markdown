@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Rétro-ingénierie"
+date:   2017-09-13
+categories: dci-workshop security
+---
+
+Pour cette édition, Francis Labelle vous propose une approche ludique et concrète à la rétro-ingénierie: vous devrez résoudre des défis de rétro-ingénierie pour progresser dans un jeu vidéo et l'emporter! 
+
+## Exercice
+Utilisez Google Chrome pour valider vos solutions.
+
+- [Binaire](https://drive.google.com/open?id=0B3RE-XsOhIt2QVpzQW9wZnk4VEk)
+- [VM](https://drive.google.com/open?id=0B3RE-XsOhIt2azBMTFNVVW42bEE)
+
+## Présentation
+- [Slides](https://drive.google.com/file/d/0B3RE-XsOhIt2QTFoX2NnamRiODg/view)
