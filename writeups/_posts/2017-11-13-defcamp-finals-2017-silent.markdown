@@ -88,8 +88,11 @@ Okay, so we have a pretty good idea of what the binary does, time to find the ex
 As long as our payload do not contains any whitespace, we can trigger a buffer overflow and overwrites the return value of main. Let's recap what we know so far:
 
 1) The buffer overflows allows us to jump anywhere we want.
+
 2) We have many areas in memory that are both writable and executable.
+
 3) We are severly limited by what syscalls we can do.
+
 
 First, let's focus on finding a way to execute arbitrary code. We know our stack is executable, but finding its address looked somewhat hard with the gadgets available. Instead, it's possible to build a ROP chain that jump back in scanf and write at an address we control, and then return at said address. To do this, we used these gadgets:
 
