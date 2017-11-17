@@ -1,7 +1,7 @@
 ---
 layout: post
-ctf: "DefCamp CTF Finals 2017"
-title:  "Silent"
+ctf: "DCTF Finals 2017"
+title:  "DCTF Finals 2017 - Pwning - Silent"
 author: "jfgauron"
 ---
 
