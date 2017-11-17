@@ -145,7 +145,7 @@ When running this script, the binary ask for input a second time, and then jump 
 
 Okay so we can execute arbitrary code, open and read a file, but how will we output the result without sys_write? Answer: We won't! We will simply test each characters found in `flag` one by one, and do one of two things: If the characters do not match our prediction, we will segfault and test another one. If the characters match, we will enter an infinite loop. If the process has not died after X seconds, we know we found the good character and can move on to the next one.
 
-So we wrote the script, tested it locally... and got the flag!! That means we are done, right? Wrong. Our script failed miserably when trying it remotely. This was was wierd, since we were not using anything specific to our local platform. So I went to the admins looking like this:
+So we wrote the script, tested it locally... and got the flag!! That means we are done, right? Wrong. Our script failed miserably when trying it remotely. This was wierd, since we were not using anything specific to our local platform. So I went to the admins looking like this:
 
 ![fail](/img/writeups/itworksonmymachine.png)
 
