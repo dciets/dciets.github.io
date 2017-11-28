@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Injection SQL"
+date:   2017-11-28
+categories: dci-workshop security
+---
+
+Pour cette édition, Félix Charette couvrira plusieurs aspect de l'injection SQL 💉: les types d'injection, les techniques de contournement et la démarche de résolution des challenges. Des exercices pratiques seront également présentés! 🏃‍♀️
+
+## Exercice
+- [Challenges](http://workshop.dciets.com/chal01.php)
+
+## Présentation
+- [Slides](https://drive.google.com/open?id=1_ks5uALXPrC9LaC6aA2oKa9KJQ2tJxiD)
