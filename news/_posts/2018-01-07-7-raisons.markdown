@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "DCI CTF de la rentrée"
+title: "7 raisons de faire les CS Games avec la DCI"
 date: 2018-01-07
 ---
 
