@@ -28,7 +28,7 @@ Tu le ne regrettas pas! Viens aux [qualifications de la DCI le 20 janvier 2018 �
 
 <div class="text-center">Site officiel des CS Games: <a href="http://csgames.org">csgames.org</a>
 <br><br>
-![Délégation des CS Games 2017](/img/timeline/2017_cs.jpg)
+<img alt="Délégation des CS Games 2017" src="/img/timeline/2017_cs.jpg">
  </div>
 
  
