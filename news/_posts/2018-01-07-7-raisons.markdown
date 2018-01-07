@@ -1,0 +1,32 @@
+---
+layout: post
+title: "DCI CTF de la rentrée"
+date: 2018-01-07
+---
+
+<big>La DCI représentera l’ÉTS aux Computer Science Games 2018. Vingt délégués se rendront à l’Université Laval pour une fin de semaine riche en défis, en rencontres et en fun. Voici quelques bonnes raisons de faire les CS Games avec la DCI :</big>
+
+1. **Des rencontres inoubliables.**
+Les CS Games rassemblent plusieurs universités du Québec, du Canada et des États-Unis. Tu rencontreras des personnes passionnées comme toi par l’informatique qui pourraient devenir tes futurs collègues de travail!
+ 
+2. **Des compétitions pour tous les goûts.** Intelligence artificielle, systèmes d’exploitation, développement mobile, sécurité, ingénierie logicielle… Les catégories sont nombreuses. Tu auras certainement la chance de découvrir un sujet qui te passionne! 
+
+3. **Beaucoup de fun.** L’énergie et l’esprit d’équipe sont à l’honneur aux CS Games. Tu accompagneras la délégation toute la fin de semaine. En plus des compétitions, de nombreuses activités ludiques et sociales sont organisées; l’ambiance est survoltée!
+
+4. **Tu amènes ton talent et ton ordinateur portable…** Et rien d’autre! Le transport, l’hôtel, les repas et les collations sont inclus pour toute la fin de semaine. On te recommande fortement d’emporter tes effets personnels et tes vêtements, tout de même! 
+
+5. **Un atout pour un emploi ou un stage.**
+Une expérience compétitive comme les CS Games est un atout pour ton CV! Les employeurs sont à la recherche de gens passionnés et talentueux comme toi. D’ailleurs, des commanditaires recrutent sur place.
+
+6.	**Des défis de taille.**
+Si tu aimes te dépasser, en apprendre davantage et sortir de ta zone de confort, les CS Games sont faits pour toi! Chaque compétition est différente et les épreuves techniques sont très intenses. 
+
+7.	**Passe à l’action!**
+Tu le ne regrettas pas! Viens aux [qualifications de la DCI le 20 janvier 2018 à 13h00](https://www.facebook.com/events/2030315243872230/). Tu pourras rencontrer des aspirant-es de tous les niveaux et relever une épreuve de programmation. Que tu sois en 1ière ou en 7ième année de baccalauréat à l’ÉTS, tu pourrais être sélectionné-e pour faire partie de la délégation! 
+
+<a class="btn btn-primary btn-lg btn-block" href="https://www.facebook.com/events/2030315243872230/">Qualifications des CS Games 2018</a>
+
+<div class="text-center">Site officiel des CS Games: <a href="http://csgames.org">csgames.org</a> </div>
+
+
+ 
