@@ -487,6 +487,30 @@ body.padded {
 }
 
 
+ol.step-counter {
+   list-style: none;
+   counter-reset: item;
+   padding: 0;
+ }
+ ol.step-counter > li {
+   counter-increment: item;
+   margin-bottom: 5px;
+ }
+ ol.step-counter > li:before {
+   margin-right: 10px;
+   content: counter(item);
+   border: 1px solid #EC1A27;
+   border-radius: 250px;
+   color: #EC1A27;
+   width: 2.2em;
+   line-height: 2em;
+   text-align: center;
+   display: inline-block;
+ }
+
+ ol.step-counter > li > p {
+ 	margin-left: 3em;
+ }
 /* Super well prefixed flexbox */
 .flexbox {
   display: -webkit-box;
