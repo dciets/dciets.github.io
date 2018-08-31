@@ -10,6 +10,15 @@ h1,h2,h3,h4,h5 {
 	font-weight: 600;
 }
 
+h4 {
+	margin-top: 20px;
+	font-size: 16pt;
+}
+
+h5 {
+	font-size: 13pt;
+}
+
 .hideme {
 	opacity: 0;
 }
@@ -429,7 +438,7 @@ transition: all 0.5s ease;
 	background-color: transparent;
 }
 
-.navbar-default { 
+.navbar-default {
 	background-color: #12356B;
 }
 .navbar-default a {
@@ -474,7 +483,7 @@ body.padded {
 	color: #EE1C25;
 }
 
-@media (max-width: 991px) { 
+@media (max-width: 991px) {
 	.blason-jumbo {
 		width: 200px;
 	}
@@ -534,7 +543,7 @@ ol.step-counter {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	            -ms-grid-row-align: center;
-	        align-items: center; 
+	        align-items: center;
 }
 
 .flexbox.vertical {
