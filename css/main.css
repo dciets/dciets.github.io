@@ -113,7 +113,8 @@ footer {
 	margin: auto;
 }
 
-.partners-diamant img {
+.partners-diamant {
+	margin-bottom: 20px;
 }
 
 .partners-platine img {
@@ -126,14 +127,17 @@ footer {
 	width:55%;
 }
 
-.partners-argent img {
-	height:45%;
-	width:45%;
+.partners-argent a {
+	vertical-align: middle;
 }
 
 .partners-bronze img {
 	height:35%;
 	width:35%;
+}
+
+.desjardins{
+	max-height: 120px !important;
 }
 
 .social a{
