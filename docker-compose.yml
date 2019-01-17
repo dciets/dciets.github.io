@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    image: 'jekyll/jekyll'
+    volumes:
+      - '.:/app'
+    working_dir: '/app'
+    ports:
+      - '4000:4000'
+      - '35729:35729' # necessary for live reload
+    command: 'jekyll serve --livereload'
