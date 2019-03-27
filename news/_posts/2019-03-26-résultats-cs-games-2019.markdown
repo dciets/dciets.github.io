@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Résultats CS Games 2018"
-date: 2018-04-02
+title: "Résultats CS Games 2019"
+date: 2019-03-26
 ---
 
-L’ÉTS a gagné la très convoitée *CS Cup* aux *Computer Sciences Games 2018* en mars. Les équipes de la Délégation des compétitions en informatique de l’ÉTS (DCI), *Éts Coast Custom* et *OuÉts Coast Custom*, ont obtenu les 1e et 5e places au classement général.
+L’ÉTS a gagné la très convoitée *CS Cup* aux *Computer Sciences Games 2019* en mars dernier. Les équipes de la Délégation des compétitions en informatique de l’ÉTS (DCI), *ETS of Empires* et *ETS of Mythology*, ont obtenu les 1re et 6e places au classement général.
 
 Les CS Games sont une compétition d’informatique qui réunissait cette année 28 équipes de 18 universités nord-américaines. De nombreux défis attendaient les délégués: systèmes d'exploitation, apprentissage machine, intelligence artificielle, programmation fonctionnelle, ingénierie logicielle, développement mobile étaient quelques unes des épreuves disputées lors des trois jours de compétition. C’est à l’Université Laval que revenait l’honneur et l’immense responsabilité d’héberger la compétition cette année. Dans l’esprit des *CS Games*, le comité organisateur a proposé une mission thématique farfelue aux délégations: réparer le vaisseau spatial de pingouins intergalactiques écrasés dans la capitale nationale. 
 
@@ -15,18 +15,19 @@ Fidèle à son habitude, la délégation de l’ÉTS s’est démarquée par son
 
 ## Résultats de compétition
 
-* 1re et 2e place — Puzzle Hero (*Éts Coast Custom* & *OuÉts Coast Custom*)
-* 1re place — Bell (*Éts Coast Custom*)
-* 1re place — Mirego (*OuÉts Coast Custom*)
-* 2e place — Programmation fonctionnelle (*Éts Coast Custom*)
-* 2e place — Système d’exploitation (*Éts Coast Custom*)
-* 2e place — Participation (*Éts Coast Custom* & *OuÉts Coast Custom*)
-* 3e place — Programmation à relais (*OuÉts Coast Custom*)
-* 3e place — CSE-CST (*Éts Coast Custom*)
+* 1re place — Puzzle Hero
+* 1re place — Développement Mobile - Mirego (*ETS of Empires*)
+* 1re place — Web - Commission de la fonction publique (*ETS of Empires*)
+* 1re place — DevOps (*ETS of Empires*)
+* 1re place — Programmation Fonctionnelle (*ETS of Empires*)
+* 2e place — Sécurité Applicative - Banque Nationale (*ETS of Empires*)
+* 2e place — Sécurité Informatique - CSE (*ETS of Empires*)
+* 2e place — Sport (*ETS of Mythology*)
+* 3e place — Ingénierie Logicielle (*ETS of Empires*)
+* 3e place — Hardware Hacking (*ETS of Empires*)
 
 ## Partenaires
 La DCI souhaite remercier ses précieux partenaires. Leur soutien permet à la DCI de se démarquer à de nombreuses compétitions dont les CS Games et d’organiser des évènements pour la communauté informatique de l’ÉTS. Ainsi, ils contribuent à former la relève. Merci à l’ÉTS, l’AÉÉTS, Infra-solutions, GoSecure, Desjardins, Coveo, Techso et ESET! 
 
 
-![Délégation CS Games 2018](/img/news/cs_games_2018_dele.jpg)
-Par Voltaic Photo
+![Délégation CS Games 2019](/img/news/cs_games_2019_dele.jpg)
