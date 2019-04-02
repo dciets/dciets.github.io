@@ -4,7 +4,7 @@ title: "Résultats des CS Games 2019"
 date: 2019-04-02
 ---
 
-![CS Cup 2019](/img/news/cs_games_2019_cup.png)
+![CS Cup 2019](/img/news/cs_games_2019_cup.jpg)
 
 La DCI a gagné sa septième *CS Cup* lors des *Computer Science Games 2019* en mars dernier. Le travail acharné des équipes *ETS of Empires* et *ETS of Mythology* leur a permis d'obtenir les 1re et 6e places au classement général.
 
