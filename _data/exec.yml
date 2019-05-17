@@ -1,14 +1,14 @@
 - name: Jean-Frédéric Gauron
-  role: Chef & VP Compétitions
+  role: Chef & VP Finances
 
-- name: Francis Labelle
+- name: Jessy Anglehart-Nunes
   role: VP Communications
-
-- name: Léanne Dutil
-  role: VP Commandites
 
 - name: Maxime Goyette
   role: VP Promotions
 
-- name: Jonathan Lalande
-  role: VP Finances
+- name: Adam Jimenez
+  role: VP Commandites
+
+- name: Francis Labelle
+  role: VP Compétitions
