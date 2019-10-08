@@ -1,3 +1,26 @@
+- date: Mars 2019
+  title: 1e place aux Computer Science Games 2019
+  image: /img/timeline/cs_2019.png
+  link: /news/2019/04/02/résultats-cs-games-2019/
+
+- date: Octobre 2018
+  title: 2e place aux LH Games 2018
+  image: /img/timeline/lhgames2018.jpg
+
+- date: Juillet 2018
+  title: 1e place aux JDIS Games 2018
+  image: /img/timeline/JDIS_2018.jpg
+
+- date: Mai 2018
+  title: 3e place au Northsec 2018
+  image: /img/timeline/2018_nsec.jpg
+  link: https://www.etsmtl.ca/nouvelles/2018/Competition-de-securite-informatique
+
+- date: Mars 2018
+  title: 1e place aux Computer Science Games 2018
+  image: /img/timeline/2018_cs.jpg
+  link: /news/2018/04/02/résultats-cs-games-2018/
+
 - date: Novembre 2017
   title: NothernCoalition - 6e position aux finales du DefCamp CTF
   image: /img/timeline/2017_dctf.jpg
@@ -9,6 +32,10 @@
 - date: Septembre 2017
   title: 16e position mondiale aux qualifications du CSAW17
   image: /img/timeline/2017_csaw.jpg
+
+- date: Mars 2017
+  title: 14e, 15e, 28e place au Northsec 2017
+  image: /img/timeline/2017_nsec.jpg
 
 - date: Mars 2017
   title: 5e et 7e position au CS Games 2017

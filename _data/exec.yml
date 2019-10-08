@@ -1,14 +1,14 @@
- - name: Benoit Côté-Jodoin
-   role: Responsable
+- name: Jean-Frédéric Gauron
+  role: Chef & VP Finances
 
- - name: Jean-Frédéric Gauron
-   role: VP Compétitions
+- name: Jessy Anglehart-Nunes
+  role: VP Communications
 
- - name: Jean-Luc Montreuil
-   role: VP Communications
+- name: Maxime Goyette
+  role: VP Promotions
 
- - name: Gabriel Trahan
-   role: VP Promotions
-   
- - name: Léanne Dutil
-   role: VP Commandites
+- name: Adam Jimenez
+  role: VP Commandites
+
+- name: Francis Labelle
+  role: VP Compétitions

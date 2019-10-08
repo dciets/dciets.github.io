@@ -1,6 +1,6 @@
 - name: Montrehack
   link: http://montrehack.ca/
-  description: Apprentissage et partage de connaissance sur la sécurité informatique en travaillant des problèmes appliqués.
+  description: Apprentissage et partage de connaissances sur la sécurité informatique en travaillant des problèmes appliqués.
 
 - name: OWASP
   link: https://www.owasp.org/
@@ -13,6 +13,10 @@
 - name: RingZer0 Team Online CTF
   link: https://ringzer0team.com/
   description: RingZer0 Team's online CTF propose des défis conçus pour tester et améliorer vos compétences en hacking.
+
+- name: Root Me
+  link: https://www.root-me.org/
+  description: Une plateforme rapide, accessible et réaliste pour tester vos compétences en hacking.
 
 - name: DCI101
   link: https://dciets.com/ing101

@@ -6,10 +6,10 @@ layout: default
   <div class='container flexbox horizontal nowrap align-center'>
     <img src="/img/blason_dci.png" class="pull-left blason-jumbo hidden-xs">
     <div>
-    <h1 class="hidden-xs">Délégation des compétitions en informatique de l'ÉTS</h1>
-    <p class="last-news"><i class="fa fa-quote-left red-text" aria-hidden="true"></i>
- {% for post in site.categories.news limit:1 %}
-          {{ post.title }} <a class="btn btn-primary btn-sm" href="{{ post.url }}">Plus d'informations</a>
+      <h1 class="hidden-xs">Délégation des compétitions en informatique de l'ÉTS</h1>
+      <p class="last-news"><i class="fa fa-quote-left red-text" aria-hidden="true"></i>
+        {% for post in site.categories.news limit:1 %}
+        {{ post.title }} <a class="btn btn-primary btn-sm" href="{{ post.url }}">Plus d'informations</a>
         {% endfor %}</p>
     </div>
 
@@ -19,89 +19,92 @@ layout: default
 </div>
 
 <div class='container'>
-  <p class="lead text-center">La Délégation des compétitions en informatique de l'ÉTS (DCI) forme des équipes talentueuses de l'École de technologie supérieure pour participer à des compétitions et des évènements reliés à l'informatique.</p>
-  <p class="text-right"><a href="/a-propos-dci">À propos  »</a></p>
+  <p class="lead text-center">La Délégation des compétitions en informatique de l'ÉTS (DCI) forme des équipes
+    talentueuses de l'École de technologie supérieure pour participer à des compétitions et des évènements reliés à
+    l'informatique.</p>
+  <p class="text-right"><a href="/a-propos-dci">À propos »</a></p>
 </div>
 <div class="alternate-section">
   <div class="container">
-      <p class='partners'>Merci &agrave; nos partenaires <i class="fa fa-heart red-text" aria-hidden="true"></i>
-      <a href='http://etsmtl.ca/'><img src='/img/partenaires/ets2011.png' alt='ÉTS'></a>
-      <a href='http://aeets.com/'><img src='/img/partenaires/aeets.png' alt='AÉÉTS'></a>
-      <a href='http://desjardins.com/'><img src='/img/partenaires/desjardins.png' alt='Desjardins'></a>
-      <a href='http://www.coveo.com/'><img src='/img/partenaires/coveo.png' alt='Coveo'></a>
-      <a href='http://www.ipnossoft.com/'><img src='/img/partenaires/ipnos.png' alt='Ipnos'></a>
-      <a href='http://www.infra-solutions.com'>
-          <img src='/img/partenaires/is.png' alt="Infra Soltuions">
-        </a>
-          </p>
-          <p class='text-right'><a href="/partenaires">Nos partenaires »</a></p>
-</div>
+    <p class='partners'>Merci &agrave; nos partenaires <i class="fa fa-heart red-text" aria-hidden="true"></i>
+      <a href='https://etsmtl.ca/'><img src='/img/partenaires/ets.svg' alt='ÉTS'></a>
+      <a href='https://aeets.com/'><img src='/img/partenaires/aeets.svg' alt='AÉÉTS'></a>
+      <a href='https://pmscada.ca/'><img src='/img/partenaires/pmscada.svg' alt="PM SCADA"></a>
+      <a href='https://desjardins.com/'><img class='desjardins' src='/img/partenaires/desjardins.svg'
+          alt='Desjardins'></a>
+      <a href='https://gosecure.net/'><img src='/img/partenaires/gosecure.svg' alt='GoSecure'></a>
+    </p>
+    <p class='text-right'><a href="/partenaires">Nos partenaires »</a></p>
+  </div>
 </div>
 <div class="alternate-section-2">
+  <div class="color-layer">
     <div class="container">
       <br>
-     <div class="row">
-    <div class="col-sm-4">
-      <h2 ><i class="fa fa-shield" aria-hidden="true"></i> Sécurité</h2>
-      <p class="lead">
-        DCIÉTS est l'une des meilleures équipes de sécurité informatique au Canada.
-      </p>
-    </div>
-    <div class="col-sm-4">
-      <h2><i class="fa fa-trophy" aria-hidden="true"></i>
- Compétitions</h2>
-      <p class="lead">
-        Mettez vos capacités au défi en participant à des compétitions telles que les Computer Science Games et le Northsec.
-      </p>
-    </div>
-    <div class="col-sm-4">
-      <h2><i class="fa fa-users" aria-hidden="true"></i>
- Communauté</h2>
-      <p class="lead">
-        Rencontrer et apprendre avec des personnes motivées et impliquées dans l'industrie.
+      <div class="row">
+        <div class="col-sm-4">
+          <h2><i class="fa fa-shield" aria-hidden="true"></i> Sécurité</h2>
+          <p class="lead">
+            DCIÉTS est l'une des meilleures équipes de sécurité informatique au Canada.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h2><i class="fa fa-trophy" aria-hidden="true"></i>
+            Compétitions</h2>
+          <p class="lead">
+            Mettez vos capacités au défi en participant à des compétitions telles que les Computer Science Games et le
+            Northsec.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h2><i class="fa fa-users" aria-hidden="true"></i>
+            Communauté</h2>
+          <p class="lead">
+            Rencontrer et apprendre avec des personnes motivées et impliquées dans l'industrie.
 
-      </p>
+          </p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+
+        <div class="col-md-4 col-md-offset-4 text-center">
+          <a class="btn btn-default btn-block" href="/contact">Rejoindre la DCI</a>
+        </div>
+
+      </div>
     </div>
   </div>
-<br>
-  <div class="row">
-
-    <div class="col-md-4 col-md-offset-4 text-center">
-      <a class="btn btn-default btn-block" href="/contact">Rejoindre la DCI</a>
-    </div>
-
-  </div>
-    </div>
-  </div>
+</div>
 <div class="container">
-   <div class='row'>
+  <div class='row'>
     <div class="col-sm-12">
       <h2>Résultats</h2>
       <div class="timeline flexbox horizontal nowrap flex-md">
 
-          {% for event in site.data.timeline, limit: 5 %}
-          <div class="flexbox vertical">
+        {% for event in site.data.timeline limit: 5 %}
+        <div class="flexbox vertical">
 
-              <div class="title">
-                   <div class="date">{{ event.date }}</div>
-                 {% if event.link %}
+          <div class="title">
+            <div class="date">{{ event.date }}</div>
+            {% if event.link %}
             <a href="{{ event.link }}">
-            {% endif %}
-
-                {{ event.title }}
-                 {% if event.link %}
-            </a>
-            {% endif %}
-              </div>
-              {% if event.image %}
-              <div class="timeline-img" style="background-image: url({{ event.image }})" ></div>
               {% endif %}
 
+              {{ event.title }}
+              {% if event.link %}
+            </a>
+            {% endif %}
           </div>
-          {% endfor %}
+          {% if event.image %}
+          <div class="timeline-img" style="background-image: url({{ event.image }})"></div>
+          {% endif %}
 
-    </div>
-  <p class="text-right"><a href="/a-propos-dci">Plus  »</a></p>
+        </div>
+        {% endfor %}
+
+      </div>
+      <p class="text-right"><a href="/a-propos-dci">Plus »</a></p>
     </div>
 
   </div>
@@ -127,10 +130,12 @@ layout: default
     </div>
     <div class="col-md-6">
       <h2>Twitter <a href="http://twitter.com/dciets/"><small>@dciets</small></a></h2>
-      <a class="twitter-timeline" href="https://twitter.com/dciets" data-widget-id="375135268799393793" lang="fr" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="1">Tweets by @dciets</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<div>
-      <div class="fb-like" data-href="http://www.facebook.com/dciets" data-width="280" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+      <a class="twitter-timeline" href="https://twitter.com/dciets" data-widget-id="375135268799393793" lang="fr"
+        data-chrome="noheader nofooter noborders transparent" data-tweet-limit="1">Tweets by @dciets</a>
+      <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+      <div>
+        <div class="fb-like" data-href="http://www.facebook.com/dciets" data-width="280" data-layout="standard"
+          data-action="like" data-show-faces="true" data-share="false"></div>
       </div>
     </div>
   </div>

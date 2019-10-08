@@ -10,6 +10,15 @@ h1,h2,h3,h4,h5 {
 	font-weight: 600;
 }
 
+h4 {
+	margin-top: 20px;
+	font-size: 16pt;
+}
+
+h5 {
+	font-size: 13pt;
+}
+
 .hideme {
 	opacity: 0;
 }
@@ -104,7 +113,8 @@ footer {
 	margin: auto;
 }
 
-.partners-diamant img {
+.partners-diamant {
+	margin-bottom: 20px;
 }
 
 .partners-platine img {
@@ -117,14 +127,17 @@ footer {
 	width:55%;
 }
 
-.partners-argent img {
-	height:45%;
-	width:45%;
+.partners-argent a {
+	vertical-align: middle;
 }
 
 .partners-bronze img {
 	height:35%;
 	width:35%;
+}
+
+.desjardins{
+	max-height: 120px !important;
 }
 
 .social a{
@@ -379,17 +392,21 @@ a.desjardins {
 .plan .about, .alternate-section-2 {
     background-color: #a80000;
     color: white;
-    padding: 50px 0px;
-    background-image: url(/img/plan/csgames_splash.jpg);
+    background-image: url(/img/news/cs_games_2019_dele.jpg);
     background-size: cover;
-    background-position: center;
-    	margin: 0 0 0.9em 0;
-
-
+    background-position: center top;
+	margin: 0 0 0.9em 0;
 }
 
 .alternate-section-2 p, .alternate-section-2 h2 {
 	text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+.alternate-section-2 > .color-layer {
+	background-color: rgba(168, 0, 0, 0.75);
+	width: 100%;
+	height: 100%;
+	padding: 50px 0px;
 }
 
 .page-break { display: none }
@@ -429,7 +446,7 @@ transition: all 0.5s ease;
 	background-color: transparent;
 }
 
-.navbar-default { 
+.navbar-default {
 	background-color: #12356B;
 }
 .navbar-default a {
@@ -474,7 +491,7 @@ body.padded {
 	color: #EE1C25;
 }
 
-@media (max-width: 991px) { 
+@media (max-width: 991px) {
 	.blason-jumbo {
 		width: 200px;
 	}
@@ -487,6 +504,30 @@ body.padded {
 }
 
 
+ol.step-counter {
+   list-style: none;
+   counter-reset: item;
+   padding: 0;
+ }
+ ol.step-counter > li {
+   counter-increment: item;
+   margin-bottom: 5px;
+ }
+ ol.step-counter > li:before {
+   margin-right: 10px;
+   content: counter(item);
+   border: 1px solid #EC1A27;
+   border-radius: 250px;
+   color: #EC1A27;
+   width: 2.2em;
+   line-height: 2em;
+   text-align: center;
+   display: inline-block;
+ }
+
+ ol.step-counter > li > p {
+ 	margin-left: 3em;
+ }
 /* Super well prefixed flexbox */
 .flexbox {
   display: -webkit-box;
@@ -510,7 +551,7 @@ body.padded {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	            -ms-grid-row-align: center;
-	        align-items: center; 
+	        align-items: center;
 }
 
 .flexbox.vertical {
