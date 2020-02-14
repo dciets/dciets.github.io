@@ -101,45 +101,6 @@ footer {
 	color:#777;
 }
 
-.partenaires {
-	width:60%;
-}
-
-.partenaires div {
-	padding:5px;
-}
-
-.partenaires .img-responsive {
-	margin: auto;
-}
-
-.partners-diamant {
-	margin-bottom: 20px;
-}
-
-.partners-platine img {
-	height:55%;
-	width:55%;
-}
-
-.partners-or img {
-	height:55%;
-	width:55%;
-}
-
-.partners-argent a {
-	vertical-align: middle;
-}
-
-.partners-bronze img {
-	height:35%;
-	width:35%;
-}
-
-.desjardins{
-	max-height: 120px !important;
-}
-
 .social a{
 	text-indent: -9999px;
 	display: inline-block;
@@ -147,23 +108,69 @@ footer {
 	width: 38px;
 }
 
-.partners a {
+.homepage-partners {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.homepage-partners a {
 	margin-left: 15px;
 	opacity: 0.7;
 	transition: opacity 0.5s linear;
 }
 
-.partners a:hover {
+.homepage-partners a:hover {
 	opacity: 1;
-
 }
 
-.partners img {
-	width: auto;
-	height: auto;
-	max-height: 80px;
-	max-width: 140px;
-	vertical-align: middle;
+.homepage-partners img {
+	height: 80px;
+	max-width: 200px;
+}
+
+#partenaires {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#partenaires .tier {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#partenaires .tier img {
+	margin: 20px;
+}
+
+#partenaires .tier.diamond img {
+	height: 200px;
+	max-width: 500px;
+}
+
+#partenaires .tier.platinium img {
+	height: 150px;
+	max-width: 375px
+}
+
+#partenaires .tier.gold img {
+	height: 150px;
+	max-width: 375px;
+}
+
+#partenaires .tier.silver img {
+	height: 100px;
+	max-width: 250px;
+}
+
+#partenaires .tier.bronze img {
+	height: 100px;
+	max-width: 200px;
 }
 
 a.facebook {
@@ -189,13 +196,6 @@ a.youtube {
 
 a.github {
 	background-image:url('../img/github.png');
-	background-size: 36px 36px;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-a.googleplus {
-	background-image:url('../img/googleplus.png');
 	background-size: 36px 36px;
 	background-repeat: no-repeat;
 	background-position: center;
