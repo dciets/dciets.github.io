@@ -1,0 +1,12 @@
+---
+layout: post
+title: "GraphQL"
+date: 2019-11-19
+categories: dci-workshop web programming
+---
+
+Pour cette édition, Jessy Anglehart-Nunes vous fera découvrir les API avec GraphQL. Vous aurez l’occasion de monter une API GraphQL et d’en utiliser une pour faire des analyses sur les données ouvertes de la ville de Montréal.
+
+## Liens
+
+- [Slides et challenges](https://github.com/ges134/dci-ws-graphql)

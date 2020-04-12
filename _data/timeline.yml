@@ -1,3 +1,19 @@
+- date: Janvier 2020
+  title: 3e place au Coveo Blitz 2020
+  image: /img/timeline/2020_coveo_blitz.jpg
+
+- date: Novembre 2019
+  title: 2e place au Hackfest
+  image:
+
+- date: Juillet 2019
+  title: 1e, 2e et 3e place au JDIS Games
+  image: /img/timeline/2019_jdis_games.jpg
+
+- date: Juin 2019
+  title: 2e et 3e place au iHack
+  image: /img/timeline/ihack-2019.jpg
+
 - date: Mars 2019
   title: 1e place aux Computer Science Games 2019
   image: /img/timeline/cs_2019.png
@@ -42,16 +58,16 @@
   image: /img/timeline/2017_cs.jpg
   link: /news/2017/04/13/résultats-cs-games-2017/
 
-- date : Novembre 2016
-  title : 12e position au final du CSAW16
-  image : /img/timeline/2016_csaw.jpg
+- date: Novembre 2016
+  title: 12e position au final du CSAW16
+  image: /img/timeline/2016_csaw.jpg
   about: false
 
-- date : Novembre 2016
-  title : 5e, 11e, 15e position au Hackfest 2016
+- date: Novembre 2016
+  title: 5e, 11e, 15e position au Hackfest 2016
   about: false
 
-- date : Septembre 2016
+- date: Septembre 2016
   title: 11e position mondial (1e canadienne) aux qualifications du CSAW16
   about: false
 
