@@ -1,3 +1,7 @@
+- name: Ghidra
+  category: Rétro-ingénierie
+  link: https://ghidra-sre.org/
+
 - name: radare2
   category: Rétro-ingénierie
   link: http://radare.org/r/
@@ -10,20 +14,28 @@
   category: Rétro-ingénierie
   link: https://www.hopperapp.com/
 
-- name: IDA
+- name: IDA Free
   category: Rétro-ingénierie
-  link: https://www.hex-rays.com/index.shtml
+  link: https://www.hex-rays.com/products/ida/support/download_freeware/
 
 - name: fcd
   link: https://zneak.github.io/fcd/
   category: Rétro-ingénierie
 
-- name: GDB
-  link: https://www.sourceware.org/gdb/
+- name: retdec
+  link: https://github.com/avast/retdec
+  category: Rétro-ingénierie
+
+- name: pwndbg
+  link: https://github.com/pwndbg/pwndbg
   category: Rétro-ingénierie
 
 - name: OllyDbg
   link: http://www.ollydbg.de/
+  category: Rétro-ingénierie
+
+- name: x64dbg
+  link: https://x64dbg.com/
   category: Rétro-ingénierie
 
 - name: angr
@@ -42,10 +54,22 @@
   category: Web & réseaux
   link: https://nmap.org/
 
-- name: pwntools
-  category: Exploitation
-  link: https://docs.pwntools.com/en/stable/
+- name: Ettercap
+  category: Web & réseaux
+  link: https://www.ettercap-project.org/
 
 - name: sqlmap
   category: Web & réseaux
   link: http://sqlmap.org/
+
+- name: pwntools
+  category: Exploitation
+  link: https://docs.pwntools.com/en/stable/
+
+- name: CyberChef
+  category: Autre
+  link: https://gchq.github.io/CyberChef/
+
+- name: Kali Linux
+  category: Autre
+  link: https://www.kali.org/
