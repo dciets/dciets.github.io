@@ -14,6 +14,7 @@ Vous serez introduits au fonctionnement de IDA, à la lecture du code assembleur
 Sections pertinentes pour le workshop: Toutes sauf celle sur l'analyse dynamique.
 
 - [Slides (La Bible)](https://drive.google.com/open?id=106nACTbg7OIj121vzbzWTZUV2m758Ug5)
+- [Instructions en assembleur Intel x86_64](https://www.felixcloutier.com/x86/)
 
 ## Outil
 
