@@ -163,18 +163,18 @@ footer {
 	max-width: 375px;
 }
 
-#partenaires .tier.silver img {
+#partenaires .silver img {
 	max-width: 250px;
 	height: 100px;
 	margin: 0;
 }
 
-#partenaires .tier.silver p {
+#partenaires .silver p {
 	text-align: justify;
 	margin:0;
 }
 
-#partenaires .tier.silver div {
+#partenaires .silver div {
 	width: 250px;
 	margin: 0 20px 0 20px;
 }
