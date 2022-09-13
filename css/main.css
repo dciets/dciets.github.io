@@ -164,8 +164,19 @@ footer {
 }
 
 #partenaires .tier.silver img {
-	height: 100px;
 	max-width: 250px;
+	height: 100px;
+	margin: 0;
+}
+
+#partenaires .tier.silver p {
+	text-align: justify;
+	margin:0;
+}
+
+#partenaires .tier.silver div {
+	width: 250px;
+	margin: 0 20px 0 20px;
 }
 
 #partenaires .tier.bronze img {
