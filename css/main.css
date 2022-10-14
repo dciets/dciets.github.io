@@ -125,7 +125,7 @@ footer {
 }
 
 .homepage-partners img {
-	height: 80px;
+	height: 60px;
 	max-width: 200px;
 }
 
@@ -151,6 +151,16 @@ footer {
 #partenaires .diamond img {
 	max-height: 200px;
 	max-width: 500px;
+	margin-bottom: 30px;
+}
+
+#partenaires .diamond div {
+	width: 500px;
+	margin: 15px 20px 15px 20px;
+}
+
+#partenaires .diamond p {
+	width: 500px;
 }
 
 #partenaires .diamond div {
@@ -164,12 +174,13 @@ footer {
 
 #partenaires .platinium img {
 	height: 150px;
-	max-width: 375px
+	max-width: 375px;
+	margin-bottom: 30px;
 }
 
 #partenaires .platinium div {
 	width: 375px;
-	margin: 0 20px 0 20px;
+	margin: 15px 20px 15px 20px;
 }
 
 #partenaires .gold img {
@@ -190,7 +201,7 @@ footer {
 
 #partenaires .silver div {
 	width: 250px;
-	margin: 0 20px 0 20px;
+	margin: 15px 20px 15px 20px;
 }
 
 #partenaires .bronze img {
