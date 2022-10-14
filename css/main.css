@@ -163,6 +163,15 @@ footer {
 	width: 500px;
 }
 
+#partenaires .diamond div {
+	width: 375px;
+	margin: 0 20px 0 20px;
+}
+
+#partenaires .diamond p {
+	width: 500px;
+}
+
 #partenaires .platinium img {
 	height: 150px;
 	max-width: 375px;
