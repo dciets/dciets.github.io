@@ -155,17 +155,12 @@ footer {
 }
 
 #partenaires .diamond div {
-	width: 500px;
-	margin: 30px 20px 30px 20px;
+	width: 375px;
+	margin: 15px 20px 30px 15px;
 }
 
 #partenaires .diamond p {
 	width: 500px;
-}
-
-#partenaires .diamond div {
-	width: 375px;
-	margin: 0 20px 0 20px;
 }
 
 #partenaires .diamond p {
