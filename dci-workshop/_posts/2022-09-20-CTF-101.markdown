@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "CTF 101"
+date:   2022-09-20
+categories: dci-workshop security
+---
+
+Durant cette première pratique de la session, les nouveaux ont été introduit aux compétitions CTF (Capture The Flag), leur différents types, ainsi que les sous-catégories rencontrées dans les CTF de style "jeopardy".
+
+## Présentation
+
+- [Slides](https://drive.google.com/file/d/1Hiz6WnGYHA9jyclO2ndALliEV2FStiDG/view?usp=sharing)
