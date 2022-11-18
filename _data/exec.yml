@@ -1,11 +1,17 @@
-- name: Francis Labelle
-  role: Chef & VP Communications
+- name: Constant ( @Constant )
+  role: Chef
 
-- name: Alexandre-Xavier Labonté-Lamoureux
-  role: VP Promotions
+- name: Hafidh Zouahi ( @hfz )
+  role: Responsable des compétitions
 
-- name: Vincent Laferrière
-  role: VP Compétitions
+- name: Francis Lemaire ( @Balnian )
+  role: Responsable des finances
 
-- name: Francis Lemaire
-  role: VP Finances
+- name: Alexis Martin ( @Deimos )
+  role: Responsable des partenariats
+
+- name: Cloé Dutil ( @Granny )
+  role: Responsable aux promotions
+  
+- name: Gabriel Landeau ( @Ioarana )
+  role: Responsable des communications
