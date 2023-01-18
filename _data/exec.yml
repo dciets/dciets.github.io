@@ -1,5 +1,5 @@
-- name: Constant ( @Constant )
-  role: Chef
+- name: Cloé Dutil ( @Granny )
+  role: Chef(fe)
 
 - name: Hafidh Zouahi ( @hfz )
   role: Responsable des compétitions
