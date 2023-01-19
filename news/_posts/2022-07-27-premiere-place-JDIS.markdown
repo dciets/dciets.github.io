@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "1ère, 5ème et 10ème place aux JDIS 2022"
-date: 2018-04-02
+date: 2022-07-27
 ---
 
 Les JDIS Games sont désormais terminés et nous souhaitons féliciter les équipes de la DCI pour leur belle performance, notamment les équipes Boba fÉTS (@Deimos, @Florent ), DCIÉTS (@Constant, @JoLach ) et @Granny en solo qui finissent respectivement première, cinquième et dixième de la compétition ! 🌟
@@ -12,4 +12,4 @@ Nous souhaitons également remercier l'équipe organisatrice de l'événement, s
 
 
 ![L'équipe Boba fÉTS](/img/news/jdis_vainqueurs_2022.jpg)
-Par JDIS
+Crédit JDIS

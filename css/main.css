@@ -232,6 +232,13 @@ a.github {
 	background-position: center;
 }
 
+a.instagram{
+	background-image:url('../img/instagram.png');
+	background-size: 36px 36px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 a.aeets {
 	background-image:url('../img/partenaires/aeets.png');
 	background-size: 45px 45px;
