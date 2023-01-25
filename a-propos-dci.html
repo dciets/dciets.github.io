@@ -7,42 +7,48 @@ title: "À propos de la DCI"
   <h1>À propos de la DCI</h1>
 
   <div id="home">
-    <h2>La DCI c’est quoi?</h2>
+    <h2>La DCI c'est quoi?</h2>
     <p>
-      La Délégation des compétitions en informatique de l'ÉTS s’occupe de représenter l’École de technologie supérieure dans les événements et compétitions inter-universitaires reliés à l’informatique. En bref, le rôle de la DCI est de :
+      La Délégation des compétitions en informatique de l'ÉTS s'occupe de représenter l'École de technologie supérieure
+      dans les événements et compétitions inter-universitaires reliés à l'informatique. En bref, le rôle de la DCI est
+      de :
 
-      <ul>
-	<li>Former des équipes pour participer aux compétitions informatique;
-	  <li>Faire la promotion des conférences reliées à l’informatique;
-	    <li>Organiser des compétitions intramurales;
-	      <li>Renforcer les liens entre les étudiants en informatique.
-      </ul>
+    <ul>
+      <li>Former des équipes pour participer aux compétitions informatique (CS Games, Northsec, etc) avec des pratiques
+        hebdomadaires
+      <li>Faire la promotion des conférences reliées à l'informatique (Hackfest, Bsides, etc)
+      <li>Organiser des compétitions (UnitedCTF)
+      <li>Renforcer les liens entre les étudiants en informatique
+    </ul>
     </p>
-    <h2>La DCI c’est qui?</h2>
+    <h2>La DCI c'est qui?</h2>
     <p>
-      La DCI, c’est tout le monde qui participe aux différents événements. Pour rejoindre la DCI, vous pouvez écrire à <a href='mailto:communications@dciets.com'>communications@dciets.com</a>.
+      La DCI, c'est tout le monde qui participe aux différents événements. Pour rejoindre la DCI, vous pouvez écrire à
+      <a href='mailto:communications@dciets.com'>communications@dciets.com</a>.
     </p>
     <h2>La DCI, c'est aussi la...</h2>
 
-     <ul class="list-unstyled two-columns-md a-propos-list">
-          {% for event in site.data.timeline %}
-          {% if event.about==null or event.about %}
-          <li>
+    <ul class="list-unstyled two-columns-md a-propos-list">
+      {% for event in site.data.timeline %}
+      {% if event.about==null or event.about %}
+      <li>
 
-                <span class="timeline-dot" {% if event.image %}style="background-image: url({{ event.image }})"{% endif %} ></span> {% if event.link %}
-            <a href="{{ event.link }}">
-            {% endif %}
-
-                {{ event.title }}
-                 {% if event.link %}
-            </a>
-            {% endif %}
-
-          </li>
+        <span class="timeline-dot" {% if event.image %}style="background-image: url({{ event.image }})" {% endif%}>
+        </span>
+        {% if event.link %}
+        <a href="{{ event.link }}">
           {% endif %}
 
-          {% endfor %}
-        </ul>
+          {{ event.title }}
+          {% if event.link %}
+        </a>
+        {% endif %}
+
+      </li>
+      {% endif %}
+
+      {% endfor %}
+    </ul>
 
   </div>
 </div>
