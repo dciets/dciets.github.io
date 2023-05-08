@@ -112,12 +112,15 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .homepage-partners a {
 	margin-left: 15px;
 	opacity: 0.7;
 	transition: opacity 0.5s linear;
+	padding: 10px;
+	justify-content: space-evenly;
 }
 
 .homepage-partners a:hover {
