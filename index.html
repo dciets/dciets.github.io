@@ -4,13 +4,20 @@ layout: default
 <!-- Jumbotron -->
 <div class='jumbotron banner'>
   <div class='container flexbox horizontal nowrap align-center'>
-    <img src="/img/blason_dci.png" class="pull-left blason-jumbo hidden-xs">
+    <img src="/img/blason_dci.png" class="pull-left blason-jumbo hidden-xs" />
+
     <div>
       <h1 class="hidden-xs">Délégation des compétitions en informatique de l'ÉTS</h1>
-      <p class="last-news"><i class="fa fa-quote-left red-text" aria-hidden="true"></i>
+
+      <p class="last-news">
+        <i class="fa fa-quote-left red-text" aria-hidden="true"></i>
+
         {% for post in site.categories.news limit:1 %}
-        {{ post.title }} <a class="btn btn-primary btn-sm" href="{{ post.url }}">Plus d'informations</a>
-        {% endfor %}</p>
+          {{ post.title }}
+
+          <a class="btn btn-primary btn-sm" href="{{ post.url }}">Plus d'informations</a>
+        {% endfor %}
+      </p>
     </div>
   </div>
 </div>
@@ -79,36 +86,36 @@ layout: default
   <div class='row'>
     <div class="col-sm-12">
       <h2>Résultats</h2>
+
       <div class="timeline flexbox horizontal nowrap flex-md">
-
         {% for event in site.data.timeline limit: 5 %}
-        <div class="flexbox vertical">
+          <div class="flexbox vertical">
+            <div class="title">
+              <div class="date">{{ event.date }}</div>
 
-          <div class="title">
-            <div class="date">{{ event.date }}</div>
-            {% if event.link %}
-            <a href="{{ event.link }}">
+              {% if event.link %}
+                <a href="{{ event.link }}" target="_blank" rel="noopener">
               {% endif %}
 
               {{ event.title }}
+
               {% if event.link %}
-            </a>
+                </a>
+              {% endif %}
+            </div>
+
+            {% if event.image %}
+              <div class="timeline-img" style="background-image: url({{ event.image }})"></div>
             {% endif %}
           </div>
-          {% if event.image %}
-          <div class="timeline-img" style="background-image: url({{ event.image }})"></div>
-          {% endif %}
-
-        </div>
         {% endfor %}
-
       </div>
-      <p class="text-right"><a href="/a-propos-dci">Plus »</a></p>
+
+      <p class="text-right">
+        <a href="/a-propos-dci">Plus »</a>
+      </p>
     </div>
-
   </div>
-
-
 </div>
 
 <div class="container">

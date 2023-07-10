@@ -433,9 +433,9 @@ a.desjardins {
 .plan .about, .alternate-section-2 {
     background-color: #a80000;
     color: white;
-    background-image: url(/img/news/cs_games_2019_dele.jpg);
+    background-image: url(/img/news/cs_games_2023_final.jpg);
     background-size: cover;
-    background-position: center top;
+    background-position: center center;
 	margin: 0 0 0.9em 0;
 }
 
