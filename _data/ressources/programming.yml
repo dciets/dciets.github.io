@@ -1,11 +1,15 @@
 - name: HackerRank
   link: https://www.hackerrank.com/
+  description: Une plateforme où apprendre et développer vos compétences en programmation.
 
 - name: CodingGame
   link: https://www.codingame.com/
+  description: Apprends à programmer en codant des jeux vidéos.
 
 - name: CodeWars
   link: https://www.codewars.com/
+  description: Gagne des ceintures en complétant des katas, des petits défis de programmation.
 
 - name: LeetCode
   link: https://leetcode.com/
+  description: La plateforme par excellence pour te pratiquer pour tes entrevues d'emplois.

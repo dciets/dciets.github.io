@@ -13,3 +13,7 @@
 - name: PicoCTF
   link: https://picoctf.com/
   description: PicoCTF est un CTF en ligne gratuit, conçu pour les étudiants du secondaire et du collégial, qui présente des problèmes de sécurité informatique et des concepts informatiques.
+
+- name: CTFTime (DCIETS)
+  link: https://ctftime.org/team/5349
+  description: CTFTime classe les équipes de sécurité du monde entier selon leurs résultats aux compétitions <em>Capture The Flag</em> et liste les évènements à venir.

@@ -11,9 +11,9 @@ title: "Sécurité"
       <div>
         <h2>Programmation 101</h2>
 
-        <ul>
+        <dl class="dl-horizontal">
           {% for link in site.data.ressources.programming %}
-            <li>
+            <dt>
               {% if link.link %}
                 <a href="{{link.link}}" target="_blank">
               {% endif %}
@@ -23,21 +23,45 @@ title: "Sécurité"
               {% if link.link %}
                 </a>
               {% endif %}
-            </li>
+            </dt>
+
+            <dd>
+              {{ link.description }}
+            </dd>
           {% endfor %}
-        </ul>
+        </dl>
       </div>
 
       <!-- <div>
         <h2>Sécurité</h2>
+
+        <dl class="dl-horizontal">
+          {% for link in site.data.ressources.security %}
+            <dt>
+              {% if link.link %}
+                <a href="{{link.link}}" target="_blank">
+              {% endif %}
+
+              {{ link.name }}
+
+              {% if link.link %}
+                </a>
+              {% endif %}
+            </dt>
+
+            <dd>
+              {{ link.description }}
+            </dd>
+          {% endfor %}
+        </dl>
       </div> -->
 
       <div>
         <h2>CTF</h2>
 
-        <ul>
+        <dl class="dl-horizontal">
           {% for link in site.data.ressources.ctf %}
-            <li>
+            <dt>
               {% if link.link %}
                 <a href="{{link.link}}" target="_blank">
               {% endif %}
@@ -47,32 +71,38 @@ title: "Sécurité"
               {% if link.link %}
                 </a>
               {% endif %}
-            </li>
+            </dt>
+
+            <dd>
+              {{ link.description }}
+            </dd>
           {% endfor %}
-        </ul>
+        </dl>
       </div>
 
-      <h2>Ressources supplémentaires</h2>
+      <div>
+        <h2>Ressources supplémentaires</h2>
       
-      <dl class="dl-horizontal">
-        {% for link in site.data.ressources.resources %}
-          <dt>
-            {% if link.link %}
-              <a href="{{link.link}}" target="_blank">
-            {% endif %}
+        <dl class="dl-horizontal">
+          {% for link in site.data.ressources.resources %}
+            <dt>
+              {% if link.link %}
+                <a href="{{link.link}}" target="_blank">
+              {% endif %}
 
-            {{ link.name }}
+              {{ link.name }}
 
-            {% if link.link %}
-              </a>
-            {% endif %}
-          </dt>
+              {% if link.link %}
+                </a>
+              {% endif %}
+            </dt>
 
-          <dd>
-            {{ link.description }}
-          </dd>
-        {% endfor %}
-      </dl>
+            <dd>
+              {{ link.description }}
+            </dd>
+          {% endfor %}
+        </dl>
+      </div>
 
       <h2>Outils</h2>
 

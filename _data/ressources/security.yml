@@ -1,0 +1,3 @@
+- name: OWASP
+  link: https://www.owasp.org/
+  description: Open Web Application Security Project (OWASP) est une communauté oeuvrant dans la sécurité des applications Web. Le site internet regorge d'informations sur les vulnérabilités.
