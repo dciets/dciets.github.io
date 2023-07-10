@@ -1,0 +1,15 @@
+- name: RingZer0 Team Online CTF
+  link: https://ringzer0team.com/
+  description: RingZer0 Team's online CTF propose des défis conçus pour tester et améliorer vos compétences en hacking.
+
+- name: Root Me
+  link: https://www.root-me.org/
+  description: Une plateforme rapide, accessible et réaliste pour tester vos compétences en hacking.
+
+- name: CTF101
+  link: https://ctf101.org/
+  description: Une introduction aux CTFs.
+
+- name: PicoCTF
+  link: https://picoctf.com/
+  description: PicoCTF est un CTF en ligne gratuit, conçu pour les étudiants du secondaire et du collégial, qui présente des problèmes de sécurité informatique et des concepts informatiques.

@@ -3,18 +3,62 @@ layout: default
 title: "Sécurité"
 ---
 
-<div class='container'>
+<div class="container">
   <h1>Ressources</h1>
   
-  <div class='row'>
-    <div class='col-md-8 col-md-push-4'>
+  <div class="row">
+    <div class="col-md-8 col-md-push-4">
+      <div>
+        <h2>Programmation 101</h2>
+
+        <ul>
+          {% for link in site.data.ressources.programming %}
+            <li>
+              {% if link.link %}
+                <a href="{{link.link}}" target="_blank">
+              {% endif %}
+
+              {{ link.name }}
+
+              {% if link.link %}
+                </a>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <!-- <div>
+        <h2>Sécurité</h2>
+      </div> -->
+
+      <div>
+        <h2>CTF</h2>
+
+        <ul>
+          {% for link in site.data.ressources.ctf %}
+            <li>
+              {% if link.link %}
+                <a href="{{link.link}}" target="_blank">
+              {% endif %}
+
+              {{ link.name }}
+
+              {% if link.link %}
+                </a>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
       <h2>Ressources supplémentaires</h2>
       
       <dl class="dl-horizontal">
         {% for link in site.data.ressources.resources %}
           <dt>
             {% if link.link %}
-              <a href="{{link.link}}">
+              <a href="{{link.link}}" target="_blank">
             {% endif %}
 
             {{ link.name }}
@@ -24,7 +68,9 @@ title: "Sécurité"
             {% endif %}
           </dt>
 
-          <dd>{{ link.description }}</dd>
+          <dd>
+            {{ link.description }}
+          </dd>
         {% endfor %}
       </dl>
 
@@ -41,7 +87,7 @@ title: "Sécurité"
               {% for tool in group.items %}
                 <li>
                   {% if tool.link %}
-                    <a href="{{tool.link}}">
+                    <a href="{{tool.link}}" target="_blank">
                   {% endif %}
 
                   {{ tool.name }}
@@ -55,32 +101,24 @@ title: "Sécurité"
           </div>
         {% endfor %}
       </div>
-
-      <h2>Sécurité</h2>
-
-      <div>
-        <!-- TODO -->
-      </div>
-
-      <h2>Programmation 101</h2>
-
-      <div>
-        <!-- TODO -->
-      </div>
     </div>
 
-    <div class='col-md-4 col-md-pull-8'>
+    <div class="col-md-4 col-md-pull-8">
       <div class="posts">
         <h2>Archives</h2>
 
         <ul>
           {% for post in site.categories.ressources %}
             <li>
-              <span>{{ post.date | date_to_string }}</span>
+              <span>
+                {{ post.date | date_to_string }}
+              </span>
 
               &raquo;
 
-              <a href='{{ post.url }}'>{{ post.title }}</a>
+              <a href="{{ post.url }}">
+                {{ post.title }}
+              </a>
             </li> 
           {% endfor %}
         </ul>
