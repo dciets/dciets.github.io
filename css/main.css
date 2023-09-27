@@ -158,7 +158,7 @@ footer {
 }
 
 #partenaires .diamond div {
-	width: 375px;
+	width: 500px;
 	margin: 15px 20px 30px 15px;
 }
 
@@ -172,18 +172,23 @@ footer {
 
 #partenaires .platinium img {
 	height: 150px;
-	max-width: 375px;
+	max-width: 400px;
 	margin-bottom: 30px;
 }
 
 #partenaires .platinium div {
-	width: 375px;
+	width: 400px;
 	margin: 30px 20px 30px 20px;
 }
 
 #partenaires .gold img {
 	height: 150px;
-	max-width: 375px;
+	max-width: 350px;
+}
+
+#partenaires .gold div {
+	width: 350px;
+	margin: 30px 20px 30px 20px;
 }
 
 #partenaires .silver img {
