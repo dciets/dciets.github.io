@@ -247,6 +247,13 @@ a.instagram{
 	background-position: center;
 }
 
+a.discord{
+	background-image:url('../img/discord.png');
+	background-size: 36px 36px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 a.aeets {
 	background-image:url('../img/partenaires/aeets.png');
 	background-size: 45px 45px;
