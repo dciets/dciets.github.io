@@ -653,3 +653,14 @@ column-gap: 5px;
 .dl-horizontal dt {
 	white-space: normal;
 }
+
+.footer-right{
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+
+.footer-right p:first-child{
+	margin-right: 25px;
+	font-size: medium;
+}
