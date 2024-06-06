@@ -1,17 +1,17 @@
 - name: Jules Barbier ( @Youllou )
-  role: Chef(fe)
+  role: Cheffe
 
 - name: Linden Brochu ( @Jersey591 ) et Alice Racine ( @euphoria )
-  role: Responsables des compétitions
+  role: VP compétitions
 
 - name: Massinissa Djellouli ( @Atlantis11656 )
-  role: Responsable des finances
+  role: VP finances
 
 - name: Veselin Getov ( @Ves )
-  role: Responsable des partenariats
+  role: VP partenariats
 
-- name: Jeanne Mas ( @Duhroakryss )
-  role: Responsable aux promotions
+- name: Sebastien Beaudet ( @mkuroni )
+  role: VP promotions
   
 - name: Erwan Derrien ( @wan )
-  role: Responsable des communications
+  role: VP communications
