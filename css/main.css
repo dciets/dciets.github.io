@@ -150,7 +150,18 @@ footer {
 #partenaires .img {
 	margin: 20px;
 }
-
+.invisible{
+	visibility: hidden;
+}
+.center {
+	display: flex;
+	justify-content: center;
+}
+#partenaires #rootme  {
+	max-height: 300px;
+	max-width: 300px;
+	margin-bottom: 30px;
+}
 #partenaires .diamond img {
 	max-height: 200px;
 	max-width: 500px;
