@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Résultats des CS Games 2025"
-date: 2024-03-17
+date: 2025-03-17
 ---
 
 # La DCI aux CS Games 2025 !
