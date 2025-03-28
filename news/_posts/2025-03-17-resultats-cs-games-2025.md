@@ -24,8 +24,4 @@ Finalement, merci aux partenaires de la DCI. Sans votre aide, nous ne serions pa
 
 Merci merci merci!!!
 
-#######
-
-
-
 
