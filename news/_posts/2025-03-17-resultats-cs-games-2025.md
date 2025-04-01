@@ -9,8 +9,9 @@ date: 2025-03-17
 La DCI était aux CS Games cette année encore une fois! La compétition était de taille, félicitations à Polytechnique qui emporte une deuxième fois de suite la coupe.
 
 **Cette année, la DCI est arrivée :**
-🥇 Compétition d’assembleur - Alice Racine & Yannis Ouakrim
-🥉 Compétition de développement de jeu vidéo - Linden Brochu & Massinissa Djellouli
+- 🥇 Compétition d’assembleur - Alice Racine & Yannis Ouakrim
+
+- 🥉 Compétition de développement de jeu vidéo - Linden Brochu & Massinissa Djellouli
 
 Félicitations à tous les étudiant\.es qui ont participé avec la DCI. Vos efforts et votre présence à rendu cette édition des CS Games inoubliables.
 
