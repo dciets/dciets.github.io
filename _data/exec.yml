@@ -1,17 +1,20 @@
+- name: Massinissa Djellouli ( @Atlantis11656 ) et Linden Brochu ( @Jersey591 )
+  role: Co-chefs
+  
+- name: Linden Brochu ( @Jersey591 ) et Robin Mazouni ( @.robinthehood )
+  role: VP Compétitions
+
 - name: Jules Barbier ( @Youllou )
-  role: Cheffe
-
-- name: Linden Brochu ( @Jersey591 ) et Alice Racine ( @euphoria )
-  role: VP compétitions
-
-- name: Massinissa Djellouli ( @Atlantis11656 )
-  role: VP finances
-
-- name: Veselin Getov ( @Ves )
-  role: VP partenariats
+  role: VP Partenariats
 
 - name: Sebastien Beaudet ( @mkuroni )
-  role: VP promotions
+  role: VP Promotions
   
-- name: Erwan Derrien ( @wan )
-  role: VP communications
+- name: Alice Racine ( @euphoria )
+  role: VP Communications
+
+- name: Stanley Vu ( @RacoonTiger )
+  role: VP Finances
+
+- name: Félix Caron ( @Milkiie )
+  role: VP Interne
