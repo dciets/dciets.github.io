@@ -1,7 +1,10 @@
-- name: Massinissa Djellouli ( @Atlantis11656 ) et Linden Brochu ( @Jersey591 )
-  role: Co-chefs
+- name: Massinissa Djellouli ( @Atlantis11656 )
+  role: Co-chef
+
+- name: Linden Brochu ( @Jersey591 )
+  role: Co-chef et VP Compétitions
   
-- name: Linden Brochu ( @Jersey591 ) et Robin Mazouni ( @.robinthehood )
+- name: Robin Mazouni ( @.robinthehood )
   role: VP Compétitions
 
 - name: Jules Barbier ( @Youllou )
