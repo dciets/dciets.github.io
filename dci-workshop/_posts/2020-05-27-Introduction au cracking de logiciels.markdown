@@ -19,4 +19,5 @@ Pour cette édition, Alexandre-Xavier Labonté-Lamoureux vous fera une introduct
 
 - [x64dbg](https://x64dbg.com/)
 - [Resource Hacker](http://www.angusj.com/resourcehacker/)
+- [Resource Cracker](https://www.pelock.com/products/resource-cracker)
 
